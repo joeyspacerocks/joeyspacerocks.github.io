@@ -31,9 +31,14 @@
             h1 {
                 font-weight: 300;
                 font-size: 42pt;
-                letter-spacing: 14px;
                 word-spacing: 20px;
                 margin: 0 0 50px 0;
+                transition: letter-spacing 3s ease-in-out;
+                letter-spacing: 8px;
+            }
+            
+            h1.loaded {
+                letter-spacing: 14px;
             }
             
             ul {
@@ -81,13 +86,12 @@
                 width: 100%;
                 background: #111A2C;
             }
-            
         </style>
     </head>
     <body>
         <div class="main">
             <div class="content">
-                <h1>fistful of squid</h1>
+                <h1 id="title">fistful of squid</h1>
                 <p class="strapline">video games for discernin' huckleberries</p>
                 <div class="links">
                     <ul>
@@ -105,4 +109,12 @@
             </div>
         </div>
     </body>
+        
+        <script>
+            window.addEventListener('load',function load() {
+                window.removeEventListener('load', load, false);
+                var d = document.getElementById('title');
+                d.className += ' loaded';
+            },false);
+        </script>
 </html>
