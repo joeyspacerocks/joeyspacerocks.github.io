@@ -1,5 +1,0 @@
-title: Test blog post
-date: 20150201
-url: test_post
-
-<p>Another test post</p>
