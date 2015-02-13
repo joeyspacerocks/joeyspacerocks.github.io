@@ -1,6 +1,5 @@
-#!/opt/local/bin/perl -w
+#!/usr/bin/perl -w
 
-use File::stat;
 use Text::Caml;
 
 my $src_path = './posts/';
@@ -9,15 +8,17 @@ my $dest_path = './';
 
 
 opendir(my $dh, $src_path) || die "can't opendir $src_path: $!";
-my @files = sort {print "[$a]"; stat($b)->ctime <=> stat($a)->ctime} readdir($dh);
+my @files = readdir($dh);
 closedir $dh;
+
+mkdir $dest_path;
 
 my $index = [];
 
 # loop over src files (newest -> oldest)
 
 foreach my $f (@files) {
-    next unless (-f $f && $f =~ /\.txt$/);
+    next unless ($f =~ /\.txt$/);
 
     my $dest = $f;
     $dest =~ s/\.txt$/\.html/;
@@ -26,15 +27,23 @@ foreach my $f (@files) {
 
     write_post($src, $tmpl_path.'post.html', $dest_path);
     
-    if (scalar(@$index) < 5) {
-        push(@$index, $src);
-    }
+	push(@$index, $src);
 }
-    
+
+# sort index date descending
+
+my @sorted = (sort { $b->{'date'} cmp $a->{'date'} } @$index);
+my @top_five = splice @sorted, 0, 5;
+
 # merge listing info with index template
 
-write_post({'posts'=>$index, 'url'=>'index'}, $tmpl_path.'index.html', $dest_path);
+write_post({'posts'=>\@top_five, 'url'=>'index'}, $tmpl_path.'index.html', $dest_path);
 
+sub format_date {
+	my ($date) = @_;
+	my ($y, $m, $d) = $date =~ /^(\d\d\d\d)(\d\d)(\d\d)$/;
+	return $d.' '.('Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec')[$m - 1].' '.$y;
+}
 
 sub process_template {
     my ($src, $tmp) = @_;
@@ -64,7 +73,7 @@ sub read_src {
         
         if ($inh) {
             if ($line =~ /^\s*([^:]+):\s*(.+)$/) {
-                $src->{$1} = $2;
+                $src->{$1} = $1 eq 'date' ? format_date($2) : $2;
             
             } elsif ($line =~ /^\s*$/) {
                 $inh = 0;
