@@ -33,7 +33,7 @@ foreach my $f (@files) {
 # sort index date descending
 
 my @sorted = (sort { $b->{'date'} cmp $a->{'date'} } @$index);
-my @top_five = splice @sorted, 0, 5;
+my @top_five = splice @sorted, 0, 50;
 
 # merge listing info with index template
 
