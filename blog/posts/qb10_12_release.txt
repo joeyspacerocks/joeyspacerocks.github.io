@@ -2,6 +2,7 @@ title: QB1-0 version 1.2 released
 url: qb10_version_12_released
 banner: post2.jpg
 date: 20140711
+icon: bullhorn
 
 <p><img src="http://lh6.ggpht.com/t8KdvEf7Sgnd84AIZRlTnLIfZbzoNYWk4LClVrKE_LZrliRdYhq-n7WLl-SBFXcsVE6YMfjCk56CA0KWrB4=s600" alt="" /></p>
 

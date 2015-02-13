@@ -73,7 +73,7 @@ sub read_src {
     my ($f) = @_;
 
     my $inh = -1;
-    my $src = { content=>''};
+    my $src = { content=>'', icon=>'newspaper-o' };
 
     open $fh, $f || die "can't open $f: $!";
     while (my $line = <$fh>) {
