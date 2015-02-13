@@ -81,7 +81,7 @@ sub read_src {
         
         if ($inh) {
             if ($line =~ /^\s*([^:]+):\s*(.+)$/) {
-                $src->{$1} = $1 eq 'date' ? format_date($2) : $2;
+                $src->{$1} = $2;
             
             } elsif ($line =~ /^\s*$/) {
                 $inh = 0;
@@ -94,6 +94,7 @@ sub read_src {
     close $fh;
 
     $src->{'blurb'} = extract_blurb($src->{'content'});
+	$src->{'nice_date} = format_date($src->{'date'});
 
     return $src;
 }
