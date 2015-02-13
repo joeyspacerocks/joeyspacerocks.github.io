@@ -94,7 +94,7 @@ sub read_src {
     close $fh;
 
     $src->{'blurb'} = extract_blurb($src->{'content'});
-	$src->{'nice_date} = format_date($src->{'date'});
+	$src->{'nice_date'} = format_date($src->{'date'});
 
     return $src;
 }
