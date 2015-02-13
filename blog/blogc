@@ -4,7 +4,7 @@ use Text::Caml;
 
 my $src_path = './posts/';
 my $tmpl_path = './templates/';
-my $dest_path = './';
+my $dest_path = './out/';
 
 
 opendir(my $dh, $src_path) || die "can't opendir $src_path: $!";
@@ -38,6 +38,14 @@ my @top_five = splice @sorted, 0, 5;
 # merge listing info with index template
 
 write_post({'posts'=>\@top_five, 'url'=>'index'}, $tmpl_path.'index.html', $dest_path);
+
+# switch git branch to master
+system('git checkout master');
+# copy output HTML files to blog root
+system('cp -r out/*.html .');
+# git commit files
+system('git add *.html');
+system('git commit -m "Blog update"');
 
 sub format_date {
 	my ($date) = @_;
