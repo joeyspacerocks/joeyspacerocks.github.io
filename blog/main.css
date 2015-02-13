@@ -25,6 +25,7 @@ a {
         font-size: 42pt;
         margin-bottom: 0px;
         letter-spacing: 10px;
+	line-height: 1em;
     }
     
     .header img {
@@ -46,7 +47,7 @@ a {
 
     .contents li {
         margin: 0 0 80px 0;
-        width: 500px;
+        max-width: 600px;
     }
     
     .contents h2 {
@@ -65,6 +66,7 @@ a {
         padding: 0 15px;
         position: relative;
         width: 100px;
+	margin: 0;
     }
     
     .contents .date:before,
