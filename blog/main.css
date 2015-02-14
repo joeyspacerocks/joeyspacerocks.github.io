@@ -24,9 +24,9 @@ a {
         font-weight: 300;
 		font-size: 56px;
         margin-bottom: 0px;
+		line-height: 1em;
 		text-indent: 14px;
         letter-spacing: 14px;
-		line-height: 1em;
 		text-rendering: optimizeSpeed;	/* disable kerning */
     }
     
@@ -168,6 +168,9 @@ a {
     .footer h1 {
         font-size: 24px;
         margin: 0 0 0 0;
+		text-indent: 6px;
+        letter-spacing: 6px;
+		text-rendering: optimizeSpeed;	/* disable kerning */
     }
 
         .footer img {
