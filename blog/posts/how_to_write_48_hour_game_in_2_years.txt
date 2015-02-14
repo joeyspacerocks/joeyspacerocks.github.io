@@ -3,7 +3,7 @@ url: how_to_write_48_hour_game_in_2_years
 banner: post1.jpg
 date: 20130726
 
-<p><img src="http://lh4.ggpht.com/u9gHkny_kQD-orsrgsMOmTIT-Ehdei35S0HEw3pt_EQxQvIqtnP8C76wsR2LoUoW5pq1t7nf8Z7EkpcQGsU0=s600" alt="" /></p><p><strong>(or how to make, and finish, video games in your spare time)</strong></p>
+<p><strong>(or how to make, and finish, video games in your spare time)</strong></p>
 <p>Two years ago I was browsing through the <a href="http://www.ludumdare.com/compo/ludum-dare-21/?action=preview&amp;uid=398">results</a> of a 48-hour games jam and felt inspired to try my hand at something similar.</p>
 <p>Asteroids, I thought. That's the kind of thing I could do in 48 hours. I know my limits.</p>
 <p>48 hours later my iPhone was displaying a black screen with a white triangle on it. Clearly my limits were being tested.</p>
