@@ -25,7 +25,7 @@ date: 20141003
 
 <p>If you're building it yourself there's also art creation, sound and music composition and level design.</p>
 
-<p><img src="http://lh5.ggpht.com/Yh4Bu8W9-E6GWrfGyQtt_fqu5sqdGyFElkQimmH6abqYQtbauac1lvWeWZXppDNl2BqqEUD-JaoGGQXrQ1I=s1143"></p>
+<p><img src="images/how_to_spooky.jpg"></p>
 
 <p>So the act of creation itself can be hugely satisfying - plus the end product is something that people will (hopefully) enjoy! Now I'm not knocking the B2B websites and commerce platforms that I spend my daylight hours glueing together, but ... when was the last time you had someone tell you how much fun they had using that reporting tool you built for them?</p>
 
@@ -37,7 +37,7 @@ date: 20141003
 
 <p>For example, <a href="http://qb1-0.canfactory.com">QB1-0</a> (an asteroidy space-shooter) has very basic mechanics. The graphics are essentially a bunch of OpenGL line and point draws, the physics is implemented using a basic position, velocity, force system and the sound ... well, let's not talk about the sound, ok?</p>
 
-<p><img src="http://lh5.ggpht.com/YuFn4p2vroe6fPBlO5tKTIN8-TW7_ptV3M_g62NVPGHTxpc85B5Iv1CEcCPEkgkOMorC_q2rVOL03ay7lyvm=s980"></p>
+<p><img src="images/how_to_qb10.jpg"></p>
 
 <p>I didn't build a 'framework' or an 'engine' to make that game. I just built the game. When I started my next game (<a href="http://forums.tigsource.com/index.php?topic=42130">Spooky Pooky</a>), a platformer, I ripped out some of the QB1-0 code and hacked away at it to morph it into something more appropriate for that new game.</p>
 
