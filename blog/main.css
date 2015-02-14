@@ -24,8 +24,9 @@ a {
         font-weight: 300;
 		font-size: 56px;
         margin-bottom: 0px;
-        letter-spacing: 10px;
+        letter-spacing: 14px;
 		line-height: 1em;
+		text-rendering: optimizeSpeed;	/* disable kerning */
     }
     
     .header img {
