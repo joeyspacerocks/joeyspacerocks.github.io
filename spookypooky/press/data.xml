@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- example file containing base tags -->
+
+<game>	
+	<title>Joe Trewin</title>
+	<founding-date>Long ago</founding-date>
+	<website>http://pixelated.postagon.com/</website>
+	<based-in>London, United Kingdom</based-in>
+	
+	<press-contact>joe@canfactory.com</press-contact>
+	<phone>Available on request</phone>
+
+	<!--
+	<address>
+		<line>Address Line 1</line>
+		<line>Address Line 2</line>
+		<line>Address Line 3</line>
+	</address>
+	-->
+	
+	<socials>
+		<social>
+			<name>@joeyspacerocks</name>
+			<link>twitter.com/joeyspacerocks</link>
+		</social>
+	</socials>
+
+	<description>	
+		I've been making and playing games since Mario first squared up against his simian foe. This fascination with games has been present throughout my life providing an outlet for both technical and artistic creativity. By day I work as the lead software engineer at Can Factory, a UK-based technology design company that also supports my game development endeavours. Other hours are spent making games. Previously I've released QB1-0, an arcade space shooter for iOS. Currently I'm working on Spooky Pooky, a 2D platformer destined for release sometime in 2015.
+	</description>
+
+	<histories>
+	<!--		
+		<history>
+			<header>Early history</header>
+			<text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel nisi dolor. Pellentesque vitae eros velit, quis venenatis orci. Phasellus elit urna, semper ut gravida et, porta non dui. Aliquam erat volutpat. Aenean porta volutpat imperdiet. Maecenas venenatis, tellus eget vehicula vulputate, augue erat elementum quam, tincidunt laoreet magna orci et mauris. Proin porttitor pharetra nisi, accumsan sollicitudin neque varius a. Aenean ut massa ipsum, id hendrerit lacus. Maecenas posuere egestas nunc at cursus. Etiam mollis libero vel eros pulvinar aliquam. Sed vitae turpis sed nibh venenatis dictum. Sed suscipit orci justo, at sagittis ante. Sed leo nisl, ultricies in fermentum id, aliquam id dolor. Ut laoreet, felis id posuere bibendum, arcu ipsum lacinia est, eu lobortis velit enim eget mi. In ullamcorper ullamcorper enim ut gravida. Vivamus rutrum lacus mollis risus malesuada iaculis.</text>
+		</history>
+		<history>
+			<header>After that</header>
+			<text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sem dui, volutpat eu adipiscing sed, rutrum aliquam lacus. Proin sollicitudin consequat dolor id dignissim. Aliquam sem turpis, sagittis lobortis viverra eget, varius vitae nunc. Proin ac lacus porttitor dui sollicitudin elementum. Nulla ut hendrerit est. Fusce vitae arcu erat, vel molestie est. Proin et placerat justo. Proin placerat arcu massa, eu blandit leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam eu lorem sed massa lobortis hendrerit vitae vel odio. Maecenas eget pulvinar tortor. Nunc vitae nisl ac odio bibendum luctus ac a leo. Suspendisse auctor elit et velit sagittis vehicula. Maecenas faucibus blandit rutrum. Duis et sem nibh. Vestibulum placerat elit et dui rhoncus accumsan.</text>
+		</history>
+	-->
+	</histories>
+	
+	<trailers>
+		<!--
+		<trailer>
+			<name>This video is nice</name>
+			<youtube>7jQbITg0MSk</youtube>
+		</trailer>
+		-->
+	</trailers>
+	
+	<awards>
+		<!--
+		<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+		-->
+	</awards>
+	
+	<!--
+	<quotes>
+		<quote>
+			<description>This is a rather insignificant quote by a highly important person.</description>
+			<name>Person Name</name>
+			<website>Website</website>
+			<link>http://www.website.com/</link>
+		</quote>
+		<quote>
+			<description>An extremely positive quote from a rather insignificant person. Also great.</description>
+			<name>Some Guy</name>
+			<website>This Page Is Visited By 12 Visitors A Month</website>
+			<link>http://geocities.blog.com/</link>
+		</quote>
+		<quote>
+			<description>I pretend to love this game even though I do not actually understand it.</description>
+			<name>Pretentious Bastard</name>
+			<website>Artsy Page</website>
+			<link>http://art.tumblr.com/</link>
+		</quote>
+		<quote>
+			<description>HOLY SHIT SO AMAZING</description>
+			<name>Caps Guy</name>
+			<website>Angry Review</website>
+			<link>http://thispage.net/angrytube</link>
+		</quote>
+	</quotes>
+		-->
+	
+	<press-can-request-copy>TRUE</press-can-request-copy> <!-- can be true or false -->
+	<monetization-permission>monetize</monetization-permission> <!-- can be: 	false (no video allowed),
+																			 	ask (permission on case-per-case basis),
+																			 	non-commercial (no monetization allowed),
+																			 	monetize (full permission) -->	
+	<additionals>
+		<additional>
+			<title>My Blog</title>
+			<description>I blog (mostly) about game development at </description>
+			<link>http://pixelated.postagon.com/</link>
+		</additional>
+		<additional>
+			<title>Can Factory Ltd</title>
+			<description>Find out more about my employer at </description>
+			<link>http://www.canfactory.com/</link>
+		</additional>
+	</additionals>
+	
+	<!--
+	<credits>
+		<credit>
+			<person>John Doe</person>
+			<role>Artist, Freelancer</role>
+		</credit>
+		<credit>
+			<person>Oliver Twist</person>
+			<website>www.olivertwist.com</website>
+			<role>Artist, Freelancer</role>
+		</credit>
+		<credit>
+			<person>Jane Doette</person>
+			<website>www.olivertwist.com</website>
+			<role>Music, Freelancer</role>
+		</credit>
+	</credits>
+	-->
+	
+	<contacts>
+		<contact>
+			<name>Inquiries</name>
+			<mail>joe@canfactory.com</mail>
+		</contact>
+		<contact>
+			<name>Twitter</name>
+			<link>http://twitter.com/joeyspacerocks</link>
+		</contact>
+	</contacts>
+</game>

@@ -1,0 +1,231 @@
+<html>
+  <head>
+    <title>Spooky Pooky - 2D platform game</title>
+	<link href='http://fonts.googleapis.com/css?family=Flamenco:300,400' rel='stylesheet' type='text/css' />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="lightbox/css/lightbox.css" rel="stylesheet" />
+    <style type="text/css">
+    
+      body {
+      	background: #140C1C;
+	    color: #C2CEDA;
+		font-family: 'Flamenco', cursive;
+		font-size: 24px;
+		font-weight: 300;
+      }
+      
+      a {
+      	text-decoration: none;
+      	color: #C2CEDA;
+      	padding-bottom: 2px;
+      }
+      
+      a:hover {
+      	border-bottom: 1px solid;
+      }
+      
+      .main {
+      	width: 100%;
+      	text-align: center;
+      }
+      
+      .header {
+      	width: 100%;
+      	height: 340px;
+		position: relative;
+      }
+      
+      .header:before {
+		content: '';
+		position: absolute;
+		z-index: -1;
+		background-position: center -60px;
+		bottom: 0;
+		top: 0;
+		left: 0;
+		right: 0;
+       	background-image: url('images/sp-banner.png');
+       	background-size: 1000px 562px;
+      }
+
+	  .header:after {
+		background-image: url('images/sp-banner-crop.gif');
+		content: '';
+		position: absolute;
+		width: 422px;
+		height: 254px;
+		background-size: 422px 254px;
+		margin-left: -211px;
+		margin-top: 4px;
+	  }
+
+	  .copy {
+	    margin: 80px 20% 0 20%;
+	    text-align: center;
+   	    line-height: 1.4em;
+	  }
+
+      .copy strong {
+		font-size: 24px;
+		color: #DEEED6;
+      }
+      
+      .copy p {
+      	margin-bottom: 50px;
+      }
+      
+      .copy h2 {
+		color: #DEEED6;
+      }
+      
+      .screens {
+      	display: inline-block;
+      	text-align: center;
+      	margin: 80px auto 0 auto;
+      }
+      
+      .screen {
+        display: inline-block;
+      	vertical-align: top;
+      	height: 340px;
+      	padding: 20px 20px 0 50px;
+   	    line-height: 1.1em;
+   	    max-width: 370px;
+      }
+      
+      .screen h2 {
+		color: #DEEED6;
+      	font-size: 20px;
+      	text-transform: uppercase;
+      }
+      
+      .screen p {
+      	font-size: 20px;
+      	margin-top: 0;
+      }
+      
+      .screen img {
+      	padding: 10px;
+      	border: 1px solid #DEEED6;
+      }
+      
+      .footer {
+      	font-size: 20px;
+      	font-weight: 500;
+      }
+      
+      .footer .panel {
+        display: inline-block;
+      	vertical-align: top;
+        width: 300px;
+      	margin: 50px 50px;
+      }
+      
+      ul {
+      	list-style: none;
+      	padding: 10;
+      	margin: 0;
+      }
+      
+      li {
+      	margin-bottom: 10px;
+      }
+      
+      .fa {
+        margin-right: 10px;
+      }
+    
+	  .copyright {
+	  	font-size: 16px;
+	  	margin: 20px 0;
+		font-variant: small-caps;
+    	text-transform: capitalize;
+	  }
+    
+      .title h1 {
+      	font-size: 100px;
+		font-variant: small-caps;
+    	text-transform: capitalize;
+    	font-weight: 300;
+    	margin-top: 30px;
+	    margin-bottom: 50px;
+	    color: #DEEED6;
+      }
+      
+    </style>
+	<script src="lightbox/js/jquery-1.11.0.min.js"></script>
+	<script src="lightbox/js/lightbox.min.js"></script>
+
+  </head>
+  <body>
+  
+	  <div class="main">
+  
+		<div class="title">
+			<h1>Spooky Pooky</h1>
+		</div>
+	
+		<div class="header">
+		</div>
+
+		<div class="copy">
+			<p><strong>Horatio Bones</strong> is a curious lad.</p>
+			<p>Working late one night at the Nefarious Science Corporation he strays into a deserted sector and unwittingly triggers ... <strong>The Machine</strong>.<p>
+			<p>The Machine strips Horatio of his fluids and organs ~ he finds himself reduced to a living skeleton trapped in a specimen jar!<p>
+			<p><em><strong>The horror!</strong></em><p>
+			<p>Thus begins the longest night of Horatio's life as he travels through a dangerous and bizarre world in search of Restoration.
+		</div>
+	
+		<div class="screens">
+			<div class="screen">
+				<a href="images/before.png" data-lightbox="image-1"><img src="images/before.png" width="333" /></a>
+				<h2>Oblivious</h2>
+				<p>Horatio wanders the lab unaware that his destiny is moments away.</p>
+			</div>
+
+			<div class="screen">
+				<a href="images/machine.png" data-lightbox="image-1"><img src="images/machine.png" width="333" /></a>
+				<h2>The Machine</h2>
+				<p>Recoil in <strong>horror</strong> as Horatio is diminished!</p>
+			</div>
+
+			<div class="screen">
+				<a href="images/heart.png" data-lightbox="image-1"><img src="images/heart.png" width="333" /></a>
+				<h2>Heart warming</h2>
+				<p>Found! Human heart, one careful owner.</p>
+			</div>
+		</div>
+		
+		<div class="copy">
+			<h2>Behind the scenes ...</h2>
+			
+			<p>Spooky Pooky is a 2D platformer that combines action, exploration and puzzle-solving set against the backdrop of a B-movie plot.</p>
+			<p>Horatio is set to meet his fate in mid-2015 on various platforms including iOS, PC and Mac.</p>
+			<p>He owes his existence, and his unconscionable situation, to developer <a href="https://twitter.com/joeyspacerocks"><strong>Joe Trewin</strong></a> and <a href="http://www.canfactory.com"><strong>Can Factory</strong></a>.</p>
+		</div>
+		
+		<div class="copy">
+			<h2>For more information ...</h2>
+			
+			<ul>
+				<li><i class="fa fa-twitter"></i> <a href="https://twitter.com/joeyspacerocks">Talk to me <strong>@joeyspacerocks</strong></a></li>
+				<li><i class="fa fa-rocket"></i> <a href="http://forums.tigsource.com/index.php?topic=42130">Follow the <strong>development log</strong></a></li>
+				<li><i class="fa fa-envelope"></i> <a href="http://eepurl.com/bcNbXr">Sign up for <strong>news and updates</strong></a></li>
+				<li><i class="fa fa-bullhornGGG fa-newspaper-o"></i> <a href="../press/spookypooky/index.html">Get the scoop at the <strong>press site</strong></a></li>
+			</ul>
+		</div>
+
+		<div class="copy">
+			<p>
+				<a href="http://www.indiedb.com/games/spooky-pooky" title="View Spooky Pooky on Indie DB" target="_blank"><img src="http://button.indiedb.com/popularity/medium/games/36823.png" alt="Spooky Pooky" /></a>
+			</p>
+		</div>
+		
+		<div class="copyright">
+			<a href="http://www.canfactory.com">&copy; Can Factory 2015</a>
+		</div>
+		
+	  </div>
+  
+  </body>
+</html>
