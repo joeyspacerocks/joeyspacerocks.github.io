@@ -100,17 +100,21 @@ a {
 .post-header {
     font-size: 20px;
     margin: 0 0;
-		text-indent: 4px;
-        letter-spacing: 4px;
-		text-rendering: optimizeSpeed;	/* disable kerning */
+    text-indent: 4px;
+    letter-spacing: 4px;
+    text-rendering: optimizeSpeed;	/* disable kerning */
 }
 
 .post-header a {
+    background-image: url('../logo-g.svg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+
     font-size: 18px;
-    display: block;
-    margin: 5px 0;
-    padding: 0;
+    margin: 5px 0 15px 0;
+    padding: 0 0 0 40px;
     color: #bbc;
+    display: inline-block;
 }
 
 .post {
