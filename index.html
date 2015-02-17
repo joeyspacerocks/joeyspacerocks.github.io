@@ -12,11 +12,13 @@
                 margin: 0;
                 padding: 0;
                 text-align: center;
+                font-size: 18px;
             }
 
             a {
                 text-decoration: none;
                 color: #fff;
+                font-size: 20px;
             }
 
             a:hover {
@@ -30,26 +32,17 @@
                 padding: 100px 0 50px 0;
             }
 
-        .logo {
-            width: 150px;
-            margin: 0 0 30px 0;
-        }
-
-	    .games {
-		margin-bottom: 80px;
+            .games {
+                margin-bottom: 80px;
                 color: #678;
-	    }
-
-	    .games a {
-		font-size: 20px;
-	    }
+            }
 
             h1 {
                 font-weight: 300;
                 font-size: 56px;
                 word-spacing: 20px;
                 margin: 0 0 50px 0;
-                transition: letter-spacing 3s ease-in-out;
+                transition: letter-spacing 3s ease-out;
 				text-indent: 8px;
                 letter-spacing: 8px;
                 text-rendering: optimizeSpeed;	/* disable kerning */
@@ -57,6 +50,17 @@
 
             h1.loaded {
                 letter-spacing: 14px;
+            }
+
+            .logo {
+                width: 120px;
+                height: 180px;
+                margin: 0 0 30px 0;
+                transition: width 2s ease-out;
+            }
+
+            .logo.loaded {
+                width: 150px;
             }
 
             ul {
@@ -90,39 +94,44 @@
                 margin-bottom: 100px;
             }
             
-            .twitter {
-                margin-top: 100px;
-                font-size: 30px;
-                vertical-align: middle;
-            }
-            
             .copyright {
                 position:absolute;
                 bottom: 0;
                 font-size: 12px;
-                color: #678;
                 width: 100%;
-                background: #111A2C;
+                background: rgba(17, 26, 44, 0.8);
+                padding-bottom: 30px;
             }
+            
+            .links .fa {
+                padding-right: 8px;
+                color: #678;
+            }
+            
+            .links .fa-twitter {
+                font-size: 30px;
+                vertical-align: middle;
+                color: #fff;
+            }
+            
         </style>
     </head>
     <body>
         <div class="main">
             <div class="content">
-                <img class="logo" src="logo.svg" alt="squid" />
+                <img id="logo" class="logo" src="logo.svg" alt="squid" />
                 <h1 id="title">fistful of squid</h1>
                 <p class="strapline">video games for discernin' huckleberries</p>
                 <div class="games">
-			<p><a href="qb1-0/index.html">QB1-0</a> ... frantic space shooter for iOS, available now</p>
-			<p><a href="spookypooky/index.html">Spooky Pooky</a> ... fiendish platformer, available mid-2015</p>
-		    </ul>
-		</div>
+                    <p><a href="qb1-0/index.html">QB1-0</a> ... frantic space shooter for iOS, available now</p>
+                    <p><a href="spookypooky/index.html">Spooky Pooky</a> ... fiendish platformer, available mid-2015</p>
+                </div>
                 <div class="links">
                     <ul>
-                        <li><a href="press/index.html">press</a></li>
-                        <li><a href="blog/index.html">blog</a></li>
+                        <li><a href="press/index.html"><i class="fa fa-bullhorn"></i> press</a></li>
+                        <li><a href="blog/index.html"><i class="fa fa-newspaper-o"></i> blog</a></li>
                         <li>
-                            <a class="twitter" href="http://twitter.com/joeyspacerocks"><i class="fa fa-twitter"> </i></a>
+                            <a href="http://twitter.com/joeyspacerocks"><i class="fa fa-twitter"> </i></a>
                         </li>
                     </ul>
                 </div>
@@ -138,6 +147,8 @@
             window.removeEventListener('load', load, false);
             var d = document.getElementById('title');
             d.className += ' loaded';
+            var logo = document.getElementById('logo');
+            logo.className += ' loaded';
         },false);
     </script>
 
