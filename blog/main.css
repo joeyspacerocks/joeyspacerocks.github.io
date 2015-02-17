@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lora);
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
 body {
     margin: 0;
@@ -93,7 +94,8 @@ a {
     }
     
     .contents .blurb {
-        font-size: 18px;
+        font-family: 'EB Garamond', serif;
+        font-size: 21px;
     }
 
 
@@ -102,7 +104,7 @@ a {
 .post-header {
     font-size: 20px;
     margin: 0 0;
-include     letter-spacing: 4px;
+    letter-spacing: 4px;
     text-rendering: optimizeSpeed;	/* disable kerning */
 }
 
@@ -112,9 +114,9 @@ include     letter-spacing: 4px;
     background-repeat: no-repeat;
 
     font-size: 18px;
-    margin: 5px 0 15px 0;
+    margin: 10px 0 20px 0;
     padding: 0 0 0 40px;
-    color: #bbc;
+    color: #aab;
     display: inline-block;
 }
 
@@ -123,18 +125,46 @@ include     letter-spacing: 4px;
     text-align: left;
     width: 80%;
     margin-top: 40px;
-    color: #668;
-    font-size: 19px;
+    color: #000; /*668;*/
+    font-size: 23px;
     padding-bottom: 40px;
     font-family: 'Lora', serif;
+    font-family: 'EB Garamond', serif;
+    line-height: 32px;
 }
 
-    .post h1 {
+    .post h1, .post h2 {
         color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .post h1 {
+        font-size: 44px;
+	line-height: 48px;
+    }
+
+    .post h2 {
+        font-size: 34px;
+	padding: 30px 0 6px 0;
     }
 
     .post iframe {
         margin: 20px 0 20px 40px;
+    }
+
+    .post a {
+	border-bottom: 1px solid #e0e0d0;
+	border-radius: 10px;
+	padding: 0 4px;
+    }
+
+    .post a:hover {
+	border-bottom: 1px solid #000;
+    }
+
+    .post strong {
+	font-weight: normal;
+	font-style: italic;
     }
 
     .post .date {
@@ -152,6 +182,7 @@ include     letter-spacing: 4px;
     width: 100%;
     height: 200px;
     overflow: hidden;
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.5);
 }
 
     .banner img {
@@ -164,6 +195,7 @@ include     letter-spacing: 4px;
     padding: 20px 0;
     width: 100%;
     color: #bbc;
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.2);
 }
 
     .footer p {
@@ -192,8 +224,4 @@ include     letter-spacing: 4px;
             font-size: 12px;
             margin-top: 10px;
         }
-
-.main {
-    border-bottom: 1px solid #eef;
-}
 
