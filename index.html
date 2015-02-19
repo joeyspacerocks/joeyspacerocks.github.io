@@ -33,10 +33,60 @@
             }
 
             .games {
-                margin-bottom: 80px;
                 color: #678;
             }
+            
+            .game {
+                margin-bottom: 80px;
+            }
 
+            .screenshot {
+                overflow: hidden;
+                width: 400px;
+                height: 240px;
+                display: inline-block;
+                position: relative;
+                border-radius: 10px;
+                transition: all 1s ease-in-out;
+            }
+
+                .screenshot:hover {
+                    width: 460px;
+                    height: 276px;
+                }
+                
+                .screenshot:after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0,32,50, 0.4);
+                    transition: all 1s linear;
+                }
+                
+                .screenshot:hover:after { background: none; pointer-events: none; }
+            
+                .screenshot .inner {
+                    display: inline-block;
+                    position: relative;
+                    right: -50%;
+                }
+            
+            
+                .screenshot img {
+                    width: 900px;
+                    position: relative;
+                    left: -50%;
+                    transition: width 1s ease-in-out;
+                }
+
+                .screenshot img:hover {
+                    width: 500px;
+                }
+                
             h1 {
                 font-weight: 300;
                 font-size: 56px;
@@ -111,6 +161,10 @@
                 color: #fff;
             }
             
+            strong {
+                color: white;
+            }
+            
         </style>
     </head>
     <body>
@@ -120,8 +174,16 @@
                 <h1 id="title">fistful of squid</h1>
                 <p class="strapline">video games for discerning cephalopods</p>
                 <div class="games">
-                    <p><a href="qb1-0/index.html">QB1-0</a> ... frantic space shooter for iOS, available now</p>
-                    <p><a href="spookypooky/index.html">Spooky Pooky</a> ... fiendish platformer, available mid-2015</p>
+                    <div class="game">
+                        <p><a href="qb1-0/index.html">QB1-0</a></p>
+                        <div class="screenshot"><div class="inner"><a href="qb1-0/index.html"><img src="images/qb1-0.png" /></a></div></div>
+                        <p>frantic space shooter for iOS, available <strong>NOW!</strong></p>
+                    </div>
+                    <div class="game">
+                        <p><a href="spookypooky/index.html">Spooky Pooky</a></p>
+                        <div class="screenshot"><div class="inner"><a href="spookypooky/index.html"><img src="images/spooky.png" /></a></div></div>
+                        <p>fiendish platformer, available <strong>mid-2015</strong></p>
+                    </div>
                 </div>
                 <div class="links">
                     <ul>
