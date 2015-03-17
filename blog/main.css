@@ -193,6 +193,10 @@ a {
         min-width: 1000px;
     }
 
+.comments {
+    display: inline-block;
+}
+
 .footer {
     margin-top: 20px;
     padding: 20px 0;
