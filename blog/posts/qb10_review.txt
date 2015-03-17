@@ -1,6 +1,7 @@
 title: QB1-0 Review
 url: qb10_review
 date: 20140717
+banner: post2.jpg
 
 <p><a href="http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html">Indie Game Enthusiast</a> posted a really good review for QB1-0 the other day ...</p>
 
