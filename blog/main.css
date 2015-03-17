@@ -195,6 +195,7 @@ a {
 
 .comments {
     display: inline-block;
+    width: 400px;
 }
 
 .footer {
