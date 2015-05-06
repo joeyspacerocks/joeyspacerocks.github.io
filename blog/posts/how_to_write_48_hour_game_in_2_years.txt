@@ -19,7 +19,7 @@ date: 20130726
 <p>Start. Added some power-ups.</p>
 <p>Stop. Four months passed.</p>
 <p>Finally I tired of my inability to progress. I called a halt to this stop-start development program and decided that it was time I actually finished something. I jotted down some basic rules that led me from half finished to completion in about three months.</p>
-<p>And then ... <a href="https://itunes.apple.com/gb/app/qb1-0/id580175669">published on the App Store</a>! For the first time in my life I'd followed a (self-driven) project through to completion and now I actually had something up and on sale.</p>
+<p>And then ... <a href="https://itunes.apple.com/gb/app/qb1-0/id989626858">published on the App Store</a>! For the first time in my life I'd followed a (self-driven) project through to completion and now I actually had something up and on sale.</p>
 <p>It may not sound like much; after all, my game is one of many Asteroids clones on the App Store. However if you spend even a small amount of time browsing game development forums you'll soon realise just how rare it is that a part-time game development project is completed.</p>
 <p>Here's some rules I eventually followed that helped me make the transition from a wannabe games developer to an actual games developer.</p>
 <h2>Start simple</h2>
@@ -36,4 +36,4 @@ date: 20130726
 <p>With self-driven projects it's hard to know when to call a halt to the work and just get it out there. With QB1-0 I fell into a long cycle of making little tweaks, or listing things I really should do before I pushed it. But none of it mattered - the main game was done, none of these things would make or break it.</p>
 <p>Seriously - that's it. Most IT projects fail because of scope-creep, bad estimates and being afraid to ship. Single-developer side-projects are no different.</p>
 <p>If I was being cynical I might now note that developing your game turns out to be the easy bit. Getting people to buy it ... well that's a whole different kettle of ball games.</p>
-<p><a href="https://itunes.apple.com/gb/app/qb1-0/id580175669">(QB1-0 is available at a very reasonable price)</a></p>
+<p><a href="https://itunes.apple.com/gb/app/qb1-0/id989626858">(QB1-0 is available at a very reasonable price)</a></p>

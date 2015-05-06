@@ -5,7 +5,7 @@ date: 20140719
 
 <p>Silence is golden. On the other hand, when it's the silence that greets the release of your pride and joy that you've spent the last year slaving away at, it's not so much golden as a disturbing brown.</p>
 
-<p>Let's get anecdotal. I wrote a game called <a href="http://qb1-0.canfactory.com">QB1-0</a> and released it in December 2012 on the <a href="https://itunes.apple.com/us/app/qb1-0/id580175669?ls=1&amp;mt=8">iOS app store</a>. It's an arcade space shooter with a retro style. I like it, and I know for a fact that at least four other people do to. Some of us still play it.</p>
+<p>Let's get anecdotal. I wrote a game called <a href="http://qb1-0.canfactory.com">QB1-0</a> and released it in December 2012 on the <a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8">iOS app store</a>. It's an arcade space shooter with a retro style. I like it, and I know for a fact that at least four other people do to. Some of us still play it.</p>
 
 <p>It was greeted, predictably, with ... well, it wasn't really greeted at all. A handful of copies were purchased, mainly by friends and family. Not totally unexpected; after all who would know it existed?</p>
 
@@ -57,6 +57,6 @@ date: 20140719
 
 <p>Unless of course you threw caution to the wind, quit your job and do this for money. In that case I look forward to seeing your Match-3 with in-app purchases for extended play.</p>
 
-<p>Almost forgot: <a href="https://itunes.apple.com/us/app/qb1-0/id580175669?ls=1&amp;mt=8">buy QB1-0 now</a>. It looks nice and smells of lemons. It's only 99c and you get to play it as much as you want.</p>
+<p>Almost forgot: <a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8">buy QB1-0 now</a>. It looks nice and smells of lemons. It's only 99c and you get to play it as much as you want.</p>
 
 
