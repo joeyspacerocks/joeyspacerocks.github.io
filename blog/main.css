@@ -24,12 +24,13 @@ a {
 
     .header h1 {
         font-weight: 300;
-		font-size: 56px;
+	font-size: 56px;
         margin-bottom: 0px;
-		line-height: 1em;
-		text-indent: 14px;
+	line-height: 1em;
+	text-indent: 14px;
         letter-spacing: 14px;
-		text-rendering: optimizeSpeed;	/* disable kerning */
+	text-rendering: optimizeSpeed;	/* disable kerning */
+	font-variant-ligatures: none;
     }
     
     .header img {
@@ -216,9 +217,10 @@ a {
     .footer h1 {
         font-size: 24px;
         margin: 0 0 0 0;
-		text-indent: 6px;
+	text-indent: 6px;
         letter-spacing: 6px;
-		text-rendering: optimizeSpeed;	/* disable kerning */
+	text-rendering: optimizeSpeed;	/* disable kerning */
+	font-variant-ligatures: none;
     }
 
         .footer img {
