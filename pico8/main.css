@@ -1,0 +1,235 @@
+@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
+
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    line-height: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 4px;
+}
+
+.main {
+}
+
+.header {
+    display: inline-block;
+    margin: 80px auto 0 auto;
+}
+
+    .header h1 {
+        font-weight: 300;
+	font-size: 56px;
+        margin-bottom: 0px;
+	line-height: 1em;
+	text-indent: 14px;
+        letter-spacing: 14px;
+	text-rendering: optimizeSpeed;	/* disable kerning */
+	font-variant-ligatures: none;
+    }
+    
+    .header img {
+        width: 160px;
+        height: 160px;
+    }
+    
+    .header p {
+        color: #aab;
+    }
+
+.contents ul {
+    display: inline-block;
+    list-style: none;
+    margin: 60px 0 0 0;
+    padding: 0;
+}
+
+    .contents li {
+        margin: 0 0 80px 0;
+        max-width: 600px;
+    }
+    
+    .contents h2 {
+        margin: 0;
+    }
+    
+        .contents h2 i {
+            font-weight: normal;
+            color: #bbc;
+            margin-right: 10px;
+        }
+    
+    .contents .date {
+        color: #aab;
+        display: inline-block;
+        padding: 0 15px;
+        position: relative;
+        width: 100px;
+	margin: 0;
+    }
+    
+    .contents .date:before,
+    .contents .date:after {
+        background: #eef;
+        content: '';
+        display: block;
+        height: 1px;
+        position: absolute;
+        top: 50%;
+        width: 150px;
+    }
+    
+    .contents .date:before {
+        left: -150px;
+    }
+    
+    .contents .date:after {
+        right: -150px;
+    }
+    
+    .contents .blurb {
+        font-family: 'EB Garamond', serif;
+        font-size: 21px;
+    }
+
+
+/* post */
+
+.post-header {
+    font-size: 20px;
+    margin: 0 0;
+    letter-spacing: 4px;
+    text-rendering: optimizeSpeed;	/* disable kerning */
+}
+
+.post-header a {
+    background-image: url('../logo.svg');
+    background-size: 40px;
+    background-repeat: no-repeat;
+
+    margin: 10px 0 20px 0;
+    padding: 0 0 0 46px;
+    color: #aab;
+    line-height: 42px;
+    display: inline-block;
+}
+
+.post {
+    display: inline-block;
+    text-align: left;
+    width: 80%;
+    margin-top: 40px;
+    color: #000; /*668;*/
+    font-size: 23px;
+    padding-bottom: 40px;
+    font-family: 'EB Garamond', serif;
+    line-height: 32px;
+}
+
+    .post h1, .post h2 {
+        color: black;
+        font-family: 'Raleway', sans-serif;
+    }
+
+    .post h1 {
+        font-size: 44px;
+	line-height: 48px;
+	text-align: center;
+    }
+
+    .post h2 {
+        font-size: 34px;
+	padding: 30px 0 6px 0;
+    }
+
+    .post iframe {
+        margin: 20px 0 20px 40px;
+    }
+
+    .post a {
+	border-bottom: 1px solid #e0e0d0;
+	border-radius: 10px;
+	padding: 0 4px;
+    }
+
+    .post a:hover {
+	border-bottom: 1px solid #000;
+    }
+
+    .post strong {
+	font-weight: normal;
+	font-style: italic;
+    }
+
+    .post .publish {
+        margin-top: 40px;
+        font-size: 16px;
+        color: #bbc;
+        text-align: center;
+    }
+    	.post .publish .date {
+      	    font-size: 22px;
+            color: #99a;
+	    margin: 0 6px;
+	}
+
+    .post img {
+	max-width: 100%;
+    }
+
+.banner {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.5);
+}
+
+    .banner img {
+        width: 100%;
+        min-width: 1000px;
+    }
+
+.comments {
+    display: inline-block;
+    width: 70%;
+}
+
+.footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    width: 100%;
+    color: #bbc;
+}
+
+    .footer p {
+        margin: 5px 0;
+    }
+    
+    .footer div {
+        display: inline-block;
+    }
+    
+    .footer h1 {
+        font-size: 24px;
+        margin: 0 0 0 0;
+	text-indent: 6px;
+        letter-spacing: 6px;
+	text-rendering: optimizeSpeed;	/* disable kerning */
+	font-variant-ligatures: none;
+    }
+
+        .footer img {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .footer .copyright {
+            font-size: 12px;
+            margin-top: 10px;
+        }
+

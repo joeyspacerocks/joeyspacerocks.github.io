@@ -2,52 +2,140 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>PICO-8 Cartridge</title>
+        <title>They Started It - a PICO-8 game</title>
         <meta name="description" content="">
+        <link rel="icon" href="favicon.png" type="image/png" />
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<STYLE TYPE="text/css">
-<!--
+		<style type="text/css">
 
-canvas#canvas { width: 580px; height: 540px; }
+			@import url(http://fonts.googleapis.com/css?family=EB+Garamond);
 
-.pico8_el {
-	float:left;
-	width:105px;
-	display:inline-block; 
-  	margin: 1px;
-	padding: 4px;
-	text-align: center;
-	color:#fff;
-	background-color:#777;
-	font-family : verdana;
-	font-size: 9pt;
-	cursor: pointer;
-	cursor: hand;
-}
-.pico8_el a{
-	text-decoration: none;
-	color:#fff;
-}
+			body {
+				font-family: 'Raleway', sans-serif;
+				background: #111A2C;
+				color: #fff;
+				margin: 0;
+				padding: 0;
+				text-align: center;
+				line-height: 2em;
+			}
 
-.pico8_el:hover{
-	background-color:#aaa;
-}
+			a {
+				text-decoration: none;
+				color: #fff;
+			}
 
-.pico8_el:link{
-	background-color:#aaa;
-}
+			h1 {
+				font-weight: 300;
+				font-size: 32px;
+				letter-spacing: 6px;
+				word-spacing: 16px;
+				margin: 50px 0 10px 0;
+				text-rendering: optimizeSpeed;  /* disable kerning */
+				font-variant-ligatures: none;
+			}
+			
+			.strap {
+				margin: 0px 0 50px 0;
+				letter-spacing: 3px;
+			}
+			
+			.blurb {
+				display: inline-block;
+				width: 500px;
+				line-height: 1.8em;
+			}
+			
+			.keys {
+				font-family: "Lucida Console", Monaco, monospace;
+				font-weight: 500;
+				color: #bbc;
+				list-style: none;
+				padding: 10px 0 10px 0;
+				line-height: 1.5em;
+				margin-bottom: 40px;
+				background: #000;
+			}
+			
+			.keys li {
+				margin: 0
+			}
+			
+			.footer {
+				margin-top: 20px;
+				padding: 20px 0;
+				width: 100%;
+				color: #bbc;
+			}
 
--->
-</STYLE>
-    
-</head>
+				.footer p {
+					margin: 5px 0;
+				}
 
-<body bgcolor=#303030>
+				.footer div {
+					display: inline-block;
+				}
 
-	<br><br><br>
+				.footer h1 {
+					font-size: 24px;
+					margin: 0 0 0 0;
+					text-indent: 6px;
+					letter-spacing: 6px;
+					text-rendering: optimizeSpeed;  /* disable kerning */
+					font-variant-ligatures: none;
+				}
 
-	<center><div style="width:580px;">
+					.footer img {
+						width: 100px;
+						height: 100px;
+					}
 
+					.footer .copyright {
+						font-size: 12px;
+						margin-top: 10px;
+					}
+
+			canvas#canvas { width: 580px; height: 540px;}
+
+			.pico8_buttons {
+			}
+			
+			.pico8_el {
+				width:20px;
+				display:inline-block; 
+				margin: 1px;
+				padding: 4px;
+				text-align: center;
+				color:#fff;
+				font-family : verdana;
+				font-size: 9pt;
+				cursor: pointer;
+				cursor: hand;
+			}
+
+			.pico8_el a{
+				text-decoration: none;
+				color:#fff;
+			}
+
+			.pico8_el:hover{
+				background-color:#313A5C;
+			}
+
+			.pico8_el:link{
+				background-color:#aaa;
+			}
+		</style>
+    </head>
+
+    <body>
+		<div class="main">
+		
+		<h1>Brick Tickler</h1>
+		<div class="strap">a pico-8 game</div>
+		
 	<canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()"></canvas>
 
 	<script type="text/javascript">
@@ -55,39 +143,21 @@ canvas#canvas { width: 580px; height: 540px; }
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight;
 
-		// show Emscripten environment where the canvas is
-		// arguments are passed to PICO-8
-		
 		var Module = {
 			arguments: ["-width","580","-height","540"],
 		};
 		Module.canvas = canvas;
-		
-		/*
-			// When pico8_buttons is defined, PICO-8 takes each int to be a live bitfield
-			// representing the state of each player's buttons
-			
-			var pico8_buttons = [0, 0, 0, 0, 0, 0, 0, 0]; // max 8 players
-			pico8_buttons[0] = 2 | 16; // example: player 0, RIGHT and Z held down
-			
-			// when pico8_gpio is defined, reading and writing to gpio pins will
-			// read and write to these values
-			var pico8_gpio = new Array(128);
-		*/
 	</script>
 
 	<script async type="text/javascript" src="bricktickler.js"></script>
 	  
 	<script>
 		// key blocker. prevent cursor keys from scrolling page while playing cart.
-		
 		function onKeyDown_blocker(event) {
 			event = event || window.event;
 			var o = document.activeElement;
-			if (!o || o == document.body || o.tagName == "canvas")
-			{
-				if ([32, 37, 38, 39, 40].indexOf(event.keyCode) > -1)
-				{
+			if (!o || o == document.body || o.tagName == "canvas") {
+				if ([32, 37, 38, 39, 40].indexOf(event.keyCode) > -1) {
 					if (event.preventDefault) event.preventDefault();
 				}
 			}
@@ -97,37 +167,55 @@ canvas#canvas { width: 580px; height: 540px; }
 
 	</script>
         
-	<br>
-
-	<div class=pico8_el onclick="Module.pico8Reset();">
-
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dOwoAMQhE15A+rfc/3bZ7AlMnQfywCkKsfcgMM9ZP+QHtIn0vLeBAFduiFdQ/0DmvtR5LXJ6CPSXe2ZXcFNlTxFbemKrbZPs35XogeS9xeQr+anT6LzoOwEDwZJ7jwhXUnwkTTiDQ2Ja34AAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Reset" width=12 height=	12/>
-
-	Reset</div>
-
-	<div class=pico8_el onclick="Module.pico8TogglePaused();">
-
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAPUlEQVR4Ae3doQ0AIAxEUWABLPtPh2WCq26DwFSU/JPNT166QSu/Hg86W9dwLte+diP7AwAAAAAAgD+A+jM2ZAgo84I0PgAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Pause" width=12 height=12/>
-
-	Pause</div>
-	<div class=pico8_el onclick="Module.requestFullScreen(true, false);">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAaklEQVR4Ae2dsQ1AIQhExfze1v2ns3UCrfgFhmgUUAoGgHscp21wX9BqaZoDojbB96OkDJKNcTN2BHTyYNYmoT2BlPL7BKgcPfHjAVXKKadkHOn9K1r16N0czN6a95N8mnA7Aq2fTZ3Af3UKmCSMazL8HwAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Fullscreen" width=12 height=12/>
-
-	Fullscreen</div>
-	<div class=pico8_el onclick="Module.pico8ToggleSound();">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAXklEQVR4Ae2doQ4AIQxD4YLH8v9fh+ULhjpxxSwLg2uyapr1JRu1iV5Z+1BGl4+xNpX38SYo2uRvYiT5LwEmt+ocgXVLrhPEgBiw8Q5w7/kueSkK+D2tJO4E/I3GrwkqQCBabEj/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="Toggle Sound" width=12 height=12/>
+	<div class="pico8_buttons">
+		<div class="pico8_el" onclick="Module.pico8Reset();">
+			<i class="fa fa-power-off" title="Reset"></i>
+		</div>
+		<div class="pico8_el" onclick="Module.pico8TogglePaused();">
+			<i class="fa fa-pause" title="Pause"></i>
+		</div>
+		<div class="pico8_el" onclick="Module.requestFullScreen(true, false);">
+			<i class="fa fa-expand" title="Fullscreen"></i>
+		</div>
+		<div class="pico8_el" onclick="Module.pico8ToggleSound();">
+			<i class="fa fa-volume-off" title="Sound"></i>
+		</div>
+	</div>
 	
-	Sound</div>
-	<div class=pico8_el ><a target="_new" href="http://www.lexaloffle.com/bbs/?cat=7&sub=2">
-	<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAlElEQVR4Ae2dMQ5FQBCGh6jcwAkkateg3DiAa+iQUGqVKi95FQfAJRQOoHeBUf8JyQqKjZ1uMzuz2e/LTE3KhyF7kSlgLOykas23f6D+A9Yp84aAOYU15pcJnfji0Il2ID8HzC4y38ZrnfIBGxeRoR3c3EWrACdsV5BOsx7OSRnrOXh4F5HzA6bevwUn8wlz7eCDsQM99B3ks0s/4QAAABB0RVh0TG9kZVBORwAyMDExMDIyMeNZtsEAAAAASUVORK5CYII=" alt="More Carts" width=12 height=12/>
+	<div class="blurb">
+		<ul class="keys">
+			<li><strong>X</strong> - <span>server</span></li>
+			<li><strong>Cursor keys</strong> - <span>move left/right</span></li>
+		</ul>
 
-	Carts</a></div>
+		<p>There were bricks in the sky. Why?</p>
+		<p>They fell on our cities - we did not like this.</p>
+		<p>We considered sending fighter jets against them, or surface-to-air missiles.</p>
+		<p>Wiser heads prevailed and instead an enormous, gravity defying bat was constructed, armed with spherical counter-measures and launched to protect us.</p>
+		<p>Destroy the bricks. Bounce them for bonuses, multiple times for more.</p>
+	</div>
+	
+	<div class="footer">
+		<div>
+			<a href="../../index.html">
+				<p><img class="logo" src="../../logo.svg" /></p>
+				<h1>fistful of squid</h1>
+			</a>
+			<p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+			<p class="copyright">&copy; copyright Joe Trewin 2016</p>
+		</div>
+	</div>
 
-	<br>	
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-	</div></center>
-	<br><br>
+	  ga('create', 'UA-59810066-1', 'auto');
+	  ga('send', 'pageview');
 
-</body></html>
+	</script>
 
-
+  </body>
+</html>
