@@ -1,0 +1,14 @@
+title: Spooky Pooky - devlog #24
+url: sp-devlog-24
+banner: spdevlog.png
+date: 20150710
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Cross-platform is starting to become more of a reality now. Finally got my terrible rendering code running on a Mac.</p>
+
+<p><img src="http://i.imgur.com/aFlYqfC.png" /></p>
+
+<p>The game runs at 480x272 and plays really nicely full screen.</p>
+
+<p>Next up is to add controller support and then I'll tackle the real issue of metroidvania-ing the level loading.</p>

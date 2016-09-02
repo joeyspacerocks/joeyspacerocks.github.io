@@ -1,0 +1,25 @@
+title: Spooky Pooky - devlog #6
+url: sp-devlog-6
+banner: spdevlog.png
+date: 20140913
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Spent a while re-jigging my embryonic entity system so that things can be associated with other things (for example buttons can turn off forcefields).</p>
+
+<p>To accompany this I rewrote the Tiled level loader to take advantage of it's object layers, specifically using the properties to specify the relationships between entities.</p>
+
+<p>In between small bouts of coding (getting harder to fit in) I've been reading a fair bit about platformer level design. I still haven't decided exactly what kind of game this will end up being - I'm veering towards puzzles rather than out-and-out action, but may make it a bit of a mix between the two.</p>
+
+<p>When I started out the aim was to create an homage to Chuckie Egg and Jet Set Willy (dating myself here) - so I need to reign in the scope a little here to make sure I can finish the thing.</p>
+
+<p>Some of the things I've been reading:</p>
+
+<ul>
+  <li><a href="http://devmag.org.za/2011/07/04/how-to-design-levels-for-a-platformer/">How to design levels for a platformer</a></li>
+  <li><a href="http://subtractivedesign.blogspot.co.uk/2013/02/making-platforming-games.html">Making Platforming Games</a></li>
+</ul>
+
+<p>Lots of interesting advice there.</p>
+
+<p>Hopefully going to pick up the pace a little from here on.</p>

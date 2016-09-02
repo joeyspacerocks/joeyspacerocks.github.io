@@ -1,0 +1,20 @@
+title: Spooky Pooky - devlog #20
+url: sp-devlog-20
+banner: spdevlog.png
+date: 20150317
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Apologies that this update is similar to the last but I finally got the momentum stuff working properly. Thought it was before but ... y'know, bugs and things.</p>
+
+<p><img src="http://fat.gfycat.com/VillainousUntimelyDrongo.gif" /></p>
+
+<p>The funny thing about doing physics for platformers is that you end up with a mixture of 'real' modelling (e.g. momentum, buoyancy and other force equations) and 'hacks'. In this case when something is resting on something else (like the player on a moving platform, or a block sitting on a floating block) I do what many people do and 'attach' it.</p>
+
+<p>The thing doing the sitting (A) gets a handle to the thing being sat on (B). When (B) moves it artificially updates the positions of all the things (A's) sitting on it by the same amount. This avoids a whole load of niggly problems like dealing with friction and resting contacts and the like.</p>
+
+<p>But it's a right old fudge, so when you then stick some 'real' physics in there you need to accommodate these things. In this case it means making sure that you when A re-collides with B next tick you only apply the momentum transfer if B wasn't already the 'ground' for A.</p>
+
+<p>Fixing that then means that things sitting on other things don't generate any push downwards, so things don't sink in water from the weight of something on top. So add a little fix to make sure that force is artificially added.</p>
+
+<p>TLDR; Hackety hack can stop bouncy bounce. Sad face.</p>

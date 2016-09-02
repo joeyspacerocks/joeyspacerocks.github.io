@@ -1,0 +1,94 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #46</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #46</h1>
+                <p class="publish">Published on <span class="date">13 Mar 2016</span> by Joe</p>
+
+                <p>Been whiling away some evenings doodling some new tiles and the like.</p>
+
+<p><img src="https://fat.gfycat.com/PessimisticBreakableAntarcticgiantpetrel.gif" /></p>
+
+<p>Making pixel 'art' is quite relaxing when you're tired.</p>
+
+<p>I then stuck a couple of gun turrets in there. Turns out one of them fires caterpillars. Weird.</p>
+
+<p><img src="https://giant.gfycat.com/AlarmedDistantAmericancrow.gif" /></p>
+
+<p>It was whilst doing this I realised that I hadn't properly implemented my 'cast a ray for line of sight' function. Gun turrets chuck a ray towards the player to see if they're within range before firing. If there's any solid tiles / entities in-between they are supposed to pretend they can't see you.</p>
+
+<p>So I had the line-of-sight stuff working fine for the main collision layer of the level, but had forgotten to add it in for dynamic tile chunk entities (e.g. those bouncy blocks). No problem I thought. And it wouldn't be if I had two brain cells to rub together / some decent sleep.</p>
+
+<p>Anyway, after several hours longer than it should have taken I finally beat the code into submission. Casting a ray first does a coarse check against entity AABB's and if it intersects it then transforms the ray at the intersection point into the coordinate system of the tile chunk entity and drops into the existing tile chunk / ray intersection stuff.</p>
+
+<p>It never ceases to amaze me the shear number of bugs I manage to squeeze into so few lines of code ...</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">13 Mar 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

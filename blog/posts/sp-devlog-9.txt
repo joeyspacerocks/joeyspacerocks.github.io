@@ -1,0 +1,14 @@
+title: Spooky Pooky - devlog #9
+url: sp-devlog-9
+banner: spdevlog.png
+date: 20141002
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Spent some time adding some wibble ... not completely sold on this yet as with my low resolution it comes across as a bit glitchy, but it'll be useful for some of the bigger sprites.</p>
+
+<p><img src="http://giant.gfycat.com/LimitedInfantileImperatorangel.gif" /></p>
+
+<p>Gone a bit crazy with making things bounce.</p>
+
+<p>Wibble.</p>

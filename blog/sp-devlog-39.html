@@ -1,0 +1,94 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #39</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #39</h1>
+                <p class="publish">Published on <span class="date">27 Jan 2016</span> by Joe</p>
+
+                <p>An aside about the particle system.</p>
+
+<p>Each particle is a simple struct containing the usual position, velocity, animation and some behaviour flags.</p>
+
+<p>The animation is the same stuff as used elsewhere - a simple array of frames (coords into a spritesheet / delay) plus some behaviour flags and render depth.</p>
+
+<p>I pre-allocate a pool of particles in the game init code (currently only 5000 big) plus a list that hooks into the pool for active particles (I have simple + fast implementations of pools and linked lists).</p>
+
+<p>Each tick the particles are updated, returned to the pool if expired. Their flags indicate if they need collision detection with the player / world, but most don't (e.g. steam particles collide with the player so that they can be wafted along depending on how fast the player is moving).</p>
+
+<p>When something needs to throw out a bunch of particles it calls some emitter code that generates them, allocating from the pool and adding to the list.</p>
+
+<p>For rendering it all goes into the same batch system that I use for all the other sprites. Each particle can have it's own depth and rendering requirements (e.g. blending mode / alpha) and they just end up sorted into batches with the rest of the stuff and flushed out to OpenGL using as few draw calls as possible.</p>
+
+<p>At the numbers I have in the game at the moment they have a negligible effect on performance - nothing like my previous game, QB1-0:</p>
+
+<p><img src="https://fat.gfycat.com/WetGleefulAxolotl.gif" /></p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">27 Jan 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

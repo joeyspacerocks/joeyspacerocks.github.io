@@ -1,0 +1,40 @@
+title: Spooky Pooky - devlog #54
+url: sp-devlog-54
+banner: spdevlog.png
+date: 20160706
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>My dedication to doing-a-little-bit-every-day is helping to push me through the molasses-like barrier of a creativity slump. At least, I think it's helping.</p>
+
+<p>The code has evolved to match the game that is emerging and whilst generally a good thing that helps keep things mean and lean, there are some aspects that eventually need to be taken to task.</p>
+
+<p>One such area has been collision detection. The main area I tackled at the start of the project was collision detection and response with solid areas. Specifically tiles.</p>
+
+<p>Entities were flagged as 'colliding with the world' and such things were shoved through a weaselly named function called 'apply_physics'. This handled applying generic forces (like gravity, springs, shifting things along predefined paths, buoyancy) as well as checking for collisions against solid tiles and other entities that were made of solid tiles (such as moving platforms).</p>
+
+<p>I then added in 'solid' entities - i.e. non-tile based things like doors that were still solid to the player.</p>
+
+<p>When I added some bad guys and triggers I created a separate function to detect collisions between non-solid things. This had a separate entity loop in it and evolved into using simple collision groups and masks so that I could indicate which things collide with which other things.</p>
+
+<p>A tad inefficient to have duplicate loops running, plus I'd managed to end up with two different collision events that I would send to entities - EVT_COLLISION and EVT_COLLISION_TILE. Messy.</p>
+
+<p>So over the past week or so I've teased the dysfunctional function 'apply_physics' apart and merged the collision loops. Solid things, and things that care about solid things, now use the generic collision masks and groups like the rest of the system which is much cleaner plus there's less loops per entity per frame.</p>
+
+<p>The events have been reduced to a single one indicating a collision occurred.</p>
+
+<p>An interesting simplification I also made was to wrap up the main foreground tile layer into a tile-chunk entity itself. This means that collision against it is just the same as other entities in the system.</p>
+
+<p>During this I noticed that seed pods weren't exploding against arbitrary non-tile solid entities correctly and so started obsessing over it until I had it working properly. Even though I don't know what they're for or why I'm adding it. Brilliant.</p>
+
+<p><img src="http://i.imgur.com/4A9NtX8.gif" /></p>
+
+<p>As a consequence of getting this working I found a great little bug - I have a simple little structure that I wrap around fixed sized C arrays so I can pass them into functions and have them maintain a 'next' pointer for those things to easily push stuff into them. And of course I'd buggered up the code that shunts the pointer on. This was used for the collision stuff so it meant that if something collided with more than one thing during a frame it lost all but the last one, which luckily broke the seed stuff in some circumstances.</p>
+
+<p>Anyhoo, I now have some nice and clean (mostly) collision stuff that all works off a simple loop. Great.</p>
+
+<p>Some other low-hanging fruit that I tackled was my use of Tiled maps. Another evolutionary dead-end that was hanging about was my lazy hardcoding of which tiles were to be treated as solid (and solid-from-the-top-but-not-if-jumping-up). Basically I had some hard coded tile id ranges. Yeuch. Bad programmer.</p>
+
+<p>So I've finally promoted the foreground layer in the tile map to be treated as all-solid tiles, and additionally enabled flagging of individual tiles in the external tileset as jump-through via Tiled properties. Lovely.</p>
+
+<p>Running out of low-hanging fruit so looks like I'm gonna be climbing trees soon.</p>

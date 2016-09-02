@@ -1,0 +1,22 @@
+title: Spooky Pooky - devlog #31
+url: sp-devlog-31
+banner: spdevlog.png
+date: 20151011
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>As part of designing a metroidvania I'm trying to pin down the mechanics of most of the movement and weapons as early as possible before I start fleshing out the world structure.</p>
+
+<p>Part of the fun is coming up with structures that present the player with areas they cannot access until they acquire certain abilities or equipment later in the game and revisit previously discovered places.</p>
+
+<p>In other words it's all a big excuse to play with different effects.</p>
+
+<p>Here's a seed gun. Let's you grow a lovely meadow and then run around in it. Let's all pretend that I know exactly what the purpose of this is and how it fits in with the big picture. Yes, let's.</p>
+
+<p><img src="http://fat.gfycat.com/QualifiedRichCuttlefish.gif" /></p>
+
+<p>Inexplicably guns can also fire creatures. Here's a crude play with some thing that fires stripy caterpillar.</p>
+
+<p><img src="http://giant.gfycat.com/SlipperyEnchantingFireant.gif" /></p>
+
+<p>I can think of lots of applications for this but it needs a bit of a graphical clean up.</p>

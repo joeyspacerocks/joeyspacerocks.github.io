@@ -1,0 +1,96 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #38</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #38</h1>
+                <p class="publish">Published on <span class="date">24 Jan 2016</span> by Joe</p>
+
+                <p>A little update this week.</p>
+
+<p>I've accidentally implemented some kind of poor-man's event system. Dang, half-arsed-framework-evolving-warning.</p>
+
+<p>It all started when I noticed that when the hero is exploded out of a container jar I had no easy (i.e. generic) way of switching his animation from 'look shocked and concerned' to 'act casual and wait to run around'.</p>
+
+<p>So I wanted things to know when they were freed from a container. Things in this eclectic code base are represented by a single struct called an Entity. Until now I had a bunch of function pointers for custom methods to think, render and handle collisions (actually two handlers for this for collisions between entities and collisions between an entity and tiles).</p>
+
+<p>(Did I mention that I'm writing this in C? Ok, ok. I'll be a good chap and won't bang on about it.)</p>
+
+<p>Reluctant to add another function pointer, I've replaced the collision functions with a single event handler pointer that takes an Event structure.</p>
+
+<p>Event types include 'triggered' (bit vague), 'collision', 'tile collision' and now 'contained' and 'released'.</p>
+
+<p>To avoid calling event handlers on things that don't care about events (i.e. most things), entities also specify a bitmask indicating which events they want to be told about. E.g. the player entity has mask of EVT_COLLISION | EVT_RELEASED.</p>
+
+<p>So after all that I now have a logical place to put a bit of code that stops the player looking so worried when he's just exploded out of a jar.</p>
+
+<p>Take heed. This is why games aren't finished.</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">24 Jan 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

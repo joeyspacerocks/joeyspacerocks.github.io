@@ -1,0 +1,116 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #30</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #30</h1>
+                <p class="publish">Published on <span class="date">21 Sep 2015</span> by Joe</p>
+
+                <p>Well that took a while. I finally acknowledged the lumbering, drooling simpleton lurking in the corner of my code. He goes by the name of The Renderer.</p>
+
+<p>This entry is a little technical and has no nice pictures. Boo. Well, I am a programmer.</p>
+
+<p>Simple is generally pretty good and will get you a long way. My 'architecture' is almost non-existent: I have entities (a single structure representing most things in the game), particles (a simpler version) and tile chunks (ranging from full level-size tilemaps to 2 or 3 tile moving platforms).</p>
+
+<p>Previously the approach to rendering was crude. Entities were stored in buckets, each representing a different depth. The rendering loop rendered things in a fixed order - background tilemaps, followed by back entities, foreground tiles, foreground entities, particles, etc.</p>
+
+<p>This was ... ok ... but obviously led to much tediousness in other areas of the code as well as being somewhat inflexible.</p>
+
+<p>The rendering itself was reasonably efficient. I would render tilemaps using a single call with a prebuilt VBO mesh representing enough tiles to fill the screen; just updating vertex uv's each frame depending on the section of the tilemap being shown on screen.</p>
+
+<p>All sprites would be batched up and rendered with one or two calls, as would electrical sparks, which needed the blending mode to be changed.</p>
+
+<p>Water shaders require two passes - take the scene rendered so far and render it with a texture that has had the liquid area masks rendered to it using the water shader.</p>
+
+<p>So ... finally I'd had enough of the fixed hard-coded nature of this and knuckled down to clean it up.</p>
+
+<p>The system now is as follows:</p>
+
+<ul>
+ <li>All entities are stored in a single list</li>
+ <li>At render time the entity render functions are called</li>
+ <li>This populates an array of 'draw calls' - each represents either a tile map, a sprite, an electrical spark or a liquid mask (the last three are all variations of a sprite) and has an associated depth value</li>
+ <li>The draw call array is sorted using a simple implementation of a radix sort - the sort key is formed from the depth and the call type / material</li>
+ <li>The draw calls are iterated over to assemble sprite batches which are flushed to OpenGL calls as material / types change, or alternatively to render complete tile maps</li>
+</ul>
+
+<p>It's simpler than it sounds, really :)</p>
+
+<p>Things like rendering liquid layers and other effect compositions are much easier now. If an entity wants to render a sprite that contains liquid (like the organ jars or blood vials) it simply adds a draw call for the sprite and a draw call for the sprite's liquid mask (just another sprite) at a slightly lower depth than the main sprite.</p>
+
+<p>The liquid sprites for a given depth all get collected up and rendered into a frame-buffer in one go, then composed with everything rendered so far using a liquid shader.</p>
+
+<p>I also use this same approach to render the normal water areas - previously I was using a nasty hardcoded function that replicated lots of other functionality.</p>
+
+<p>Anyway, the upshot is that it's all nicely flexible now and means that I can mix and match materials and depths etc. Should mean that I can add more composition effects much more simply than before.</p>
+
+<p>Oh, enough of all this pseudo-technical rambling. I'll stick some screenshots up next time.</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">21 Sep 2015</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

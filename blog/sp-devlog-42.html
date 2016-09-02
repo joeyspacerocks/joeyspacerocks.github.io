@@ -1,0 +1,88 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #42</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #42</h1>
+                <p class="publish">Published on <span class="date">16 Feb 2016</span> by Joe</p>
+
+                <p>I've long been tempted to mess with lighting in this game, but held off mostly due to in-decision. However I've decided that a little glow can go a long way and so implemented a little bloom shader for fake lights.</p>
+
+<p>Sprites can already define a 'mask'; just an offset to another sprite of the same size that masks out an area. I've been using this for the rendering wibbly liquid regions and now I'm also using it to define areas that should glow.</p>
+
+<p>Entities that indicate they contain glow areas are rendered as normal but then render their mask to another frame buffer. When ready this buffer is used as a source texture for the glow shader. Normally Gaussian blurs are achieved by using tricks like repeated rendering on lower-resolution buffers, but given that this game is already using such a low resolution, and because I'm quite lazy, I took the easy way and just apply it to the full-size buffer (twice, once for horizontal and once for vertical blurring). Finally I render the result to the main buffer using additive blending.</p>
+
+<p><img src="https://giant.gfycat.com/CheerfulTanFrenchbulldog.gif" /></p>
+
+<p>The above was also experimenting with glowing liquid - this didn't go quite as well due to the way stuff is rendered. I end up additively blending the mask twice, once for the liquid and once for the light ... so things get a little, um, bright.</p>
+
+<p>On the plus side it meant I can finally ditch some dodgy electrical sprites that contained semi-transparent pixels.</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">16 Feb 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

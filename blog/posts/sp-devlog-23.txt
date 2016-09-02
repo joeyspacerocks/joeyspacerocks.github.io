@@ -1,0 +1,12 @@
+title: Spooky Pooky - devlog #23
+url: sp-devlog-23
+banner: spdevlog.png
+date: 20150619
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Just decided - Spooky Pooky is morphing into a Metroidvania game.</p>
+
+<p>I've been leaning towards this for a while now as I've felt that it better fits the organ / power-up mechanism and story-wise it just makes sense for Horatio's quest to be restored to his human self to take place in a single large world, rather than broken into levels.</p>
+
+<p>Technically it's not a massive change to what I have at the moment. I'm going to spend a little time knocking the story into shape and planning how the exploration of the world will take place.</p>

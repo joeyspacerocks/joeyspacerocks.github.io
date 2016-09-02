@@ -1,0 +1,102 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #53</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #53</h1>
+                <p class="publish">Published on <span class="date">19 Jun 2016</span> by Joe</p>
+
+                <p>Like the sunshine in an English summertime, progress on Spooky Pooky has been patchy in the month of June.</p>
+
+<p>There has been an amount of cleanup in the code-base, such as removing the last references to 'levels' and replacing with 'rooms', finally cementing the game's status as a non-level based metroidvania. I've also been busy indulging in my favourite programming past-time - deleting code.</p>
+
+<p>On a more constructive note I've given the slime blobs the ground-breaking ability to follow the walls to their left. Hence the test blob-cave below.</p>
+
+<p><img src="http://i.imgur.com/8hiOt7s.gif" /></p>
+
+<p>Something that's been on the list for a while is importing rotated and flipped tiles from Tiled. When I render the tile-map I use a static VBA with enough tiles to cover the screen that I offset according to the scroll-offset. I dynamically remap the texture coords for the array and resend that every frame, so to support flips and rotations (which are covered by flips about the diagonal) I simply had to fiddle with the UVs when building the per-frame texture coords.</p>
+
+<p>The current plan is to chain a series of rooms together that contain all the weapons and power-ups available in the game, so that I can test them singularly and then in combinations. First step was to revisit the gain-a-powerup-organ sequence, which currently consists of finding an 'organ container' and busting it open using a button, etc.</p>
+
+<p><img src="http://i.imgur.com/ajVLbLF.gif" /></p>
+
+<p>I'm not finished with this yet as the effect underwhelms me a little, but it'll do for the moment.</p>
+
+<p>Speaking of effects, I've expanded the post-processing stuff a little. I can add a post-processing effect into my drawcall at any depth - in the GIF above the red tint is added above everything except the white explosion effect - but I've only allowed for a single control parameter. So I've expanded this so that a post-processing shader can take an arbitrary 3 vec4 parameters. This finally enables me to pass in things like a colour, and/or a focal point, etc. Using this I plan to add some wibble effects focused around the player, possibly with a depth-of-field thingy too. We'll see how it goes.</p>
+
+<p>I think I've got enough pieces in play now so that I can get on with implementing all of the powerups. To plan these out I've sketched out a list of progression barriers (e.g. can't reach a platform, or get past an enemy) along with potential solutions (e.g. double-jump / fly / wind-tunnel) to help me get at least the main movement powerups sorted.</p>
+
+<p>That's the plan anyway. And we all know how long those last ..</p>
+
+<p>Finally, when I'm tired I doodle stuff. I've been very tired recently ..</p>
+
+<p><img src="http://i.imgur.com/44Yauvn.png" /></p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">19 Jun 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,14 @@
+title: Spooky Pooky - devlog #41
+url: sp-devlog-41
+banner: spdevlog.png
+date: 20160131
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>I was supposed to be working on the structure of the game and power-ups this weekend.</p>
+
+<p>Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.</p>
+
+<p><img src="https://giant.gfycat.com/PlaintiveRelievedGaur.gif" /></p>
+
+<p>Um. Oops.</p>

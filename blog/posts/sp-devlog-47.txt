@@ -1,0 +1,24 @@
+title: Spooky Pooky - devlog #47
+url: sp-devlog-47
+banner: spdevlog.png
+date: 20160323
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>So let's talk UI. I feel that UI gets a bad rap amongst game developers. It's all totally deserved of course.</p>
+
+<p>The problem (for me) is that it just doesn't fit in. It doesn't even try. You've got a whole bunch of code to run your game, some of it might even be nicely architected. Let's kid ourselves.</p>
+
+<p>Then UI arrives and you realise that it's a bit weird - it doesn't want to run and jump or shoot stuff. It just sits there being kind of square and (shudder) hierarchical and requires a whole bunch of special code all of its own. Basically it's a whole lot of hassle for seemingly little reward and it doesn't even do anything interesting. Except let the player choose options, or start the game. Or pause the game.</p>
+
+<p>Look.</p>
+
+<p><img src="https://giant.gfycat.com/AnimatedBruisedIbadanmalimbe.gif" /></p>
+
+<p>Of course we're looking at it all wrong. The goal should be to polish it and make it look cool and swish and, because remember this is a game we're making, fun to use. So into the project todo list it goes. It's functional for the moment, so it gets the job done, but it needs pazazz and gravitas. Or other words.</p>
+
+<p>It's a pretty simple implementation as it stands. Some basic structures to hold 'panels' and 'menu items', etc with some callback functions to trigger actions. There's a little stack of panels that can be pushed and popped and some truly horrendous layout code because I'm all about the hardcoded numerical pixel values.</p>
+
+<p>I'm getting the feeling that maybe this is the kind of stuff I should save until I'm into Greenlight or something, but I need to get save/load games sorted so that I can add to it as I go when building features and content, and that kind of thing is so much easier when you have a little UI to hang it off.</p>
+
+<p>So that's what I'm off to do next - save/load. My, what a glamorous life we lead.</p>

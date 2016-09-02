@@ -1,0 +1,92 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #29</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #29</h1>
+                <p class="publish">Published on <span class="date">31 Aug 2015</span> by Joe</p>
+
+                <p>Recently I've been playing around with title screens which lead to a much needed tidy-up of various aspects of the code-base.</p>
+
+<p>Specifically I've now made the level code a bit more self-contained so that I can, for instance, design arbitrary screens using levels.</p>
+
+<p>So the title screen is now just another level with electrical entities for the titles themselves, etc.</p>
+
+<p><img src="http://fat.gfycat.com/RashPassionateCaiman.gif" /></p>
+
+<p>It's only a stand-in for the moment as from a design point of view it's a bit messy plus there's not actually any room for UI menus and the like.</p>
+
+<p>Next up is a long-overdue clean of the render code. Specifically I never really handled rendering entities at different depths very well - I simply kept the entities in different buckets (arrays) in the level and used those to render them. I did it this for simplicity and because it was quick to knock together when I needed it. This obviously led to some nasty code in other places where I want to iterate over.</p>
+
+<p>So I'm finally going to fix this and add some proper sorting in the render code. While I'm at it I'll also sort by 'material' to clean up my existing batching code that I'm using to render all sprites in single draw calls.</p>
+
+<p>The inspiration for this clean up goes to an old article by <a href="http://realtimecollisiondetection.net/blog/?p=86">Christer Ericson</a>.</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">31 Aug 2015</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

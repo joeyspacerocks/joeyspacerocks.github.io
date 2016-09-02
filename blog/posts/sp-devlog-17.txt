@@ -1,0 +1,30 @@
+title: Spooky Pooky - devlog #17
+url: sp-devlog-17
+banner: spdevlog.png
+date: 20150112
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Despite appearances I am making progress ... loosely in the right direction.</p>
+
+<p>I've finally started building 'real' levels, hopefully for a demo build containing some random number of levels to beat. Not sure how many yet; probably around 5-10, but enough to show off gameplay and get the kinks worked out.</p>
+
+<p>Level 1 ends with Horatio and his organs separated into jar containers and shipped off to different parts of the lab. So it makes sense for level 2 to start with our hero in a spot of bother ...</p>
+
+<p><img src="http://giant.gfycat.com/SimpleCriminalAngelfish.gif" /></p>
+
+<p>Currently Horatio's escape from the jar is just time based so I may need to make that user-controlled using a simple movement wiggle or something. Or not.</p>
+
+<p>Once freed level 2 is designed to teach the user blood collection and basic jumping / object avoidance ...</p>
+
+<p><img src="http://giant.gfycat.com/DependableEcstaticArthropods.gif" /></p>
+
+<p>The funny thing about actually building levels is that you almost immediately realise how little your game code will support it. For example, I've got some collision code for sprite based enemies, but the first thing I go and do is put the electricity barrier in that he has to jump over. Obviously I then realise that I've got no support for collisions with path based entities like that. So, stop the level build and back to the code.</p>
+
+<p>It's good in a way as it means that I'll add features as I go but it will make for a slowish start to the build process for the next few days as I knock the code into shape to support whatever ideas I come up with for the level.</p>
+
+<p>I've also got some gameplay decisions to make, such as exactly what happens when he hits an enemy (e.g. health loss or life loss), and where you re-spawn after losing a life.</p>
+
+<p>I'm toying with the idea of double-jump or extended jump as well but not sure if that's going to be a default ability or something you get from an organ pick-up.</p>
+
+<p>All quite fun though. I really want to get some audio in soon as well as the whole thing is a bit lifeless at the moment.</p>

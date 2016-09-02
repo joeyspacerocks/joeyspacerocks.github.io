@@ -1,0 +1,24 @@
+title: Spooky Pooky - devlog #46
+url: sp-devlog-46
+banner: spdevlog.png
+date: 20160313
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Been whiling away some evenings doodling some new tiles and the like.</p>
+
+<p><img src="https://fat.gfycat.com/PessimisticBreakableAntarcticgiantpetrel.gif" /></p>
+
+<p>Making pixel 'art' is quite relaxing when you're tired.</p>
+
+<p>I then stuck a couple of gun turrets in there. Turns out one of them fires caterpillars. Weird.</p>
+
+<p><img src="https://giant.gfycat.com/AlarmedDistantAmericancrow.gif" /></p>
+
+<p>It was whilst doing this I realised that I hadn't properly implemented my 'cast a ray for line of sight' function. Gun turrets chuck a ray towards the player to see if they're within range before firing. If there's any solid tiles / entities in-between they are supposed to pretend they can't see you.</p>
+
+<p>So I had the line-of-sight stuff working fine for the main collision layer of the level, but had forgotten to add it in for dynamic tile chunk entities (e.g. those bouncy blocks). No problem I thought. And it wouldn't be if I had two brain cells to rub together / some decent sleep.</p>
+
+<p>Anyway, after several hours longer than it should have taken I finally beat the code into submission. Casting a ray first does a coarse check against entity AABB's and if it intersects it then transforms the ray at the intersection point into the coordinate system of the tile chunk entity and drops into the existing tile chunk / ray intersection stuff.</p>
+
+<p>It never ceases to amaze me the shear number of bugs I manage to squeeze into so few lines of code ...</p>

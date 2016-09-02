@@ -1,0 +1,110 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #43</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #43</h1>
+                <p class="publish">Published on <span class="date">26 Feb 2016</span> by Joe</p>
+
+                <p>I began the week doodling some UI elements, which was surprisingly fun.</p>
+
+<p>I came up with a health / damage indicator bar ..</p>
+
+<p><img src="http://i.imgur.com/MzzldfF.png" /></p>
+
+<p>.. and a minimap ..</p>
+
+<p><img src="http://i.imgur.com/qJAG280.png" /></p>
+
+<p>Both of these use masks to render their contents with a bit of a glow which gives it a nice pseudo-sci-fi look.</p>
+
+<p>After doodling the minimap I came to the interesting conclusion that I had absolutely no way of actually rendering it. Until now each room in the game is a separate Tiled file and I link them together with some properties in the exit objects that get triggered when you collide with them. This kind of worked ok, but there was no over-arching structure that could be viewed. It also means that getting a feel for the world whilst designing it was tricky.</p>
+
+<p>So, I've implemented a world map that describes how rooms in the game fit together which can then also be used as the player explores to construct the minimap.</p>
+
+<p>To do this I use a single Tiled file with a special tileset for describing rooms and connections:</p>
+
+<p><img src="http://i.imgur.com/GwnN7Nq.png" /></p>
+
+<p>The squares tiles are cells (roughly a screen-sized area) that join together to form rooms. I use the connector tiles to join the rooms together.</p>
+
+<p>I then use an object layer to define rectangular regions on top so that I can give rooms a name, and potentially other properties.</p>
+
+<p>In the game I load in this world file at startup and parse the Tiled data to construct an in-memory graph structure of rooms.</p>
+
+<p>Each room Tiled file then contains exit entities (just rectangular Tiled objects) that correspond to left/right/up/down connectors from the world map.</p>
+
+<p>So far it's working out quite nicely. As the driving force between the Tiled world map are the objects I can mess around with the structures quite freely. It is a bit odd, using a tile editor to design a graph like structure but it appeals to me.</p>
+
+<p>The only snag I've hit so far is that if I want to display the minimap like I have, where rooms are directly adjacent to each other in a grid-like structure, then I need to be careful how I arrange them with connectors in the world map, as it's possible to create overlapping room cells.</p>
+
+<p>I could actually display the minimap in a similar way to the source map with connectors and all; can't quite decide - as a player I think it might be more useful to have the compact view that the current minimap design portrays.</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">26 Feb 2016</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

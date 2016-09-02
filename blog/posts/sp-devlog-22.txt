@@ -1,0 +1,20 @@
+title: Spooky Pooky - devlog #22
+url: sp-devlog-22
+banner: spdevlog.png
+date: 20150607
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Been a sparse few weeks for gamedev what with one thing and another, however I've been trying to get some tiny things done here and there.</p>
+
+<p>Finally added tile animations. Another little feature that took a little longer than it should have.</p>
+
+<p><img src="http://i.imgur.com/vHfDVzr.gif" /></p>
+
+<p>Tiled has some support for tile animations, allowing you to specify a sequence of tiles from the set and the delays between them. So I added support for loading external tilesets (tsx) files and associated animations, plus some simple in-game code for rendering them.</p>
+
+<p>My implementation was knocked up in a distracted hour or so and isn't what you might call elegant. I store a list of tile animations for the level (each specified as a collection of tile + delay structs), and a lookup table containing an entry for each tile id.</p>
+
+<p>Each game loop I update the current tile for an animation (if past the delay time) and change the entry in the lookup table. Similar to how an indexed colour palette is implemented.</p>
+
+<p>Like I say, not exactly elegant but fast at render time.</p>

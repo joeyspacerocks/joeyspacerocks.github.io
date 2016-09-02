@@ -1,0 +1,20 @@
+title: Spooky Pooky - devlog #26
+url: sp-devlog-26
+banner: spdevlog.png
+date: 20150811
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>I've been busy porting the current build of Spooky Pooky to the PC - currently got it running more-or-less fine under Windows 8, thanks to it being written in C and using fairly standard OpenGL - i.e. no fancy extensions.</p>
+
+<p>So it's currently running on iOS, PC and Mac without too much trouble. Except for controllers of course. I've only got a wired XBox 360 controller so I've been testing with that and am now wondering how people deal with mapping all those buttons on different platforms. Crazy!</p>
+
+<p>In an attempt to avoid tackling the hard problems (i.e. story, levels, gameplay), I've successfully distracted myself with some ho-hum fiery particle effects.</p>
+
+<p><img src="http://fat.gfycat.com/MealyForsakenHoneycreeper.gif" /></p>
+
+<p>It was actually super-quick to add in the fire - just a slightly tweaked particle emitter with some crude flame sprite animation and Robert's your father's brother.</p>
+
+<p>At the moment I've no collision detection going on between particles and other entities, so I've got to decide how best to handle that - i.e. add it between individual particles or a single hit area that roughly covers the fire area. I prefer the former as it would allow for more accurate collisions, plus I can then add some more interesting interactions (like swirling smoke / steam particles when you run through them).</p>
+
+<p>Oh, I've also spent a bit of time with Reaper trying to make music. Obviously going to need to spend a little more time practising that ... say 3 or 4 years.</p>

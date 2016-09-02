@@ -1,0 +1,119 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #33</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #33</h1>
+                <p class="publish">Published on <span class="date">28 Nov 2015</span> by Joe</p>
+
+                <p>I only stepped out for a minute and more than a month has passed. Good job this game is already retro ...</p>
+
+<p>I've been improving my tool chain of late as things were getting a little tedious in my crazy little self-made circle of hell.</p>
+
+<p>My approach to roll-your-own games programming has always been to whack stuff in there and sort it out later if it works. Starting from scratch meant I would do the simplest thing first to get things rolling.</p>
+
+<p>This meant that sprites, tiles and animations were billy-basic to say the least. I had a big ol' image that had everything in it that I hand-edited in place using Pixen. In the code I then hand-entered the coordinates of sprites into a structure, and added these to animation definitions.</p>
+
+<p>The approach got me quite far but it's not hard to see that the next phase of cranking out content was going to seriously suffer. So I've been replacing this nonsense with the following.</p>
+
+<p>First up I'm now using PyxelEdit for, um, editing pyxels. It's a great little tool which does exactly what I want (but no more) and is brilliant for tile-editing.</p>
+
+<p>So I've extracted the tiles into a proper tileset inside PyxelEdit.</p>
+
+<p>I then exported all the individual sprites into separate PyxelEdit animation image files which means that I can properly edit animations without having to start up the game.</p>
+
+<p>Obviously that change meant that I'd need a texture packer, so I gave TexturePacker a whirl. Not bad, but the workflow was a little too manual for my liking. I had to edit stuff in PyxelEdit, then export to PNGs, then run TexturePacker, etc. Plus the PyxelEdit export for animations doesn't export any metadata - just PNGs. So there was way to get it to export per-frame timings.</p>
+
+<p>So I decided to have a little look inside PyxelEdit files and whaddya know? Turns out they're brilliantly structured. A PyxelEdit file is just a zip containing a JSON data file plus a bunch of PNGs that store the layers and others that store each tile from tilesets. Lovely!</p>
+
+<p>So I spent a bunch of hours writing a little Python script that does the following:</p>
+
+<ul>
+ <li>reads animation meta data</li>
+ <li>extracts the image data from the merged layer PNGs</li>
+ <li>generates a sprite sheet PNG using a simple packing algorithm</li>
+ <li>generates a sprite sheet meta file in a nice format for me to read</li>
+ <li>includes mask layer sprite coords (I use them for objects that contain liquid)</li>
+ <li>generates a single tileset image</li>
+</ul>
+
+<p>Next I hooked it up to XCode so that it runs the script as a build phase.</p>
+
+<p>So my workflow is now just edit files in PyxelEdit (including animation timings) and save. Run game.</p>
+
+<p>Lovely job!</p>
+
+<p>I've just uploaded my toy PyxelEdit animation / tileset / texturepacker script to <a href="https://github.com/joeyspacerocks/pexpo">GitHub</a> in case anyone else finds it handy.</p>
+
+<p>(NB. OK, so I didn't have to write the exporter in Python. Given that I didn't actually know Python before I started. But I just fancied it. So I did, and it's pretty cool! So are all the great libraries for Python.)</p>
+
+<p>(NB. NB. I spent a lot of time reading about texture-packing. There's a lot of crazily complicated algorithms out there. Luckily I stumbled across <a href="http://gamedev.stackexchange.com/questions/2829/texture-packing-algorithm">this brilliant post</a> which gives a very simple way of doing it that really works well, especially for the stuff I've got. So hooray for that.)</p>
+
+                
+        
+            </div>
+
+            <div class="publish">Published on <span class="date">28 Nov 2015</span> by Joe</div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

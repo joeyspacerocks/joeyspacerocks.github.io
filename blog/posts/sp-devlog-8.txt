@@ -1,0 +1,16 @@
+title: Spooky Pooky - devlog #8
+url: sp-devlog-8
+banner: spdevlog.png
+date: 20140926
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>I've been tweaking the system a bit so that I can properly attach entities in Tiled maps to other moving things.</p>
+
+<p>Below is a laser/forcefield attached to the moving platform. Had some fun messing about with particles to add some steam where the laser hits the water and sparks for the ground.</p>
+
+<p><img src="http://giant.gfycat.com/LoathsomeUntriedBufeo.gif" /></p>
+
+<p>I've also zoomed out a bit so that you can see more of the play area - will give me more options for level design.</p>
+
+<p>Next up is some title / menu design and hopefully some power-ups - i.e. collectable organs that'll affect game play in some way.</p>

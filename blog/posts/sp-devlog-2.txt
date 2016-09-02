@@ -1,0 +1,14 @@
+title: Spooky Pooky - devlog #2
+url: sp-devlog-2
+banner: spdevlog.png
+date: 20140721
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Fixed the tiling bug and experimented with changing the scale.</p>
+
+<p><img src="http://giant.gfycat.com/OddballComplexCuttlefish.gif" /></p>
+
+<p>I like big pixels, but there's no getting away from the fact that a larger view area gives me a lot more level design options.</p>
+
+<p>NB. this isn't a 'real' level - just some tiles thrown together to play-test with</p>

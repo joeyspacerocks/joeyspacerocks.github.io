@@ -102,32 +102,34 @@ a {
 
 .post-header {
     font-size: 20px;
-    margin: 0 0;
+    margin: 0 0 40px 0;
     letter-spacing: 4px;
     text-rendering: optimizeSpeed;	/* disable kerning */
+    overflow: hidden;
 }
 
-.post-header a {
-    background-image: url('../logo.svg');
+.nav a {
+    background-image: url('../logo-black.svg');
     background-size: 40px;
     background-repeat: no-repeat;
-
-    margin: 10px 0 20px 0;
-    padding: 0 0 0 46px;
-    color: #aab;
-    line-height: 42px;
+    /*position: absolute;*/
     display: inline-block;
+    margin:  0;
+    line-height: 50px;
+    width: 50px;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .post {
     display: inline-block;
     text-align: left;
     width: 80%;
-    margin-top: 40px;
     color: #000; /*668;*/
-    font-size: 23px;
+    font-size: 20px;
     padding-bottom: 40px;
-    font-family: 'EB Garamond', serif;
+    font-family: 'Georgia', 'EB Garamond', serif;
     line-height: 32px;
 }
 
@@ -138,8 +140,9 @@ a {
 
     .post h1 {
         font-size: 44px;
-	line-height: 48px;
+	line-height: 40px;
 	text-align: center;
+	margin-bottom: 0;
     }
 
     .post h2 {
@@ -148,7 +151,9 @@ a {
     }
 
     .post iframe {
-        margin: 20px 0 20px 40px;
+        display: block;
+        margin: 50px auto 60px auto;
+        box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
     }
 
     .post a {
@@ -166,32 +171,42 @@ a {
 	font-style: italic;
     }
 
-    .post .publish {
-        margin-top: 40px;
+    .publish {
+        font-family: 'Raleway', sans-serif;
         font-size: 16px;
         color: #bbc;
         text-align: center;
     }
-    	.post .publish .date {
-      	    font-size: 22px;
+    	.publish .date {
+      	    font-size: 18px;
             color: #99a;
-	    margin: 0 6px;
+	    margin: 0 2px;
 	}
 
     .post img {
 	max-width: 100%;
+	display: block;
+	margin: 50px auto 60px auto;
+	box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
     }
 
 .banner {
-    width: 100%;
-    height: 350px;
+    height: 300px;
     overflow: hidden;
-    box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.5);
+    box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
+    position: relative;
+    left: -50%; 
+    width: 200%; 
 }
 
     .banner img {
-        width: 100%;
-        min-width: 1000px;
+      position: absolute; 
+      top: 0; 
+      left: 0; 
+      right: 0; 
+      margin: auto; 
+      width: 50%;
+      min-width: 1000px;
     }
 
 .comments {

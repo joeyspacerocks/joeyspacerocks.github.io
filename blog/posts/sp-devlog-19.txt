@@ -1,0 +1,22 @@
+title: Spooky Pooky - devlog #19
+url: sp-devlog-19
+banner: spdevlog.png
+date: 20150310
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>I took my eye off the ball for one second and .. bamm! Six weeks flash by.</p>
+
+<p>Still here, still plugging away. Got distracted by setting up an 'identity' and a new website plus some distracting business in so-called real-life.</p>
+
+<p>Here's the scoop. I've started fleshing out level 4 for my 'vertical slice' as the cool kids seem to be calling it these days.</p>
+
+<p>This level introduces water which gave me cause to examine my appalling stop-gap physics code that was pretending to implement buoyancy. Fixing that then led to a closer look at my stop-gap code for collision response. And so on. Obviously if I was some sort of UnRealIty engine 2/3/4 I wouldn't be messing about with this kind of stuff. But where would my self-respect be then, eh? I'd actually have to get on with gameplay and the like. Shudder.</p>
+
+<p>Look here's a large GIF with some floaty, nudgey kind of stuff:</p>
+
+<p><img src="http://giant.gfycat.com/KnobbyAgedChinchilla.gif" /></p>
+
+<p>Luckily I rediscovered <a href="http://chrishecker.com/Rigid_Body_Dynamics">Chris Hecker's 18 year old physics series</a> or I'd still be embedded in a wall.</p>
+
+<p>Next up is ensuring that an animated skeleton realistically sinks in water until he gets his lungs, whereupon he can swim n' stuff. Unfortunately he can then also drown. I'm going to get some gameplay out of this thing if it kills me.</p>

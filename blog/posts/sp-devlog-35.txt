@@ -1,0 +1,12 @@
+title: Spooky Pooky - devlog #35
+url: sp-devlog-35
+banner: spdevlog.png
+date: 20151215
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Silly little test to see how an electrical power up would look - i.e. how does the electrical sprite renderer look for small sprites (16x21 in this case):</p>
+
+<p><img src="https://giant.gfycat.com/ReliableAgreeableJoey.gif" /></p>
+
+<p>In a bit of a creative slump at the moment (otherwise known as why the hell am I doing a metroidvania) so trying to jolt myself out of it with a few volts.</p>

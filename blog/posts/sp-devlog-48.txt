@@ -1,0 +1,28 @@
+title: Spooky Pooky - devlog #48
+url: sp-devlog-48
+banner: spdevlog.png
+date: 20160401
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>So then. Weapons. Here we go, some explodey bang-bangs. Finally poor Horatio can fight back ...</p>
+
+<p><img src="https://giant.gfycat.com/PlasticEnragedCob.gif" /></p>
+
+<p><img src="https://giant.gfycat.com/OrganicMassiveGrassspider.gif" /></p>
+
+<p>(The gif encoding has washed out some of the colours so it's all looking a bit grey at the top there instead of the vile green/yellow it should be..)</p>
+
+<p>So here he has a simple laser gun with which he is massacring some defenceless, and harmless, caterpillars. Well, he has been through a lot, so we'll cut him a little slack.</p>
+
+<p>As usual this all took a lot longer to get working than it probably should have, thanks to my usual approach of implementing just enough but no more. My code-that-is-where-an-engine-would-go .. um .. engine .. carried out collision checks between the player and other (suitably flagged) entities, but not between arbitrary entities such as, say, a laser bolt and a caterpillar.</p>
+
+<p>So first change was to pull out this collision stuff into a more generic form, which was reasonably simple. My entities implement flags (such as E_COLLIDES_ENTITY) indicating that they'd like to collide with other things. If they do they can then indicate that they'd like to receive events (i.e. notifications) that they hit something by adding an event to their event mask (e.g. EVT_COLLIDE). This way I only collide things that care together.</p>
+
+<p>The generic code will also apply damage (if the collider has a 'damage' quantity set) and trigger a corresponding EVT_HURT (or EVT_DEAD if things get really bad) in the collidee. That's a word, right?</p>
+
+<p>So things are coming together in the main system to support this stuff. Along the way I've noticed several glitches (such as caterpillars falling through the floor when they crawl into a door), so I'm accumulating a little list of things to fix which I pick off when I've got a spare 10 minutes to kill.</p>
+
+<p>I've also been a good boy and tried to keep adding sound effects as I go. The game has a sound design best described as 'glitchy' and 'atmospheric', to suit it's techno style.</p>
+
+<p>The weapon implemented (laser) is just a test, and really belongs to various enemies, although I may add it as a collectable weapon. So next up is to design and implement the various weapons I really want Horatio to wield, plus their effects on the enemies and environment.</p>

@@ -1,0 +1,34 @@
+title: Spooky Pooky - devlog #52
+url: sp-devlog-52
+banner: spdevlog.png
+date: 20160531
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Hello devlog, sorry it's been a while.</p>
+
+<p>Since last time I've made a little room generator script. It's really billy-basic - not so much procedural-generation as just ... generation. It's a Python script that just creates Tiled levels at custom screen-sizes (e.g. 1x1, 2x1, etc) with some exits at strategic points and some basic generation. The purpose is to have a quick way of kicking off empty rooms for me to fill with stuff to test. As the build progress I'll extend the script with more options (e.g. tilesets, etc) but it's only ever going to be used for generating the basis for hand-crafted rooms.</p>
+
+<p>As an aside, I'm also going to play around with a script for augmenting room files to add 'stuff' - e.g. foliage, background tech stuff; basically non-colliding decoration.</p>
+
+<p>I've also simplified doors and exits (the GIF below shows some basic generates rooms - with manually added stuff on top). Previously exits were a mixture of tiles, invisible trigger areas and door objects placed into a room. Now an exit is a single Tiled object plonked into a room. In game this becomes an entity backed by an appropriate sprite and a door is automatically added next to it. The direction you exit the room in (i.e. up/down/left/right) is automatically determined by the edge the exit is added to, and the destination room identified from the world map (discussed in a previous entry).</p>
+
+<p><img src="http://i.imgur.com/QwzRECY.gif" /></p>
+
+<p>I finally added in floor/ceiling exits too. Pretty simple except that it finally made me address the issue of how to deal with logistics. Vertical exits are simple as you just walk into them. The doors have a range within which they automatically open or close.</p>
+
+<p>Ceiling doors also have this range. When you hit a ceiling exit, you're flagged as 'antigrav' and artificially pulled into them.</p>
+
+<p>Floor doors are fun. Ranges didn't really work here, so to open a floor door you have to stand on it and hit the 'activate' button. You then drop into the exit. I've also added a little tweak to the collision code so that if you're running along and hit the edge of a door (or any lowish solid object) you're automatically bumped up so that you can step over them without having to jump.</p>
+
+<p>When you enter the room through a floor door you're given an upwards boost so that you fly up out of the exit, the door closes, and you gracefully land onto the floor-door. Beautiful.</p>
+
+<p>So much for doors.</p>
+
+<p>This is a supposed to be a game with a touch of the grotesque. So with that in mind, how about a little power-up that enables you to detach the upper part of your head fro your body and then run around the world in a disembodied state. Helpfully it also lets you scuttle through low areas.</p>
+
+<p><img src="http://i.imgur.com/ku1wQvF.gif" /></p>
+
+<p>It's not terribly well thought through at the moment - bugs galore and it's quite easy to lose your body. Never mind.</p>
+
+<p>The reattachment animation was donated to me by a lovely person on Twitter called <a href="https://twitter.com/EnchaeC">@EnchaeC</a> and opend my eyes to the possibilities once you stop obsessing over frame-count and just bump it right up there ...</p>

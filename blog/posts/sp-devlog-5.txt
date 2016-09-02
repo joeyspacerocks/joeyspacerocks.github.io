@@ -1,0 +1,22 @@
+title: Spooky Pooky - devlog #5
+url: sp-devlog-5
+banner: spdevlog.png
+date: 20140816
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>You ever add something to a game and then spend far to much time messing about with it?</p>
+
+<p>So then, water ... added some render code so that arbitrary tiles can specify masks that apply the water affect.</p>
+
+<p>Below is a container (will hold the organs that the player has to retrieve) containing some green gloop.</p>
+
+<p><img src="http://fat.gfycat.com/DampDefenselessIbizanhound.gif" /></p>
+
+<p>It required a separate rendering pass to the swimmable water (or what approximates to it in my ad-hoc thrown together renderer) so that it can render the background behind and the tiles in front. Just got to find a way to get some bubbles in there that can be masked off.</p>
+
+<p>What you probably can't tell in the GIF above is that the little blood vials that are collectable also have this mask applied - the blood inside is distorting the background. Yeah, I've definitely taken this too far.</p>
+
+<p>Also tweaked the water effect and made another little play level to have a swim. Additionally added another background level of parallax - no idea what to put in it yet. If I had a creative director I'd have probably sacked him by now.</p>
+
+<p><img src="http://giant.gfycat.com/MildThickArrowcrab.gif" /></p>

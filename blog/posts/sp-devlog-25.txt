@@ -1,0 +1,14 @@
+title: Spooky Pooky - devlog #25
+url: sp-devlog-25
+banner: spdevlog.png
+date: 20150712
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Thanks to <a href="http://www.glfw.org/">GLFW</a> (great tip-off from <a href="http://twitter.com/dekdev">dek</a>) I got an XBox 360 controller working very nicely with the game.</p>
+
+<p>Owing to how GLFW works I had to replace my lovely Mac-specific application launch code with a much simpler (and cross-platform) C file that uses GLFW to create the window + OpenGL context so that I could hook into it's input functions.</p>
+
+<p>Much nicer now plus there's the added bonus that more of it should work cross-platform now.</p>
+
+<p>I'm not quite sure how reliable the controller joystick and button mapping will be for different controllers - only got the one so not an easy thing to test right now.</p>
