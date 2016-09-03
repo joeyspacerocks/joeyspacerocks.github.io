@@ -212,6 +212,7 @@ a {
 .comments {
     display: inline-block;
     width: 70%;
+    margin-top: 40px;
 }
 
 .footer {
@@ -248,3 +249,7 @@ a {
             margin-top: 10px;
         }
 
+.links ul {
+    list-style: none;
+    padding: 0;
+}
