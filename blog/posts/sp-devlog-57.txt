@@ -1,5 +1,5 @@
 title: Spooky Pooky - devlog #57 - Dialogue
-url: sp-devlog-56
+url: sp-devlog-57
 banner: spdevlog.png
 date: 20161211
 icon: cogs
