@@ -140,7 +140,7 @@ a {
 
     .post h1 {
         font-size: 44px;
-	line-height: 40px;
+	line-height: 48px;
 	text-align: center;
 	margin-bottom: 0;
     }
@@ -188,6 +188,12 @@ a {
 	display: block;
 	margin: 50px auto 60px auto;
 	box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
+    }
+
+    .post .code {
+	font-size: 12px;
+	font-family: 'Consolasa','Monaco','Lucida Console','Courier New';
+	line-height: 1.5em;
     }
 
 .banner {
