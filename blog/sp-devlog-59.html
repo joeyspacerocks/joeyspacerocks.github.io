@@ -1,0 +1,117 @@
+<html>
+    <head>
+	<title>Spooky Pooky - devlog #59 - Flashback</title>
+        <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+            <div class="post">
+		    <h1>Spooky Pooky - devlog #59 - Flashback</h1>
+                <p class="publish">Published on <span class="date">20 Feb 2017</span> by Joe</p>
+
+                <p>Despite the lack of posts on the devlog, I've actually been making pretty consistent and real progress for the last few months (by my own definition of 'progress').</p>
+
+<p>I've a fairly well defined sense of the opening chunk of the game, so I've knuckled down to attempt to get a first pass of that done.</p>
+
+<p>Spooky Pooky opens with our protagonist floating in a jar, memory-wiped (in the best tradition of the genre). Once freed there's a little bit of basic platforming to warm the player up and then the first 'power-up' - the brain.</p>
+
+<p>This is really just a device to trigger a flood of memories, which take the form of a playable flashback section of the game set back when the hero was still a bumbling lab assistant and culminating in the transformation by The Machine.</p>
+
+<p>So, a bit of scene-setting then. I didn't want to open with this as it seemed more fun to play around with the narrative sequence a little.</p>
+
+<p>First up, here's the finished-ish result.</p>
+
+<p><img src="http://i.imgur.com/jl3Fnpx.gif" /></p>
+
+<p>From a technical point of view I've made quite a few changes here. The actual wibbly stuff is all implemented in a single post-processor shader. This combines some radial blurring, some fake bloom and a simple noise function to permutate the edge.</p>
+
+<p>That green, though. Seriously, that's green. Might need to revisit that. I mean, I like green, but .. yeah, that is really .. green.<p>
+
+<p>From a structural point of view though I've addressed a few things to get this scene working. This game is being written in C with no scripting language in play, so all in-game events need to be wired up somehow. The maps are built in Tiled with the judicious use of Tiled objects for things like invisible event triggers.</p>
+
+<p>The main tidy up was around entity instantiation during the Tiled map loading. Each entity type now has a pointer to a 'builder' function registered against a type name that's matched with the incoming Tiled data. Additionally I can give any Tiled object an 'event handler' property which is used to match against similarly registered event handle functions.</p>
+
+<p>This is quite flexible and means that I can use builders for common repeated entities (such as platforms, monsters, containers, etc) but just one-off event handlers for things that are only used once, such as in this case for 'scripting' the lift (when you reach the top it plummets and then jerks to a halt at the bottom).</p>
+
+<p>Nice to finally clean that up.</p>
+
+<p>The next step for this intro will be to get the player to the machine that transforms them, before ending the flashback and returning to 'now'.</p>
+
+<p>I don't want the player to have to dawdle about too long in the non-pookified (yes, that's a word) state, but I'd also like to get them to visit some rooms that they'll get to see later in the game.</p>
+
+                
+            </div>
+
+            <div class="publish">Published on <span class="date">20 Feb 2017</span> by Joe</div>
+	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
+
+	    <div class="links">
+		<p>
+		Interested in finding out more about <strong>Spooky Pooky</strong>?
+		</p>
+                <ul>
+                 <li><i class="fa fa-envelope"></i> <a href="http://eepurl.com/bcNbXr">Sign up for <strong>news and updates</strong></a></li>
+                 <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/joeyspacerocks">Talk to me <strong>@joeyspacerocks</strong></a></li>
+                 <li><i class="fa fa-desktop"></i> <a href="../spookypooky/index.html">Visit the main site</a></li>
+                </ul>
+	    </div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>
