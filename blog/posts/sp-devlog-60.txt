@@ -1,0 +1,90 @@
+title: Spooky Pooky - devlog #60 - Catch Up, Part 1
+url: sp-devlog-60
+banner: spdevlog.png
+date: 20170908
+icon: cogs
+tags: devlog,spooky-pooky
+
+<p>Welcome to my weekly bi-annual devlog update. It's only been 7 months since the last update, 
+so apologies for spamming.</p>
+
+<p>I've actually got quite a bit done on Spooky Pooky. Not as much as I should have and clearly not in 
+the devlogging department. Hopefully these things will get a little more regular now, as will the progress
+on the game as I'll have a little more time to get things done.</p>
+
+<p>There's been a lot of behind-the-scenes work, otherwise known as this-is-why-people-don't-write-their-own-stuff-and-use-Unity.
+The good news though is that the game builds and runs nicely under both Windows and OSX (on the small pool 
+of test machines available to me), so I'm going to try and be better at regularly testing under both from here on.</p>
+
+<p>Here's a selection of stuff done ...</p>
+
+<h2>Let there be (nicer) light!</h2>
+
+<p>I added basic lighting a little way back which definitely improved the atmosphere. The downside was that
+unlit areas felt too dark and trying to up the ambient level washed it all out too much.</p>
+
+<p>I've done a lot of tweaking on this and arrived at a couple of changes that helped quite a bit.</p>
+
+<p>The first was to make the lighting look more stylised. Previously I was rendering the light using a simple
+smooth fall-off calculation based on the distance from the source. I've changed this to render in discrete bands 
+with big intensity steps which feels more in-keeping with the low-resolution / limited colour palette look of the
+rest of the game. To make this more interesting I've also added some time-based noise perturbation to give things
+a dynamic smokey look. You can see the result below where some a light shaft is slanting down into the water.</p>
+
+<p><img src="https://i.imgur.com/ZYxJljY.gif" /></p>
+
+<p>The second change was more subtle and I could see it maybe splitting opion. Personally I like it and I'm the
+developer so it's in. When I compose the contents of the final lighting buffer with the scene I take high-intensity 
+areas and render them additionally into the glow texture that's used for light-emitting sprites (I'm using 
+multi-texture rendering so this is trivial and can be accomplished in the same shader that's doing the 
+composition).</p>
+
+<p>The resulting glow texture is already being composited after the lighting into the main scene using some blur, so
+pretty much for free I get some nice subtle glowing for bright pixels that are in direct light. You can (maybe) see
+this below:<p>
+
+<p><img src="https://i.imgur.com/vHSlaw4.gif" /></p>
+
+<p>The combination of these effects feel like they've lifted the look into something much more polished. I'm fully 
+aware that some people may not like this sort of thing, especially in a game with a pixelly look, but you can't please
+everybody.</p>
+
+<h2>Workflow</h2>
+
+<p>When it comes to content generation having a fast workflow is pretty important. 
+I'm using <a href="http://www.mapeditor.org/">Tiled</a> to build my rooms which helpfully
+lets you add arbitrary commands to it.</p>
+
+<p>I've hooked up one such command to launch the game passing in the current room file and any
+selected object id. The game spots these and launches with the player located in the room being 
+currently edited. If the selected object is an exit then the player enters the room through that
+point; otherwise the exit located is used.</p>
+
+<p>There's the caveat that the room has to exist on the world map (another Tiled file), but that's 
+not to much of a burden.</p>
+
+<p>I may add some hot-reloading of map files so that I can keep the game running and it'll spot if the file changes, 
+but since the game is pretty much instantaneous to load and run it'll do for the moment.</p>
+
+<p>I've also finally sorted out the logging. Since I'm a lazy and poorly disciplined developer (at home - at 
+work I'm a consumate professional), I've been chucking in random <code>printf</code> calls at various points.</p>
+
+<p>This kind of nonsense always has a limited shelf-life, so I've knocked together some very basic logging with the
+usual info, warn, error, fatal type of logging calls. Currently stuff goes to stdout and a file; I still need to 
+take a pass through the code to improve the actual content of what's logged.</p>
+
+<p>It's obviously important to get this right - not specifically for debugging stuff during development, but more for 
+the hypothetical time that'll come when other people start playing this - when it comes to bug reports you can never
+have enough information.</p>
+
+<h2>And the rest ...</h2>
+
+<p>Anyone still reading is obviously a game developer and so will already have trouble maintaining focus for longer 
+than 5 minutes. Out of solidarity for you I'll break this rambling recap into two or three posts, with the next to
+arrive in a day or so.</p>
+
+<p>To entice you, the next exciting installments will cover such topics as changing the state system to use mutating 
+function pointers instead of enums, switching from SFML to SDL, and changes in development environment and build systems 
+to ease cross-platform development.</p>
+
+<p>Gripping stuff ...</p>
