@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #45
+title: Spooky Pooky #45 - Brain in a Jar
 url: sp-devlog-45
 banner: spdevlog.png
 date: 20160308

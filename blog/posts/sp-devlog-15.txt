@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #15
+title: Spooky Pooky #15 - How it Begins
 url: sp-devlog-15
 banner: spdevlog.png
 date: 20141126

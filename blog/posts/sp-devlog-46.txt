@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #46
+title: Spooky Pooky #46 - Line of Sight
 url: sp-devlog-46
 banner: spdevlog.png
 date: 20160313

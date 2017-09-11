@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #57 - Dialogue
+title: Spooky Pooky #57 - Dialogue
 url: sp-devlog-57
 banner: spdevlog.png
 date: 20161211

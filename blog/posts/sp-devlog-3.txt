@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #3
+title: Spooky Pooky #3 - Water
 url: sp-devlog-3
 banner: spdevlog.png
 date: 20140809

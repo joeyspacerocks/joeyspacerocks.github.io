@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #22
+title: Spooky Pooky #22 - Tile Animations
 url: sp-devlog-22
 banner: spdevlog.png
 date: 20150607

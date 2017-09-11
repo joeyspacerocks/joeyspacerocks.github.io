@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #49
+title: Spooky Pooky #49 - Machines
 url: sp-devlog-49
 banner: spdevlog.png
 date: 20160411

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #26
+title: Spooky Pooky #26 - PC Build + Fire
 url: sp-devlog-26
 banner: spdevlog.png
 date: 20150811

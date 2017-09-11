@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #38
+title: Spooky Pooky #38 - Events, sort of
 url: sp-devlog-38
 banner: spdevlog.png
 date: 20160124

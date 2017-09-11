@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #18
+title: Spooky Pooky #18 - Demo Levels
 url: sp-devlog-18
 banner: spdevlog.png
 date: 20150120

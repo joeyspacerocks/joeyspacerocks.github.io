@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #58 - Lighting
+title: Spooky Pooky #58 - Lighting
 url: sp-devlog-58
 banner: spdevlog.png
 date: 20170219

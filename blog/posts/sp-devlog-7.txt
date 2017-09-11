@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #7
+title: Spooky Pooky #7 - Tile Objects
 url: sp-devlog-7
 banner: spdevlog.png
 date: 20140919

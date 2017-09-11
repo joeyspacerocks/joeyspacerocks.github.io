@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #37
+title: Spooky Pooky #37 - Room to Move
 url: sp-devlog-37
 banner: spdevlog.png
 date: 20160119

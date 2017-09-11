@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #8
+title: Spooky Pooky #8 - Related Entities
 url: sp-devlog-8
 banner: spdevlog.png
 date: 20140926

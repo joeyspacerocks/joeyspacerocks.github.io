@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #36
+title: Spooky Pooky #36 - GLFW to SFML
 url: sp-devlog-36
 banner: spdevlog.png
 date: 20160113

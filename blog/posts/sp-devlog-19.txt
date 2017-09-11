@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #19
+title: Spooky Pooky #19 - Buoyancy
 url: sp-devlog-19
 banner: spdevlog.png
 date: 20150310

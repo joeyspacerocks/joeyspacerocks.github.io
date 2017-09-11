@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #54
+title: Spooky Pooky #54 - Collision Detection
 url: sp-devlog-54
 banner: spdevlog.png
 date: 20160706

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #4
+title: Spooky Pooky #4 - Water Shader
 url: sp-devlog-4
 banner: spdevlog.png
 date: 20140811

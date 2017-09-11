@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #9
+title: Spooky Pooky #9 - Bouncy bouncy bouncy
 url: sp-devlog-9
 banner: spdevlog.png
 date: 20141002

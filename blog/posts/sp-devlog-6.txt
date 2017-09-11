@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #6
+title: Spooky Pooky #6 - Entities
 url: sp-devlog-6
 banner: spdevlog.png
 date: 20140913

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #10
+title: Spooky Pooky #10 - Map Building
 url: sp-devlog-10
 banner: spdevlog.png
 date: 20141004

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #17
+title: Spooky Pooky #17 - Level Building
 url: sp-devlog-17
 banner: spdevlog.png
 date: 20150112

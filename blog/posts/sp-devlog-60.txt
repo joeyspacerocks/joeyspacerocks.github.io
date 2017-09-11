@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #60 - Catch Up, Part 1
+title: Spooky Pooky #60 - Catch Up, Part 1
 url: sp-devlog-60
 banner: spdevlog.png
 date: 20170908

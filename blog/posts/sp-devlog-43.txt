@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #43
+title: Spooky Pooky #43 - We All Love UI
 url: sp-devlog-43
 banner: spdevlog.png
 date: 20160226

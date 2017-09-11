@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #47
+title: Spooky Pooky #47 - UI Again
 url: sp-devlog-47
 banner: spdevlog.png
 date: 20160323

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #35
+title: Spooky Pooky #35 - Slump
 url: sp-devlog-35
 banner: spdevlog.png
 date: 20151215

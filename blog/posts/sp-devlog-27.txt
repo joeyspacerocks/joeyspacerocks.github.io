@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #27
+title: Spooky Pooky #27 - Electrical Demons
 url: sp-devlog-27
 banner: spdevlog.png
 date: 20150815

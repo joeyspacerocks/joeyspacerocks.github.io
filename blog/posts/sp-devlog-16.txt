@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #16
+title: Spooky Pooky #16 - The Machine
 url: sp-devlog-16
 banner: spdevlog.png
 date: 20141215

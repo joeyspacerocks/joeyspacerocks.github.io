@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #2
+title: Spooky Pooky #2 - Scaling Changes
 url: sp-devlog-2
 banner: spdevlog.png
 date: 20140721

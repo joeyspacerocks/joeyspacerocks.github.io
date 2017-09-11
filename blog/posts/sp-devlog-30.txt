@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #30
+title: Spooky Pooky #30 - Rendering Rewrite
 url: sp-devlog-30
 banner: spdevlog.png
 date: 20150921

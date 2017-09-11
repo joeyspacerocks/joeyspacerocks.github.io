@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #14
+title: Spooky Pooky #14 - Time is an Illusion
 url: sp-devlog-14
 banner: spdevlog.png
 date: 20141112

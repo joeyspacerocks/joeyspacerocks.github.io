@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #50
+title: Spooky Pooky #50 - Miscellaneous Fixing
 url: sp-devlog-50
 banner: spdevlog.png
 date: 20160503

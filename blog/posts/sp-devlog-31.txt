@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #31
+title: Spooky Pooky #31 - Weapons
 url: sp-devlog-31
 banner: spdevlog.png
 date: 20151011

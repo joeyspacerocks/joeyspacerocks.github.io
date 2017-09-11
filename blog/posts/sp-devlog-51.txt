@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #51
+title: Spooky Pooky #51 - Physics Again
 url: sp-devlog-51
 banner: spdevlog.png
 date: 20160504

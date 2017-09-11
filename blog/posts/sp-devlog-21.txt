@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #21
+title: Spooky Pooky #21 - Targeting Multiple Platforms
 url: sp-devlog-21
 banner: spdevlog.png
 date: 20150509

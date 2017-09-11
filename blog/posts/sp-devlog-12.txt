@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #12
+title: Spooky Pooky #12 - Momentum
 url: sp-devlog-12
 banner: spdevlog.png
 date: 20141029

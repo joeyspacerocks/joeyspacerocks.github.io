@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #40
+title: Spooky Pooky #40 - Rendering Recap
 url: sp-devlog-40
 banner: spdevlog.png
 date: 20160129

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #48
+title: Spooky Pooky #48 - We Get a Gun
 url: sp-devlog-48
 banner: spdevlog.png
 date: 20160401

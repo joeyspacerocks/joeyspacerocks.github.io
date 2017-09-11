@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #23
+title: Spooky Pooky #23 - Full Metroidvania
 url: sp-devlog-23
 banner: spdevlog.png
 date: 20150619

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #24
+title: Spooky Pooky #24 - From iOS to OSX
 url: sp-devlog-24
 banner: spdevlog.png
 date: 20150710

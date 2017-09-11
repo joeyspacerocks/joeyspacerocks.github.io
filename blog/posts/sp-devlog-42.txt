@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #42
+title: Spooky Pooky #42 - Glow Business
 url: sp-devlog-42
 banner: spdevlog.png
 date: 20160216

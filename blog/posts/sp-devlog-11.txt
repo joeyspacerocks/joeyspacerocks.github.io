@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #11
+title: Spooky Pooky #11 - Shocking Titles
 url: sp-devlog-11
 banner: spdevlog.png
 date: 20141014

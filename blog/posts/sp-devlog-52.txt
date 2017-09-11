@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #52
+title: Spooky Pooky #52 - Reanimator
 url: sp-devlog-52
 banner: spdevlog.png
 date: 20160531

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #20
+title: Spooky Pooky #20 - Stacking Stuff
 url: sp-devlog-20
 banner: spdevlog.png
 date: 20150317

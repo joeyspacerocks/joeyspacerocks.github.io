@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #32
+title: Spooky Pooky #32 - Seed Plants
 url: sp-devlog-32
 banner: spdevlog.png
 date: 20151018

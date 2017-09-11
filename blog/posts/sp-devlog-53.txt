@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #53
+title: Spooky Pooky #53 - Slime Blobs
 url: sp-devlog-53
 banner: spdevlog.png
 date: 20160619

@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #41
+title: Spooky Pooky #41 - Mega-Caterpillar
 url: sp-devlog-41
 banner: spdevlog.png
 date: 20160131

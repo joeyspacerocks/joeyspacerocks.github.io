@@ -1,4 +1,4 @@
-title: Spooky Pooky - devlog #33
+title: Spooky Pooky #33 - PyxelEdit Workflow
 url: sp-devlog-33
 banner: spdevlog.png
 date: 20151128
