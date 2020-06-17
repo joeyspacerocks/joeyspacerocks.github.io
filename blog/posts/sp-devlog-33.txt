@@ -5,45 +5,45 @@ date: 20151128
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>I only stepped out for a minute and more than a month has passed. Good job this game is already retro ...</p>
+I only stepped out for a minute and more than a month has passed. Good job this game is already retro ...
 
-<p>I've been improving my tool chain of late as things were getting a little tedious in my crazy little self-made circle of hell.</p>
+I've been improving my tool chain of late as things were getting a little tedious in my crazy little self-made circle of hell.
 
-<p>My approach to roll-your-own games programming has always been to whack stuff in there and sort it out later if it works. Starting from scratch meant I would do the simplest thing first to get things rolling.</p>
+My approach to roll-your-own games programming has always been to whack stuff in there and sort it out later if it works. Starting from scratch meant I would do the simplest thing first to get things rolling.
 
-<p>This meant that sprites, tiles and animations were billy-basic to say the least. I had a big ol' image that had everything in it that I hand-edited in place using Pixen. In the code I then hand-entered the coordinates of sprites into a structure, and added these to animation definitions.</p>
+This meant that sprites, tiles and animations were billy-basic to say the least. I had a big ol' image that had everything in it that I hand-edited in place using Pixen. In the code I then hand-entered the coordinates of sprites into a structure, and added these to animation definitions.
 
-<p>The approach got me quite far but it's not hard to see that the next phase of cranking out content was going to seriously suffer. So I've been replacing this nonsense with the following.</p>
+The approach got me quite far but it's not hard to see that the next phase of cranking out content was going to seriously suffer. So I've been replacing this nonsense with the following.
 
-<p>First up I'm now using PyxelEdit for, um, editing pyxels. It's a great little tool which does exactly what I want (but no more) and is brilliant for tile-editing.</p>
+First up I'm now using PyxelEdit for, um, editing pyxels. It's a great little tool which does exactly what I want (but no more) and is brilliant for tile-editing.
 
-<p>So I've extracted the tiles into a proper tileset inside PyxelEdit.</p>
+So I've extracted the tiles into a proper tileset inside PyxelEdit.
 
-<p>I then exported all the individual sprites into separate PyxelEdit animation image files which means that I can properly edit animations without having to start up the game.</p>
+I then exported all the individual sprites into separate PyxelEdit animation image files which means that I can properly edit animations without having to start up the game.
 
-<p>Obviously that change meant that I'd need a texture packer, so I gave TexturePacker a whirl. Not bad, but the workflow was a little too manual for my liking. I had to edit stuff in PyxelEdit, then export to PNGs, then run TexturePacker, etc. Plus the PyxelEdit export for animations doesn't export any metadata - just PNGs. So there was way to get it to export per-frame timings.</p>
+Obviously that change meant that I'd need a texture packer, so I gave TexturePacker a whirl. Not bad, but the workflow was a little too manual for my liking. I had to edit stuff in PyxelEdit, then export to PNGs, then run TexturePacker, etc. Plus the PyxelEdit export for animations doesn't export any metadata - just PNGs. So there was way to get it to export per-frame timings.
 
-<p>So I decided to have a little look inside PyxelEdit files and whaddya know? Turns out they're brilliantly structured. A PyxelEdit file is just a zip containing a JSON data file plus a bunch of PNGs that store the layers and others that store each tile from tilesets. Lovely!</p>
+So I decided to have a little look inside PyxelEdit files and whaddya know? Turns out they're brilliantly structured. A PyxelEdit file is just a zip containing a JSON data file plus a bunch of PNGs that store the layers and others that store each tile from tilesets. Lovely!
 
-<p>So I spent a bunch of hours writing a little Python script that does the following:</p>
+So I spent a bunch of hours writing a little Python script that does the following:
 
-<ul>
- <li>reads animation meta data</li>
- <li>extracts the image data from the merged layer PNGs</li>
- <li>generates a sprite sheet PNG using a simple packing algorithm</li>
- <li>generates a sprite sheet meta file in a nice format for me to read</li>
- <li>includes mask layer sprite coords (I use them for objects that contain liquid)</li>
- <li>generates a single tileset image</li>
-</ul>
 
-<p>Next I hooked it up to XCode so that it runs the script as a build phase.</p>
+* reads animation meta data
+* extracts the image data from the merged layer PNGs
+* generates a sprite sheet PNG using a simple packing algorithm
+* generates a sprite sheet meta file in a nice format for me to read
+* includes mask layer sprite coords (I use them for objects that contain liquid)
+* generates a single tileset image
 
-<p>So my workflow is now just edit files in PyxelEdit (including animation timings) and save. Run game.</p>
 
-<p>Lovely job!</p>
+Next I hooked it up to XCode so that it runs the script as a build phase.
 
-<p>I've just uploaded my toy PyxelEdit animation / tileset / texturepacker script to <a href="https://github.com/joeyspacerocks/pexpo">GitHub</a> in case anyone else finds it handy.</p>
+So my workflow is now just edit files in PyxelEdit (including animation timings) and save. Run game.
 
-<p>(NB. OK, so I didn't have to write the exporter in Python. Given that I didn't actually know Python before I started. But I just fancied it. So I did, and it's pretty cool! So are all the great libraries for Python.)</p>
+Lovely job!
 
-<p>(NB. NB. I spent a lot of time reading about texture-packing. There's a lot of crazily complicated algorithms out there. Luckily I stumbled across <a href="http://gamedev.stackexchange.com/questions/2829/texture-packing-algorithm">this brilliant post</a> which gives a very simple way of doing it that really works well, especially for the stuff I've got. So hooray for that.)</p>
+I've just uploaded my toy PyxelEdit animation / tileset / texturepacker script to [GitHub](https://github.com/joeyspacerocks/pexpo) in case anyone else finds it handy.
+
+(NB. OK, so I didn't have to write the exporter in Python. Given that I didn't actually know Python before I started. But I just fancied it. So I did, and it's pretty cool! So are all the great libraries for Python.)
+
+(NB. NB. I spent a lot of time reading about texture-packing. There's a lot of crazily complicated algorithms out there. Luckily I stumbled across [this brilliant post](http://gamedev.stackexchange.com/questions/2829/texture-packing-algorithm) which gives a very simple way of doing it that really works well, especially for the stuff I've got. So hooray for that.)

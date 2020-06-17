@@ -5,16 +5,16 @@ date: 20150820
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>So I've been messing about with guns a bit.</p>
+So I've been messing about with guns a bit.
 
-<p>Some bang-bang explodey action ...</p>
+Some bang-bang explodey action ...
 
-<p><img src="http://giant.gfycat.com/AcidicGiddyAmericancrow.gif" /></p>
+<img src="http://giant.gfycat.com/AcidicGiddyAmericancrow.gif" />
 
-<p>An annoying blob gun ...</p>
+An annoying blob gun ...
 
-<p><img src="http://giant.gfycat.com/AbleAgileCricket.gif" /></p>
+<img src="http://giant.gfycat.com/AbleAgileCricket.gif" />
 
-<p>I'm having too much fun messing about those - it's distracting me.</p>
+I'm having too much fun messing about those - it's distracting me.
 
-<p>Still can't decide if I'm going to let you shoot back or not. I didn't set out to make a shooter, but it just seems pretty unfair not to be able to defend yourself ...</p>
+Still can't decide if I'm going to let you shoot back or not. I didn't set out to make a shooter, but it just seems pretty unfair not to be able to defend yourself ...

@@ -5,14 +5,14 @@ date: 20160216
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>I've long been tempted to mess with lighting in this game, but held off mostly due to in-decision. However I've decided that a little glow can go a long way and so implemented a little bloom shader for fake lights.</p>
+I've long been tempted to mess with lighting in this game, but held off mostly due to in-decision. However I've decided that a little glow can go a long way and so implemented a little bloom shader for fake lights.
 
-<p>Sprites can already define a 'mask'; just an offset to another sprite of the same size that masks out an area. I've been using this for the rendering wibbly liquid regions and now I'm also using it to define areas that should glow.</p>
+Sprites can already define a 'mask'; just an offset to another sprite of the same size that masks out an area. I've been using this for the rendering wibbly liquid regions and now I'm also using it to define areas that should glow.
 
-<p>Entities that indicate they contain glow areas are rendered as normal but then render their mask to another frame buffer. When ready this buffer is used as a source texture for the glow shader. Normally Gaussian blurs are achieved by using tricks like repeated rendering on lower-resolution buffers, but given that this game is already using such a low resolution, and because I'm quite lazy, I took the easy way and just apply it to the full-size buffer (twice, once for horizontal and once for vertical blurring). Finally I render the result to the main buffer using additive blending.</p>
+Entities that indicate they contain glow areas are rendered as normal but then render their mask to another frame buffer. When ready this buffer is used as a source texture for the glow shader. Normally Gaussian blurs are achieved by using tricks like repeated rendering on lower-resolution buffers, but given that this game is already using such a low resolution, and because I'm quite lazy, I took the easy way and just apply it to the full-size buffer (twice, once for horizontal and once for vertical blurring). Finally I render the result to the main buffer using additive blending.
 
-<p><img src="https://giant.gfycat.com/CheerfulTanFrenchbulldog.gif" /></p>
+<img src="https://giant.gfycat.com/CheerfulTanFrenchbulldog.gif" />
 
-<p>The above was also experimenting with glowing liquid - this didn't go quite as well due to the way stuff is rendered. I end up additively blending the mask twice, once for the liquid and once for the light ... so things get a little, um, bright.</p>
+The above was also experimenting with glowing liquid - this didn't go quite as well due to the way stuff is rendered. I end up additively blending the mask twice, once for the liquid and once for the light ... so things get a little, um, bright.
 
-<p>On the plus side it meant I can finally ditch some dodgy electrical sprites that contained semi-transparent pixels.</p>
+On the plus side it meant I can finally ditch some dodgy electrical sprites that contained semi-transparent pixels.

@@ -5,18 +5,18 @@ date: 20141215
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Dear diary. Progress has been slow over the last few weeks due to various ailments. Winter, huh.</p>
+Dear diary. Progress has been slow over the last few weeks due to various ailments. Winter, huh.
 
-<p>Still, I've been fleshing out the intro level where you begin as Horatio and end with the transformation.</p>
+Still, I've been fleshing out the intro level where you begin as Horatio and end with the transformation.
 
-<p>Basic premise is that Horatio stumbles into a disused lab area that he shouldn't be in - at the end the player ends up in the machine.</p>
+Basic premise is that Horatio stumbles into a disused lab area that he shouldn't be in - at the end the player ends up in the machine.
 
-<p><img width="667" src="http://i.imgur.com/tCycHob.png" /></p>
+<img width="667" src="http://i.imgur.com/tCycHob.png" />
 
-<p><img width="667" src="http://i.imgur.com/WCOHss7.png" /></p>
+<img width="667" src="http://i.imgur.com/WCOHss7.png" />
 
-<p><img width="667" src="http://i.imgur.com/n2Dts14.png" /></p>
+<img width="667" src="http://i.imgur.com/n2Dts14.png" />
 
-<p>Added some transitions between levels to show little captions, and cleaned up the state management code a bit.</p>
+Added some transitions between levels to show little captions, and cleaned up the state management code a bit.
 
-<p>So next up is to build some real levels and finally get some sample gameplay with enemies nailed down.</p>
+So next up is to build some real levels and finally get some sample gameplay with enemies nailed down.

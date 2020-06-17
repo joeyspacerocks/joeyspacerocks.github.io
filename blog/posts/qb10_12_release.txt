@@ -4,16 +4,16 @@ banner: post2.jpg
 date: 20140711
 icon: bullhorn
 
-<p>Behold the full might of a marketing machine swinging into action.</p>
+Behold the full might of a marketing machine swinging into action.
 
-<p>Ahem. <a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8">Version 1.2 of QB1-0</a> was released on the App Store months ago and I've finally got around to mentioning it here.</p>
+Ahem. [Version 1.2 of QB1-0](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8) was released on the App Store months ago and I've finally got around to mentioning it here.
 
-<p>But that's not all! There's a new trailer as well!</p>
+But that's not all! There's a new trailer as well!
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gJkFGrNRVbY" frameborder="0" allowfullscreen></iframe>
 
-<p>So what's new? The biggest change is that it's now a Universal app, and so is available for both iPad and iPhone. Additionally there are some graphical improvements and a couple of bug fixes.</p>
+So what's new? The biggest change is that it's now a Universal app, and so is available for both iPad and iPhone. Additionally there are some graphical improvements and a couple of bug fixes.
 
-<p>There you have it.</p>
+There you have it.
 
-<p>Marketing.</p>
+Marketing.

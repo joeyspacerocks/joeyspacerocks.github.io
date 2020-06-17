@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 import chevron
 import shutil
+import markdown
 
 __version__ = '0.1.1'
 
@@ -14,6 +15,8 @@ def read_post(f):
         'content': '',
         'icon': 'newspaper-o'
     }
+
+    md_content = ''
     with open(f) as fh:
         header = True
         for line in fh:
@@ -24,8 +27,11 @@ def read_post(f):
                 else:
                     header = False
             else:
-                post['content'] += line
+                md_content += line
 
+    post['content'] = markdown.markdown(md_content)
+
+    # FIXME: extraxct summary from property, falling back to markdown-sourced paragraph
     summary = re.sub(r'<[^<]+?>', '', post['content'])
     summary = re.sub(r'\n+|\t+|\s+', ' ', summary)
     post['blurb'] = re.sub(r'^(.{0,120})\b.*$', r'\1...', summary)

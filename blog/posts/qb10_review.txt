@@ -3,10 +3,8 @@ url: qb10_review
 date: 20140717
 banner: post2.jpg
 
-<p><a href="http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html">Indie Game Enthusiast</a> posted a really good review for QB1-0 the other day ...</p>
+[Indie Game Enthusiast](http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html) posted a really good review for QB1-0 the other day ...
 
-<blockquote>
-QB1-0 released in 2012. It received a Universal update in May, a new trailer in June. I just discovered the game today. Searching online, I couldn't find a single review and that's a damn shame. If you're a fan of arcade shooters, I recommend giving QB1-0 a try ...<p>...a stylish frenetic arcade shooter with responsive controls, that fills the screen with particles and enemies and bullets, and for that reason, I think QB1-0 is worth checking out if you enjoy these kinds of games.</p>
-</blockquote>
+> QB1-0 released in 2012. It received a Universal update in May, a new trailer in June. I just discovered the game today. Searching online, I couldn't find a single review and that's a damn shame. If you're a fan of arcade shooters, I recommend giving QB1-0 a try ......a stylish frenetic arcade shooter with responsive controls, that fills the screen with particles and enemies and bullets, and for that reason, I think QB1-0 is worth checking out if you enjoy these kinds of games.
 
-<p>The site is performing a brilliant service for indie gaming by championing the many overlooked games that might not otherwise be seen. <a href="http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html">Check out the full review.</a></p>
+The site is performing a brilliant service for indie gaming by championing the many overlooked games that might not otherwise be seen. [Check out the full review.](http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html)

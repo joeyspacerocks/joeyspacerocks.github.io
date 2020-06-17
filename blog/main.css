@@ -171,6 +171,12 @@ a {
 	font-style: italic;
     }
 
+    .post blockquote {
+        font-style: italic;
+        padding: 15px 20px;
+        color: #99a;
+    }
+
     .publish {
         font-family: 'Raleway', sans-serif;
         font-size: 16px;
@@ -183,17 +189,29 @@ a {
 	    margin: 0 2px;
 	}
 
-    .post img {
-	max-width: 100%;
-	display: block;
-	margin: 50px auto 60px auto;
-	box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
+    .post img, .post video {
+        max-width: 100%;
+        display: block;
+        margin: 50px auto 60px auto;
+        box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
     }
 
-    .post .code {
-	font-size: 12px;
-	font-family: 'Consolasa','Monaco','Lucida Console','Courier New';
-	line-height: 1.5em;
+    .post pre {
+        padding: 15px 20px;
+        font-size: 13px;
+        font-family: 'Consolasa','Monaco','Lucida Console','Courier New';
+        line-height: 1.2em;
+        overflow-x: auto;
+        background: #335;
+        color: #fff;
+        box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.7);
+        margin: 40px 20px;
+    }
+
+    .post :not(pre) code {
+        background: #eee;
+        font-size: 18px;
+        padding: 4px;
     }
 
 .banner {

@@ -5,59 +5,59 @@ date: 20170913
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>I told you I'd be back. Unless you've never been here before, and have no idea who I am or 
-what I'm talking about. In which case, hi!</p>
+I told you I'd be back. Unless you've never been here before, and have no idea who I am or 
+what I'm talking about. In which case, hi!
 
-<p>Let's talk state. Specifically, state referring to how things in the game know what to do next.</p>
+Let's talk state. Specifically, state referring to how things in the game know what to do next.
 
-<p>I'm a simple soul and this is reflected in the simplicity of my code. Things in the game are mostly
+I'm a simple soul and this is reflected in the simplicity of my code. Things in the game are mostly
 represented by an instance of a structure containing a bunch of disperate data. One of those items of
-data was the entity state, where the state was a simple <code>int</code> accompanied by an expiry time.</p>
+data was the entity state, where the state was a simple `int` accompanied by an expiry time.
 
-<p>(NB. The game is written in C; there are no 'objects' in the OO sense of the word, but I do copiously
+(NB. The game is written in C; there are no 'objects' in the OO sense of the word, but I do copiously
 use function pointers stored in structures, so I'm happy for you to argue with me.)
 
-<p>State-as-an-int works ok up to a point - you end up with functions that have ever-expanding switch 
+State-as-an-int works ok up to a point - you end up with functions that have ever-expanding switch 
 statements, but there's nothing inherently wrong with that. It's straightforward and you can see
-exactly what's going on.</p>
+exactly what's going on.
 
-<p>However. You do start to feel a bit silly when your switch statements simply start calling 
-other functions, with names like 'handle_being_electrocuted' and 'keep_dying', or 'do_normal_stuff'.</p>
+However. You do start to feel a bit silly when your switch statements simply start calling 
+other functions, with names like 'handle_being_electrocuted' and 'keep_dying', or 'do_normal_stuff'.
 
-<p>So, given that one of my function pointers is to a 'think' function, it quickly becomes obvious that
-maybe a nicer way to handle this is to just change the think when previously some state needed to change.</p>
+So, given that one of my function pointers is to a 'think' function, it quickly becomes obvious that
+maybe a nicer way to handle this is to just change the think when previously some state needed to change.
 
-<p>This cleans up a lot of code and works nicely. I still need timers just to keep a handle on when stuff might
-need to change, but generally speaking the behaviour is simple enough for this to be perfectly adequate.</p>
+This cleans up a lot of code and works nicely. I still need timers just to keep a handle on when stuff might
+need to change, but generally speaking the behaviour is simple enough for this to be perfectly adequate.
 
-<p>The other nice thing about being freed from the shackles of OO is that you stop thinking in terms about 
+The other nice thing about being freed from the shackles of OO is that you stop thinking in terms about 
 what something is. In other words my entities do not have a 'type' as such. The player isn't a player type,
 it's just got some behaviour defined via the function pointers. Yes, yes, yes, I know that's one chunk of
-the varying definition of OO, but it gives you the opportunity to completely abuse the behaviour at runtime.</p>
+the varying definition of OO, but it gives you the opportunity to completely abuse the behaviour at runtime.
 
-<p>For example, when an enemy is dispatched and you might want to spawn a power-up I can instead just mutate the struct
+For example, when an enemy is dispatched and you might want to spawn a power-up I can instead just mutate the struct
 representing the enemy into a power-up. I.e. change the sprites, change the think functions, etc, thus saving a little messing
-with the object pooling and saving a little time.</p>
+with the object pooling and saving a little time.
 
-<p>Of course you can achieve all this in 'proper' OO too by using a proper ECS system, or a bunch of interfaces, etc, 
+Of course you can achieve all this in 'proper' OO too by using a proper ECS system, or a bunch of interfaces, etc, 
 but there's something nice about having almost zero architecture getting in the way and just having some nice clean
-code where you can see exactly what it's doing and where.</p>
+code where you can see exactly what it's doing and where.
 
-<p>It's also blatently obvious that I'm not even using a proper state machine. I haven't got a stack of states. Maybe
-I'll need one later, or maybe I won't - it probably depends how complex the behaviour gets.</p>
+It's also blatently obvious that I'm not even using a proper state machine. I haven't got a stack of states. Maybe
+I'll need one later, or maybe I won't - it probably depends how complex the behaviour gets.
 
-<p>The most obvious downside of all of this is that I have a monolithic 'entity' structure. There are fields in there
+The most obvious downside of all of this is that I have a monolithic 'entity' structure. There are fields in there
 that are only relavent to certaing types of entity, and not others. For instance, I'm pretty sure that a tile chunk
 doesn't need a jump power (although on the other hand ...). It's not strictly necessary, but it is very, very simple,
 especially when it comes to object pooling and memory management. There's an overhead there but let's face it, I'm 
 making a 2D room-based game where the number of entities per room, or even per sector is going to be limited. Some judicious
 use of the beautiful (and hated) C 'union' feature may be used later once everything's pinned down to carve up the 
-fields into chunks that make sense, but at the moment it's just not necessary.</p>
+fields into chunks that make sense, but at the moment it's just not necessary.
 
-<p>If I had a point to make it would probably be that things can be nice and simple and still work. You don't 
+If I had a point to make it would probably be that things can be nice and simple and still work. You don't 
 always need a complicated (or clever) architecture, and in many cases doing so just gets in the way and obscures
-what you're really trying to accomplish.</p>
+what you're really trying to accomplish.
 
-<p>I expect the next blog post will be titled "Why I moved from C to C++ to Unity in 3 months".</p>
+I expect the next blog post will be titled "Why I moved from C to C++ to Unity in 3 months".
 
-<p>But for the moment it's all just sorta working.</p>
+But for the moment it's all just sorta working.

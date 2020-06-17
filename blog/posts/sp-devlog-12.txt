@@ -5,14 +5,14 @@ date: 20141029
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>So I'm still plugging away at Spooky Pooky after a short interlude whilst I patched up QB1-0 with an iPhone 6+ fix.</p>
+So I'm still plugging away at Spooky Pooky after a short interlude whilst I patched up QB1-0 with an iPhone 6+ fix.
 
-<p>Latest update is to tidy up some of the physics code so that I could impart some physically implausible reaction forces to platforms when landed on.</p>
+Latest update is to tidy up some of the physics code so that I could impart some physically implausible reaction forces to platforms when landed on.
 
-<p><img src="http://giant.gfycat.com/InsistentScaryCapeghostfrog.gif" /></p>
+<img src="http://giant.gfycat.com/InsistentScaryCapeghostfrog.gif" />
 
-<p>Similarly for floating platforms, albeit a bit more subtlety.</p>
+Similarly for floating platforms, albeit a bit more subtlety.
 
-<p><img src="http://giant.gfycat.com/CarefreeLastingArchaeopteryx.gif" /></p>
+<img src="http://giant.gfycat.com/CarefreeLastingArchaeopteryx.gif" />
 
-<p>Tweaking this kind of stuff is really just a way of getting back into the flow of it after a bit of a creative slump. Going to change the control system next to try and improve gameplay as at the moment it's really just too twitchy.</p>
+Tweaking this kind of stuff is really just a way of getting back into the flow of it after a bit of a creative slump. Going to change the control system next to try and improve gameplay as at the moment it's really just too twitchy.

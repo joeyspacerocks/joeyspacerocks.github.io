@@ -5,50 +5,49 @@ date: 20161211
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>The dialogue system is in the game at last. It didn't take too much time really in and of itself, just took a while to find the time to do it.</p>
+The dialogue system is in the game at last. It didn't take too much time really in and of itself, just took a while to find the time to do it.
 
-<p>Here's an example:</p>
+Here's an example:
 
-<p><img src="http://i.imgur.com/q7t7HN3.gif" /></p>
+<img src="http://i.imgur.com/q7t7HN3.gif" />
 
-<p>So there are few things going on here. First I extended the custom UI code I had that handles the menus and option panels to handle more general situations.</p>
+So there are few things going on here. First I extended the custom UI code I had that handles the menus and option panels to handle more general situations.
 
-<p>Internally I can give the UI elements target display settings and it will tween between its current state and the desired one. This makes having things slide up and fade in, etc, simple to implement.</p>
+Internally I can give the UI elements target display settings and it will tween between its current state and the desired one. This makes having things slide up and fade in, etc, simple to implement.
 
-<p>The dialogue itself is broken into scenes, where each scene can have a number of lines spoken by participants. This is encoded in an XML file (probably should be JSON, but I already had an XML parser coded up) - here's an example for the above scene:</p>
+The dialogue itself is broken into scenes, where each scene can have a number of lines spoken by participants. This is encoded in an XML file (probably should be JSON, but I already had an XML parser coded up) - here's an example for the above scene:
 
-<pre class="code">
-&lt;dialogue&gt;
-    &lt;scene id="start"&gt;
-        &lt;line avatar="horatio"&gt;
-            {Ahtalk1}Ooh. Floaty. {P1000}{Ahtalk2}Hello? {P1000}{Ahtalk1}Anybody there? {P1000}{Ahtalk2}Anyone?
-        &lt;/line&gt;
-        &lt;line avatar="mech" align="right" font="robot" colour="11"&gt;
-            {Amtalk1}Registering unusual activity in container {C14}#424f4e4553{C11}. Possible malfunction.
-        &lt;/line&gt;
-        &lt;line avatar="mech" align="right" font="robot" colour="11"&gt;
-            {Amtalk2}Checking. {P1000}{Amtalk3}Container error confirmed.
-        &lt;/line&gt;
-    &lt;/scene&gt;
-    ..
-</pre>
+    <dialogue>
+       <scene id="start">
+           <line avatar="horatio">
+               {Ahtalk1}Ooh. Floaty. {P1000}{Ahtalk2}Hello? {P1000}{Ahtalk1}Anybody there? {P1000}{Ahtalk2}Anyone?
+           </line>
+           <line avatar="mech" align="right" font="robot" colour="11">
+               {Amtalk1}Registering unusual activity in container {C14}#424f4e4553{C11}. Possible malfunction.
+           </line>
+           <line avatar="mech" align="right" font="robot" colour="11">
+               {Amtalk2}Checking. {P1000}{Amtalk3}Container error confirmed.
+           </line>
+       </scene>
+       ..
+    </dialogue>
 
-<p>You can include directives in the dialogue text, denoted by the curly braces. Currently I can indicate a pause (in ms), a colour change or a request to play some audio.</p>
+You can include directives in the dialogue text, denoted by the curly braces. Currently I can indicate a pause (in ms), a colour change or a request to play some audio.
 
-<p>Text is revealed a letter at a time, with a little read-ahead to ensure that words that will wrap when revealed are pre-wrapped as they appear.</p>
+Text is revealed a letter at a time, with a little read-ahead to ensure that words that will wrap when revealed are pre-wrapped as they appear.
 
-<p>So nothing to special, but it works reasonably well. I need to get a skip mechanism in there to 'abort' the dialogue.</p>
+So nothing to special, but it works reasonably well. I need to get a skip mechanism in there to 'abort' the dialogue.
 
-<p>I tried a few different mechanisms to get dialogue to play in a room via different trigger events. For instance, the example above needs to automatically start playing after a short delay. Other dialogue will be shown when other events are triggered - e.g. a collision event with something.</p>
+I tried a few different mechanisms to get dialogue to play in a room via different trigger events. For instance, the example above needs to automatically start playing after a short delay. Other dialogue will be shown when other events are triggered - e.g. a collision event with something.
 
-<p>So I've added trigger objects (I'm using Tiled for the room build) that can have an auto-play delay specified, and dialogue objects that keep a handle to the scene id and can be set as a trigger target for a trigger entity.</p>
+So I've added trigger objects (I'm using Tiled for the room build) that can have an auto-play delay specified, and dialogue objects that keep a handle to the scene id and can be set as a trigger target for a trigger entity.
 
-<p>This way I can slot it into my existing trigger system and it plays fairly nicely.</p>
+This way I can slot it into my existing trigger system and it plays fairly nicely.
 
-<p>One last bit of nonsense is to get something to happen when a dialogue scene has finished playing. Here I can give a dialogue object in a room a target object which is then sent a trigger event on completion of the scene. In the example above this is used to break the jar.</p>
+One last bit of nonsense is to get something to happen when a dialogue scene has finished playing. Here I can give a dialogue object in a room a target object which is then sent a trigger event on completion of the scene. In the example above this is used to break the jar.
 
-<p>So there we have it. I want to add in some polish for the actual display - things like special effects for the dialogue pane (like static / glitches for the mech stuff), and rendering avatar portraits using full game entities so I can animate them and code up special effects like steam, etc.</p>
+So there we have it. I want to add in some polish for the actual display - things like special effects for the dialogue pane (like static / glitches for the mech stuff), and rendering avatar portraits using full game entities so I can animate them and code up special effects like steam, etc.
 
-<p>It'll do for the moment.</p>
+It'll do for the moment.
 
-<p>Next I'm adding explanation panels for things like powerup collection - got to be careful not to overdo it though.</p>
+Next I'm adding explanation panels for things like powerup collection - got to be careful not to overdo it though.

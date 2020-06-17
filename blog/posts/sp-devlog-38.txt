@@ -5,22 +5,22 @@ date: 20160124
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>A little update this week.</p>
+A little update this week.
 
-<p>I've accidentally implemented some kind of poor-man's event system. Dang, half-arsed-framework-evolving-warning.</p>
+I've accidentally implemented some kind of poor-man's event system. Dang, half-arsed-framework-evolving-warning.
 
-<p>It all started when I noticed that when the hero is exploded out of a container jar I had no easy (i.e. generic) way of switching his animation from 'look shocked and concerned' to 'act casual and wait to run around'.</p>
+It all started when I noticed that when the hero is exploded out of a container jar I had no easy (i.e. generic) way of switching his animation from 'look shocked and concerned' to 'act casual and wait to run around'.
 
-<p>So I wanted things to know when they were freed from a container. Things in this eclectic code base are represented by a single struct called an Entity. Until now I had a bunch of function pointers for custom methods to think, render and handle collisions (actually two handlers for this for collisions between entities and collisions between an entity and tiles).</p>
+So I wanted things to know when they were freed from a container. Things in this eclectic code base are represented by a single struct called an Entity. Until now I had a bunch of function pointers for custom methods to think, render and handle collisions (actually two handlers for this for collisions between entities and collisions between an entity and tiles).
 
-<p>(Did I mention that I'm writing this in C? Ok, ok. I'll be a good chap and won't bang on about it.)</p>
+(Did I mention that I'm writing this in C? Ok, ok. I'll be a good chap and won't bang on about it.)
 
-<p>Reluctant to add another function pointer, I've replaced the collision functions with a single event handler pointer that takes an Event structure.</p>
+Reluctant to add another function pointer, I've replaced the collision functions with a single event handler pointer that takes an Event structure.
 
-<p>Event types include 'triggered' (bit vague), 'collision', 'tile collision' and now 'contained' and 'released'.</p>
+Event types include 'triggered' (bit vague), 'collision', 'tile collision' and now 'contained' and 'released'.
 
-<p>To avoid calling event handlers on things that don't care about events (i.e. most things), entities also specify a bitmask indicating which events they want to be told about. E.g. the player entity has mask of EVT_COLLISION | EVT_RELEASED.</p>
+To avoid calling event handlers on things that don't care about events (i.e. most things), entities also specify a bitmask indicating which events they want to be told about. E.g. the player entity has mask of EVT_COLLISION | EVT_RELEASED.
 
-<p>So after all that I now have a logical place to put a bit of code that stops the player looking so worried when he's just exploded out of a jar.</p>
+So after all that I now have a logical place to put a bit of code that stops the player looking so worried when he's just exploded out of a jar.
 
-<p>Take heed. This is why games aren't finished.</p>
+Take heed. This is why games aren't finished.

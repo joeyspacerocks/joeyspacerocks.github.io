@@ -5,10 +5,10 @@ date: 20140721
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Fixed the tiling bug and experimented with changing the scale.</p>
+Fixed the tiling bug and experimented with changing the scale.
 
-<p><img src="http://giant.gfycat.com/OddballComplexCuttlefish.gif" /></p>
+<img src="http://giant.gfycat.com/OddballComplexCuttlefish.gif" />
 
-<p>I like big pixels, but there's no getting away from the fact that a larger view area gives me a lot more level design options.</p>
+I like big pixels, but there's no getting away from the fact that a larger view area gives me a lot more level design options.
 
-<p>NB. this isn't a 'real' level - just some tiles thrown together to play-test with</p>
+NB. this isn't a 'real' level - just some tiles thrown together to play-test with

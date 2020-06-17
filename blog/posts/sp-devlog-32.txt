@@ -5,8 +5,8 @@ date: 20151018
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>More prevarication recently - made a little wibbly, wobbly seed pod plant that explodes when you get too close.</p>
+More prevarication recently - made a little wibbly, wobbly seed pod plant that explodes when you get too close.
 
-<p><img src="http://giant.gfycat.com/GloomyDapperAnole.gif" /></p>
+<img src="http://giant.gfycat.com/GloomyDapperAnole.gif" />
 
-<p>Still indulging in experimenting with projectiles and weapons and the like, and starting to sketch out some test rooms to map out how the power ups will work together.</p>
+Still indulging in experimenting with projectiles and weapons and the like, and starting to sketch out some test rooms to map out how the power ups will work together.

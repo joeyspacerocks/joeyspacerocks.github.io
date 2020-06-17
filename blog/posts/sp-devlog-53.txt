@@ -5,28 +5,28 @@ date: 20160619
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Like the sunshine in an English summertime, progress on Spooky Pooky has been patchy in the month of June.</p>
+Like the sunshine in an English summertime, progress on Spooky Pooky has been patchy in the month of June.
 
-<p>There has been an amount of cleanup in the code-base, such as removing the last references to 'levels' and replacing with 'rooms', finally cementing the game's status as a non-level based metroidvania. I've also been busy indulging in my favourite programming past-time - deleting code.</p>
+There has been an amount of cleanup in the code-base, such as removing the last references to 'levels' and replacing with 'rooms', finally cementing the game's status as a non-level based metroidvania. I've also been busy indulging in my favourite programming past-time - deleting code.
 
-<p>On a more constructive note I've given the slime blobs the ground-breaking ability to follow the walls to their left. Hence the test blob-cave below.</p>
+On a more constructive note I've given the slime blobs the ground-breaking ability to follow the walls to their left. Hence the test blob-cave below.
 
-<p><img src="http://i.imgur.com/8hiOt7s.gif" /></p>
+<img src="http://i.imgur.com/8hiOt7s.gif" />
 
-<p>Something that's been on the list for a while is importing rotated and flipped tiles from Tiled. When I render the tile-map I use a static VBA with enough tiles to cover the screen that I offset according to the scroll-offset. I dynamically remap the texture coords for the array and resend that every frame, so to support flips and rotations (which are covered by flips about the diagonal) I simply had to fiddle with the UVs when building the per-frame texture coords.</p>
+Something that's been on the list for a while is importing rotated and flipped tiles from Tiled. When I render the tile-map I use a static VBA with enough tiles to cover the screen that I offset according to the scroll-offset. I dynamically remap the texture coords for the array and resend that every frame, so to support flips and rotations (which are covered by flips about the diagonal) I simply had to fiddle with the UVs when building the per-frame texture coords.
 
-<p>The current plan is to chain a series of rooms together that contain all the weapons and power-ups available in the game, so that I can test them singularly and then in combinations. First step was to revisit the gain-a-powerup-organ sequence, which currently consists of finding an 'organ container' and busting it open using a button, etc.</p>
+The current plan is to chain a series of rooms together that contain all the weapons and power-ups available in the game, so that I can test them singularly and then in combinations. First step was to revisit the gain-a-powerup-organ sequence, which currently consists of finding an 'organ container' and busting it open using a button, etc.
 
-<p><img src="http://i.imgur.com/ajVLbLF.gif" /></p>
+<img src="http://i.imgur.com/ajVLbLF.gif" />
 
-<p>I'm not finished with this yet as the effect underwhelms me a little, but it'll do for the moment.</p>
+I'm not finished with this yet as the effect underwhelms me a little, but it'll do for the moment.
 
-<p>Speaking of effects, I've expanded the post-processing stuff a little. I can add a post-processing effect into my drawcall at any depth - in the GIF above the red tint is added above everything except the white explosion effect - but I've only allowed for a single control parameter. So I've expanded this so that a post-processing shader can take an arbitrary 3 vec4 parameters. This finally enables me to pass in things like a colour, and/or a focal point, etc. Using this I plan to add some wibble effects focused around the player, possibly with a depth-of-field thingy too. We'll see how it goes.</p>
+Speaking of effects, I've expanded the post-processing stuff a little. I can add a post-processing effect into my drawcall at any depth - in the GIF above the red tint is added above everything except the white explosion effect - but I've only allowed for a single control parameter. So I've expanded this so that a post-processing shader can take an arbitrary 3 vec4 parameters. This finally enables me to pass in things like a colour, and/or a focal point, etc. Using this I plan to add some wibble effects focused around the player, possibly with a depth-of-field thingy too. We'll see how it goes.
 
-<p>I think I've got enough pieces in play now so that I can get on with implementing all of the powerups. To plan these out I've sketched out a list of progression barriers (e.g. can't reach a platform, or get past an enemy) along with potential solutions (e.g. double-jump / fly / wind-tunnel) to help me get at least the main movement powerups sorted.</p>
+I think I've got enough pieces in play now so that I can get on with implementing all of the powerups. To plan these out I've sketched out a list of progression barriers (e.g. can't reach a platform, or get past an enemy) along with potential solutions (e.g. double-jump / fly / wind-tunnel) to help me get at least the main movement powerups sorted.
 
-<p>That's the plan anyway. And we all know how long those last ..</p>
+That's the plan anyway. And we all know how long those last ..
 
-<p>Finally, when I'm tired I doodle stuff. I've been very tired recently ..</p>
+Finally, when I'm tired I doodle stuff. I've been very tired recently ..
 
-<p><img src="http://i.imgur.com/44Yauvn.png" /></p>
+<img src="http://i.imgur.com/44Yauvn.png" />

@@ -5,16 +5,16 @@ date: 20160830
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>I'm still here! I think this is the longest I've gone without posting, but I'm still here and working on the game.</p>
+I'm still here! I think this is the longest I've gone without posting, but I'm still here and working on the game.
 
-<p>I took a break over the summer and messed about with Pico-8 to try and regain some perspective and sanity.</p>
+I took a break over the summer and messed about with Pico-8 to try and regain some perspective and sanity.
 
-<p>It may not have worked, but let's give it a go anyway.</p>
+It may not have worked, but let's give it a go anyway.
 
-<p>So, here's some bats. Apparently all games need to have bats nowadays.</p>
+So, here's some bats. Apparently all games need to have bats nowadays.
 
-<p><img src="http://i.imgur.com/Ol4QXq8.gif" /></p>
+<img src="http://i.imgur.com/Ol4QXq8.gif" />
 
-<p><img src="http://i.imgur.com/BpxJI4c.gif" /></p>
+<img src="http://i.imgur.com/BpxJI4c.gif" />
 
-<p>I'm in the process of trying to bring some organisation to this mess and, dare I say it, plan the rest of the development.</p>
+I'm in the process of trying to bring some organisation to this mess and, dare I say it, plan the rest of the development.

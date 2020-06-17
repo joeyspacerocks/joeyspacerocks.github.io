@@ -5,18 +5,18 @@ date: 20140919
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>It was while I was writing an XML parser in C that I started to question my motivation behind this project ...</p>
+It was while I was writing an XML parser in C that I started to question my motivation behind this project ...
 
-<p>Still, it all worked out - radically cleaned up my Tiled loader code, plus finally sorted out the rest of the system so I can throw entities about with custom handlers for AI etc.</p>
+Still, it all worked out - radically cleaned up my Tiled loader code, plus finally sorted out the rest of the system so I can throw entities about with custom handlers for AI etc.
 
-<p>The result, so far, is that I can flag chunks of scenery as being independent entities that I can then do things with - such as move around on paths (defined using polylines in Tiled), float about in water or have their state changed via triggers.</p>
+The result, so far, is that I can flag chunks of scenery as being independent entities that I can then do things with - such as move around on paths (defined using polylines in Tiled), float about in water or have their state changed via triggers.
 
-<p><img src="http://giant.gfycat.com/DisfiguredCornyCod.gif" /></p>
+<img src="http://giant.gfycat.com/DisfiguredCornyCod.gif" />
 
-<p>Above is a test level showing a simple up/down platform, some tiles following a path, a big chunk of scenery bobbing about in water and a square chunk of stone hanging from the ceiling waiting for a button press to release it.</p>
+Above is a test level showing a simple up/down platform, some tiles following a path, a big chunk of scenery bobbing about in water and a square chunk of stone hanging from the ceiling waiting for a button press to release it.
 
-<p>I've also now replaced the old very specific custom code that drove the up/down platforms with this new generic system, which cleaned things up considerably.</p>
+I've also now replaced the old very specific custom code that drove the up/down platforms with this new generic system, which cleaned things up considerably.
 
-<p>So, I'm getting there with organisation and slowly getting enough elements together so that I can put some proper trial levels together.</p>
+So, I'm getting there with organisation and slowly getting enough elements together so that I can put some proper trial levels together.
 
-<p>Of course if I was't writing this thing from scratch then I wouldn't have had to write a (simple) physics system, an XML parser, a Tiled level loader and a million other things. But I can't help it ... it's more fun this way.</p>
+Of course if I was't writing this thing from scratch then I wouldn't have had to write a (simple) physics system, an XML parser, a Tiled level loader and a million other things. But I can't help it ... it's more fun this way.

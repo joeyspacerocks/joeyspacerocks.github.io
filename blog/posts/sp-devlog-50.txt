@@ -5,29 +5,29 @@ date: 20160503
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>My how time flies.</p>
+My how time flies.
 
-<p>Despite appearances, work is continuing - here's a little list of minor accomplishments to make myself feel better:</p>
+Despite appearances, work is continuing - here's a little list of minor accomplishments to make myself feel better:
 
-<ul>
-<li>Variable-height jumping finally fixed</li>
-<li>Judder when doing a little jump on moving platforms fixed</li>
-<li>Buoyancy problems fixed</li>
-<li>Physics collisions and responses broken by previous two fixes .. um .. fixed</li>
-<li>Gun removed - skeletons don't hold guns silly, they fire lasers from their EYES!</li>
-<li>Auto-aiming (within a certain range / angle) implemented</li>
-<li>Yet another odd machine added - possibly a save point</li>
-<li>Some idle animations added</li>
-</ul>
 
-<p>Everyone loves lists. Look at all those things I can tick off the list I didn't write them on. Unfortunately I haven't ticked off anything that actually was on the list.</p>
+* Variable-height jumping finally fixed
+* Judder when doing a little jump on moving platforms fixed
+* Buoyancy problems fixed
+* Physics collisions and responses broken by previous two fixes .. um .. fixed
+* Gun removed - skeletons don't hold guns silly, they fire lasers from their EYES!
+* Auto-aiming (within a certain range / angle) implemented
+* Yet another odd machine added - possibly a save point
+* Some idle animations added
 
-<p>Here's some GIFs.</p>
 
-<p><img src="http://i.imgur.com/VgiMdON.gif" /></p>
+Everyone loves lists. Look at all those things I can tick off the list I didn't write them on. Unfortunately I haven't ticked off anything that actually was on the list.
 
-<p><img src="http://i.imgur.com/25sbwkH.gif" /></p>
+Here's some GIFs.
 
-<p><img src="http://i.imgur.com/l6eF8CX.gif" /></p>
+<img src="http://i.imgur.com/VgiMdON.gif" />
 
-<p>I'm desperately trying to focus now to give some structure to the game and get some real content built. The fact I'm here writing this shows how easily distracted I am ...</p>
+<img src="http://i.imgur.com/25sbwkH.gif" />
+
+<img src="http://i.imgur.com/l6eF8CX.gif" />
+
+I'm desperately trying to focus now to give some structure to the game and get some real content built. The fact I'm here writing this shows how easily distracted I am ...

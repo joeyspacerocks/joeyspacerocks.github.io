@@ -5,16 +5,16 @@ date: 20141106
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>So recently I've been working on organ collection. Well, it was halloween ...</p>
+So recently I've been working on organ collection. Well, it was halloween ...
 
-<p>In the game the hero must locate and collect his organs, each of which will then give him a power-up. Sometimes the power-up comes with a flip side. For example, collecting his lungs may give him a power (e.g. can blow things, or run faster) but will also limit his time underwater as he can now drown.</p>
+In the game the hero must locate and collect his organs, each of which will then give him a power-up. Sometimes the power-up comes with a flip side. For example, collecting his lungs may give him a power (e.g. can blow things, or run faster) but will also limit his time underwater as he can now drown.
 
-<p>First up is the heart, which will make him stronger meaning he can now push blocks around.</p>
+First up is the heart, which will make him stronger meaning he can now push blocks around.
 
-<p><img src="http://giant.gfycat.com/FaintFlimsyAfricanharrierhawk.gif" /></p>
+<img src="http://giant.gfycat.com/FaintFlimsyAfricanharrierhawk.gif" />
 
-<p>Initially organs are trapped in vessels like the green thing above. At the moment they're freed just when the player collides with them but I'm changing that so that you'll have to jump up and down on it a few times to break the glass, or maybe drop something on it.</p>
+Initially organs are trapped in vessels like the green thing above. At the moment they're freed just when the player collides with them but I'm changing that so that you'll have to jump up and down on it a few times to break the glass, or maybe drop something on it.
 
-<p>Once freed the heart runs/bounces away from him - when collected it sits up in the UI.</p>
+Once freed the heart runs/bounces away from him - when collected it sits up in the UI.
 
-<p>So basics done but need to work on the effects.</p>
+So basics done but need to work on the effects.

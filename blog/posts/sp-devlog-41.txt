@@ -5,10 +5,10 @@ date: 20160131
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>I was supposed to be working on the structure of the game and power-ups this weekend.</p>
+I was supposed to be working on the structure of the game and power-ups this weekend.
 
-<p>Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.</p>
+Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.
 
-<p><img src="https://giant.gfycat.com/PlaintiveRelievedGaur.gif" /></p>
+<img src="https://giant.gfycat.com/PlaintiveRelievedGaur.gif" />
 
-<p>Um. Oops.</p>
+Um. Oops.

@@ -5,10 +5,10 @@ date: 20141126
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Quick update - been working on an intro level where you play as the hero, Horatio prior to being transformed.</p>
+Quick update - been working on an intro level where you play as the hero, Horatio prior to being transformed.
 
-<p>It's only a small level and you lack certain abilities (such as not being able to jump very high, and slowish walk). Eventually you're corralled into ... The Machine:</p>
+It's only a small level and you lack certain abilities (such as not being able to jump very high, and slowish walk). Eventually you're corralled into ... The Machine:
 
-<p><img src="http://giant.gfycat.com/FilthyLegalBluet.gif" /></p>
+<img src="http://giant.gfycat.com/FilthyLegalBluet.gif" />
 
-<p>Not quite finished yet - organs need refining and I want to add some distortion effects over the whole thing using some shader magic, but it's getting there ...</p>
+Not quite finished yet - organs need refining and I want to add some distortion effects over the whole thing using some shader magic, but it's getting there ...

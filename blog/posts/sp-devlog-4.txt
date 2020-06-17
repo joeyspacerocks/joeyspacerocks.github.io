@@ -5,10 +5,10 @@ date: 20140811
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Added some wibbly-wobbly water shader goodness.</p>
+Added some wibbly-wobbly water shader goodness.
 
-<p><img src="http://giant.gfycat.com/FlamboyantJoyousAnemoneshrimp.gif" /></p>
+<img src="http://giant.gfycat.com/FlamboyantJoyousAnemoneshrimp.gif" />
 
-<p>It's not exactly revolutionary but I quite like the effect. Although it offends the purist in me that the game is no longer 16 colours now that I have transparency ...</p>
+It's not exactly revolutionary but I quite like the effect. Although it offends the purist in me that the game is no longer 16 colours now that I have transparency ...
 
-<p>Haven't fixed the bubbles yet though ...</p>
+Haven't fixed the bubbles yet though ...

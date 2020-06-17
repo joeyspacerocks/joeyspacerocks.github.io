@@ -4,22 +4,22 @@ banner: post2.jpg
 date: 20141103
 icon: bullhorn
 
-<p>Version 1.3 of QB1-0 was released to the App Store today!</p>
+Version 1.3 of QB1-0 was released to the App Store today!
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/gJkFGrNRVbY" frameborder="0" allowfullscreen></iframe>
 
-<p>A small update this time, but I fixed a few things that have annoyed me since the original launch:</p>
+A small update this time, but I fixed a few things that have annoyed me since the original launch:
 
-<ul>
-    <li>iPhone 6/6+ native resolution support</li>
-    <li>Fix to off-screen spawning of enemies preventing delays before they arrive</li>
-    <li>Cleared link to instructions on title screen</li><li>Minor tweak to firing spread</li>
-    <li>Upgraded Game Centre integration&nbsp;to remove deprecated calls</li>
-    <li>App Store preview video</li>
-</ul>
 
-<p>QB1-0 plays really well on an iPhone 6 so I'm pretty pleased with it.</p>
+* iPhone 6/6+ native resolution support
+* Fix to off-screen spawning of enemies preventing delays before they arrive
+* Cleared link to instructions on title screen* Minor tweak to firing spread
+* Upgraded Game Centre integration&nbsp;to remove deprecated calls
+* App Store preview video
 
-<p>I'm looking forwards to the reboot project where I'm aiming to expand the game&nbsp;in some new directions.</p>
 
-<p><a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8"><i class="fa fa-star"></i> Download from the App Store now!</a></p>
+QB1-0 plays really well on an iPhone 6 so I'm pretty pleased with it.
+
+I'm looking forwards to the reboot project where I'm aiming to expand the game&nbsp;in some new directions.
+
+[<i class="fa fa-star"></i> Download from the App Store now!](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8)

@@ -5,22 +5,22 @@ date: 20150509
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>Greetings. Wow, has it been that long?</p>
+Greetings. Wow, has it been that long?
 
-<p>I've been distracted by some non-gamedev things for the past couple of months but have kept picking away at Spooky Pooky in the meantime.</p>
+I've been distracted by some non-gamedev things for the past couple of months but have kept picking away at Spooky Pooky in the meantime.
 
-<p>Here's an embryonic water level with some killer fish. Dumb but dangerous.</p>
+Here's an embryonic water level with some killer fish. Dumb but dangerous.
 
-<p><img src="http://giant.gfycat.com/IdenticalWarmheartedIrrawaddydolphin.gif" /></p>
+<img src="http://giant.gfycat.com/IdenticalWarmheartedIrrawaddydolphin.gif" />
 
-<p><img src="http://giant.gfycat.com/ElegantHomelyAndeancockoftherock.gif" /></p>
+<img src="http://giant.gfycat.com/ElegantHomelyAndeancockoftherock.gif" />
 
-<p>I've also been cleaning up some of the triggers so that levels can include single-use buttons and timed buttons/triggers that turn themselves off a short while after being activated.</p>
+I've also been cleaning up some of the triggers so that levels can include single-use buttons and timed buttons/triggers that turn themselves off a short while after being activated.
 
-<p>Additionally I changed the logic when you hit something. Colliding with something bad costs you a life, much like many other platformers. I've kept the damage-o-meter so that I can use it once you've got some other power-ups.</p>
+Additionally I changed the logic when you hit something. Colliding with something bad costs you a life, much like many other platformers. I've kept the damage-o-meter so that I can use it once you've got some other power-ups.
 
-<p>Lurking over the page of my todo list are the big things - namely a PC port and audio.</p>
+Lurking over the page of my todo list are the big things - namely a PC port and audio.
 
-<p>To sort the port out I'm looking at using SDL 2 to wrap my init code and get hold of an OpenGL surface. I'll dualboot my Mac so I can dev/test under windows but naively I don't see too many problems.</p>
+To sort the port out I'm looking at using SDL 2 to wrap my init code and get hold of an OpenGL surface. I'll dualboot my Mac so I can dev/test under windows but naively I don't see too many problems.
 
-<p>Seems to me that the best way to get some kind of demo out into the hands of anyone who fancies a play is to go PC - iOS is just too much of a barrier to getting it out there.</p>
+Seems to me that the best way to get some kind of demo out into the hands of anyone who fancies a play is to go PC - iOS is just too much of a barrier to getting it out there.

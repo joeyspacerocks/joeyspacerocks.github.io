@@ -3,60 +3,60 @@ url: written_a_game_now_what
 banner: post4.jpg
 date: 20140719
 
-<p>Silence is golden. On the other hand, when it's the silence that greets the release of your pride and joy that you've spent the last year slaving away at, it's not so much golden as a disturbing brown.</p>
+Silence is golden. On the other hand, when it's the silence that greets the release of your pride and joy that you've spent the last year slaving away at, it's not so much golden as a disturbing brown.
 
-<p>Let's get anecdotal. I wrote a game called <a href="http://qb1-0.canfactory.com">QB1-0</a> and released it in December 2012 on the <a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8">iOS app store</a>. It's an arcade space shooter with a retro style. I like it, and I know for a fact that at least four other people do to. Some of us still play it.</p>
+Let's get anecdotal. I wrote a game called [QB1-0](http://qb1-0.canfactory.com) and released it in December 2012 on the [iOS app store](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8). It's an arcade space shooter with a retro style. I like it, and I know for a fact that at least four other people do to. Some of us still play it.
 
-<p>It was greeted, predictably, with ... well, it wasn't really greeted at all. A handful of copies were purchased, mainly by friends and family. Not totally unexpected; after all who would know it existed?</p>
+It was greeted, predictably, with ... well, it wasn't really greeted at all. A handful of copies were purchased, mainly by friends and family. Not totally unexpected; after all who would know it existed?
 
-<p>I wrote QB1-0 in my spare time over the course of two years purely for the experience of writing and releasing it. During development I didn't harbour too many unrealistic notions that it would be some kind of run-away success. However, despite what I felt then, the instance the finished product was released out into the world I changed my mind.</p>
+I wrote QB1-0 in my spare time over the course of two years purely for the experience of writing and releasing it. During development I didn't harbour too many unrealistic notions that it would be some kind of run-away success. However, despite what I felt then, the instance the finished product was released out into the world I changed my mind.
 
-<p>Actually finishing a small but reasonably polished game is an achievement in itself. So why didn't anyone want to buy it?</p>
+Actually finishing a small but reasonably polished game is an achievement in itself. So why didn't anyone want to buy it?
 
-<p>Just for kicks let's list some possible reasons.</p>
+Just for kicks let's list some possible reasons.
 
-<p><strong>It's not free.</strong></p>
+**It's not free.**
 
-<p>Yes, people won't buy a game if it's not free. People don't like the idea of dropping a small amount of cash (in this case 99c) on a game. Instead the cool kids are all downloading games for free and either putting up with ads or being suckered into spending more money via in-app purchases. So having an initial price tag is an instant barrier.</p>
+Yes, people won't buy a game if it's not free. People don't like the idea of dropping a small amount of cash (in this case 99c) on a game. Instead the cool kids are all downloading games for free and either putting up with ads or being suckered into spending more money via in-app purchases. So having an initial price tag is an instant barrier.
 
-<p>I just can't do it though. Ads offend the aesthetic, and in-app purchases just seem so ... grubby. In my mind a game should be a complete thing - you pay once and you have it. Plus you get free upgrades for life (*not a guarantee).</p>
+I just can't do it though. Ads offend the aesthetic, and in-app purchases just seem so ... grubby. In my mind a game should be a complete thing - you pay once and you have it. Plus you get free upgrades for life (* not a guarantee).
 
-<p>(NB. If my next game has in-app purchases I won't care. I'm shameless.)</p>
+(NB. If my next game has in-app purchases I won't care. I'm shameless.)
 
-<p><strong>No one knows it's there</strong></p>
+**No one knows it's there**
 
-<p>I released this game into a vacuum. There was no development log, no twitter account with little progress updates, no trailers. It's a <em>massively</em> flooded market, with hundreds of other games being released all the time, of varying degrees of quality. I half-heartedly sent out some 'press releases' to a few of the bigger review sites, but I can't say I'm too surprised that I didn't hear anything.</p>
+I released this game into a vacuum. There was no development log, no twitter account with little progress updates, no trailers. It's a *massively* flooded market, with hundreds of other games being released all the time, of varying degrees of quality. I half-heartedly sent out some 'press releases' to a few of the bigger review sites, but I can't say I'm too surprised that I didn't hear anything.
 
-<p><strong>It's not good enough</strong></p>
+**It's not good enough**
 
-<p>I said possible reasons - of course it's good enough! The feedback I've had is enough to encourage me that, yes, it is a fun game. I'm a single developer building this thing in my spare time. The game is a little lacking in depth but I took care to polish and tune it so that it was as good as I can make it. However, when you've got triple-A games selling in the app store for 99c, or worse, for <em>free</em>, it's difficult to compete.</p>
+I said possible reasons - of course it's good enough! The feedback I've had is enough to encourage me that, yes, it is a fun game. I'm a single developer building this thing in my spare time. The game is a little lacking in depth but I took care to polish and tune it so that it was as good as I can make it. However, when you've got triple-A games selling in the app store for 99c, or worse, for *free*, it's difficult to compete.
 
-<p><strong>There's no market for it</strong></p>
+**There's no market for it**
 
-<p>Now this one may be more to the point. I made a high-octane asteroids clone. Is there a market for that? Well probably, but it's not going to be mainstream. I didn't approach this from a business angle. There was no research to find out what people are playing, no pre-release buzz and the wrong monetisation model.</p>
+Now this one may be more to the point. I made a high-octane asteroids clone. Is there a market for that? Well probably, but it's not going to be mainstream. I didn't approach this from a business angle. There was no research to find out what people are playing, no pre-release buzz and the wrong monetisation model.
 
-<p>So poor old QB1-0 sat there and languished while I moved on to other things. I released a little update to fix a few bugs and add Game Centre support and put a gameplay trailer up on YouTube. However, that didn't help.</p>
+So poor old QB1-0 sat there and languished while I moved on to other things. I released a little update to fix a few bugs and add Game Centre support and put a gameplay trailer up on YouTube. However, that didn't help.
 
-<p>I wrote a <a href="http://pixelated.postagon.com/5g437329d">blog post</a> about the struggle of writing the game in my spare time. Miraculously that was pretty popular and stayed at the top of <a href="https://news.ycombinator.com/">Hacker News</a> for a day garnering around 16,000 views and a lively discussion thread (there's a lot of kindred spirits out there). That generated a nice little handful of sales and a few nice reviews in the app store, but in reality the blog audience (hi) aren't really the target market - I'm not saying you're all cheap, but ...</p>
+I wrote a [blog post](http://pixelated.postagon.com/5g437329d) about the struggle of writing the game in my spare time. Miraculously that was pretty popular and stayed at the top of [Hacker News](https://news.ycombinator.com/) for a day garnering around 16,000 views and a lively discussion thread (there's a lot of kindred spirits out there). That generated a nice little handful of sales and a few nice reviews in the app store, but in reality the blog audience (hi) aren't really the target market - I'm not saying you're all cheap, but ...
 
-<p>Encouraged by the blog success I put together another update for the game, adding iPad support and some graphics updates. That went out in May and, yes, you've guessed it disappeared under the waves without a trace.</p>
+Encouraged by the blog success I put together another update for the game, adding iPad support and some graphics updates. That went out in May and, yes, you've guessed it disappeared under the waves without a trace.
 
-<p>Finally, a few weeks ago I put out a few more forum posts here and there and set up a profile on <a href="http://indedb.com">IndieDB</a>. The game was noticed by a really nice chap who reviewed it (<a href="http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html">Indie Game Enthusiast</a>) and more importantly liked it!</p>
+Finally, a few weeks ago I put out a few more forum posts here and there and set up a profile on [IndieDB](http://indedb.com). The game was noticed by a really nice chap who reviewed it ([Indie Game Enthusiast](http://indiegameenthusiast.blogspot.co.uk/2014/07/ios-spotlight-80-qb1-0.html)) and more importantly liked it!
 
-<p>(NB. seriously if you're into games and the indie scene - of course you are - follow <a href="http://twitter.com/IG_Enthusiast">@IG_Enthusiast</a> - he's been super supportive of the game, and syndicated his review to <a href="http://gamemob.com/news/indie-game-ios-spotlight-qb1-0/">GameMob</a>.)</p>
+(NB. seriously if you're into games and the indie scene - of course you are - follow [@IG_Enthusiast](http://twitter.com/IG_Enthusiast) - he's been super supportive of the game, and syndicated his review to [GameMob](http://gamemob.com/news/indie-game-ios-spotlight-qb1-0/).)
 
-<p>Just the fact that there has been some really positive feedback from an independent and credible source has given me faith again, plus it taught me an insanely obvious lesson - you've got to get out there and hustle. For me the game development is the easy bit - it's the networking and the constant lookout for opportunities to promote that I find harder. It can be kind of fun too, but it really doesn't come naturally.</p>
+Just the fact that there has been some really positive feedback from an independent and credible source has given me faith again, plus it taught me an insanely obvious lesson - you've got to get out there and hustle. For me the game development is the easy bit - it's the networking and the constant lookout for opportunities to promote that I find harder. It can be kind of fun too, but it really doesn't come naturally.
 
-<p>Follow me on Twitter <a href="https://twitter.com/joeyspacerocks" style="font-size: 20px;">@joeyspacerocks</a>. See, subtle huh?</p>
+Follow me on Twitter [@joeyspacerocks](https://twitter.com/joeyspacerocks). See, subtle huh?
 
-<p>So, I'll do another update and I'll continue with the next game because as long as there's one or two people who enjoy it, well that makes it all worthwhile.</p>
+So, I'll do another update and I'll continue with the next game because as long as there's one or two people who enjoy it, well that makes it all worthwhile.
 
-<p>So to any other indie devs out there in the same boat - yeah, the odds are against us but you can do a lot to improve them. Set up an <a href="http://indiedb.com">IndieDB</a> account. Get active on <a href="http://forums.tigsource.com">TigSource forums</a>. Twitter. (I can't bring myself to say Facebook, but you're probably already there.)</p>
+So to any other indie devs out there in the same boat - yeah, the odds are against us but you can do a lot to improve them. Set up an [IndieDB](http://indiedb.com) account. Get active on [TigSource forums](http://forums.tigsource.com). Twitter. (I can't bring myself to say Facebook, but you're probably already there.)
 
-<p>Be honest with yourself about the quality of your work. You'll get a ton of useful feedback and eventually someone will write some nice words about something you've built and it'll all be worth it.</p>
+Be honest with yourself about the quality of your work. You'll get a ton of useful feedback and eventually someone will write some nice words about something you've built and it'll all be worth it.
 
-<p>Unless of course you threw caution to the wind, quit your job and do this for money. In that case I look forward to seeing your Match-3 with in-app purchases for extended play.</p>
+Unless of course you threw caution to the wind, quit your job and do this for money. In that case I look forward to seeing your Match-3 with in-app purchases for extended play.
 
-<p>Almost forgot: <a href="https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8">buy QB1-0 now</a>. It looks nice and smells of lemons. It's only 99c and you get to play it as much as you want.</p>
+Almost forgot: [buy QB1-0 now](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8). It looks nice and smells of lemons. It's only 99c and you get to play it as much as you want.
 
 

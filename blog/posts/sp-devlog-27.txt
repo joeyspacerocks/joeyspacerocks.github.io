@@ -5,22 +5,22 @@ date: 20150815
 icon: cogs
 tags: devlog,spooky-pooky
 
-<p>So then, this week I've been continuing the elemental theme and have been crafting an electrical demon. Or something.</p>
+So then, this week I've been continuing the elemental theme and have been crafting an electrical demon. Or something.
 
-<p><img src="http://fat.gfycat.com/ArcticDiligentBats.gif" /></p>
+<img src="http://fat.gfycat.com/ArcticDiligentBats.gif" />
 
-<p>It's using the same approach I took with the titles but I've made it generic now.</p>
+It's using the same approach I took with the titles but I've made it generic now.
 
-<p>Any sprite (including sprites in animations) can have an associated point-cloud (simply an array of vectors) indicating non-blank pixels.</p>
+Any sprite (including sprites in animations) can have an associated point-cloud (simply an array of vectors) indicating non-blank pixels.
 
-<p>At render time I can then use the algorithm I'm using with the titles to generate electrical sparks between random points in the sprite, within a threshold distance. The sparks hang about for a bit and fade out.</p>
+At render time I can then use the algorithm I'm using with the titles to generate electrical sparks between random points in the sprite, within a threshold distance. The sparks hang about for a bit and fade out.
 
-<p>Nice thing about this is I can also do other things with the point-cloud, like emit particles:</p>
+Nice thing about this is I can also do other things with the point-cloud, like emit particles:
 
-<p><img src="http://fat.gfycat.com/MeagerPresentGoldeneye.gif" /></p>
+<img src="http://fat.gfycat.com/MeagerPresentGoldeneye.gif" />
 
-<p>The actual sprite I'm using for this is just for testing, but due to the nature of the rendering can be extremely crude:</p>
+The actual sprite I'm using for this is just for testing, but due to the nature of the rendering can be extremely crude:
 
-<p><img src="http://i.imgur.com/DtAvFPg.png" /></p>
+<img src="http://i.imgur.com/DtAvFPg.png" />
 
-<p>I think you'll agree that that is just a doggone work of art. You can see now why I have to prop up the art with effects ...</p>
+I think you'll agree that that is just a doggone work of art. You can see now why I have to prop up the art with effects ...
