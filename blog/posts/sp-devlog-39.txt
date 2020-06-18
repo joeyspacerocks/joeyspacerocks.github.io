@@ -21,4 +21,4 @@ For rendering it all goes into the same batch system that I use for all the othe
 
 At the numbers I have in the game at the moment they have a negligible effect on performance - nothing like my previous game, QB1-0:
 
-<img src="https://fat.gfycat.com/WetGleefulAxolotl.gif" />
+![](images/WetGleefulAxolotl.gif)

@@ -11,11 +11,11 @@ Still, I've been fleshing out the intro level where you begin as Horatio and end
 
 Basic premise is that Horatio stumbles into a disused lab area that he shouldn't be in - at the end the player ends up in the machine.
 
-<img width="667" src="http://i.imgur.com/tCycHob.png" />
+![](images/tCycHob.png)
 
-<img width="667" src="http://i.imgur.com/WCOHss7.png" />
+![](images/WCOHss7.png)
 
-<img width="667" src="http://i.imgur.com/n2Dts14.png" />
+![](images/n2Dts14.png)
 
 Added some transitions between levels to show little captions, and cleaned up the state management code a bit.
 

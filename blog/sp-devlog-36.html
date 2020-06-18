@@ -28,25 +28,15 @@
                 <p class="publish">Published on <span class="date">13 Jan 2016</span> by Joe</p>
 
                 <p>And ... I'm back in the game. Took a little break over Christmas and the neglect caused Spooky Pooky to get very cross with me.</p>
-
 <p>Fired it up and randomly fullscreen was running at about 30fps.</p>
-
 <p>No idea why - MacBookPro retina using GLFW and OGL 3.2. Windowed still worked fine, even a window the same size as fullscreen.</p>
-
 <p>So began a long and ultimately fruitless journey to try and work what the hell was happening. Over Christmas I'd done two things that I thought could be relevant. The first was that I played quite a bit of Elite Dangerous, in full screen. The second was that I plugged my laptop into my Sony TV via HDMI.</p>
-
 <p>Still not understanding the problem I switched the window + context creation code to use SFML (since I was planning to do that anyway) with no discernible difference. Finally I switched vsync off and suddenly it was running at full speed again (actually ridiculous speed, since I'd artificially set delta times to 1/60s to help with debug pauses, so it was blasting along at 7 billion fps).</p>
-
 <p>Anyway, none the wiser really.</p>
-
 <p>Since then I've bypassed the SFML fullscreen mode when running on macs to make the game compatible with OS X fullscreen stuff, meaning I don't have to deal with context recreation (a pain since context sharing doesn't work on OS X with the OGL version I use).</p>
-
 <p>Brilliant. Anyway, mapping the input over to use SFML was trivial so the game is back to running how it should and I can get on with fixing the room transition code.</p>
-
 <p>Originally the game was being written as a level-based thingy - now it's a metroidvania. So levels have become rooms, and it lets you randomly wander between them. It's been fairly easy to transition the game to this. Each room is a Tiled map and I cache them in memory, preserving entity state as you wander between them.</p>
-
 <p>Rooms can be grouped into sections so I may flush whole sections out of memory when you cross the boundary - either way it's a fairly lazy system.</p>
-
                 
             </div>
 

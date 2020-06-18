@@ -11,7 +11,7 @@ In the game the hero must locate and collect his organs, each of which will then
 
 First up is the heart, which will make him stronger meaning he can now push blocks around.
 
-<img src="http://giant.gfycat.com/FaintFlimsyAfricanharrierhawk.gif" />
+![](images/FaintFlimsyAfricanharrierhawk.gif)
 
 Initially organs are trapped in vessels like the green thing above. At the moment they're freed just when the player collides with them but I'm changing that so that you'll have to jump up and down on it a few times to break the glass, or maybe drop something on it.
 

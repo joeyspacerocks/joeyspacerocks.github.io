@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Sometimes the simplest of things take an age to get working. Like room transitions. As seen in the horribly laggy gif below:
 
-<img src="https://fat.gfycat.com/GoodnaturedWarmheartedFirefly.gif" />
+![](images/GoodnaturedWarmheartedFirefly.gif)
 
 My rooms are stored as separate Tiled maps. There is an entity type called a 'transporter' which has a collision function attached to it. When a player runs into the transporter it assumes control (via a generic target property, and a corresponding owner property in the player entity).
 

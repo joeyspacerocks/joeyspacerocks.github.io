@@ -9,7 +9,7 @@ The dialogue system is in the game at last. It didn't take too much time really 
 
 Here's an example:
 
-<img src="http://i.imgur.com/q7t7HN3.gif" />
+![](images/q7t7HN3.gif)
 
 So there are few things going on here. First I extended the custom UI code I had that handles the menus and option panels to handle more general situations.
 

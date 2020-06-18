@@ -28,35 +28,21 @@
                 <p class="publish">Published on <span class="date">20 Feb 2017</span> by Joe</p>
 
                 <p>Despite appearances, I've actually been making pretty consistent and real progress for the last few months (by my own definition of 'progress').</p>
-
 <p>I've a fairly well defined sense of the opening chunk of the game, so I've knuckled down to attempt to get a first pass of that done.</p>
-
 <p>Spooky Pooky opens with our protagonist floating in a jar, memory-wiped (in the best tradition of the genre). Once freed there's a little bit of basic platforming to warm the player up and then the first 'power-up' - the brain.</p>
-
 <p>This is really just a device to trigger a flood of memories, which take the form of a playable flashback section of the game set back when the hero was still a bumbling lab assistant and culminating in the transformation by The Machine.</p>
-
 <p>So, a bit of scene-setting then. I didn't want to open with this as it seemed more fun to play around with the narrative sequence a little.</p>
-
 <p>First up, here's the finished-ish result.</p>
-
-<p><img src="http://i.imgur.com/jl3Fnpx.gif" /></p>
+<video autoplay="true" muted="true" loop="true"><source src="images/jl3Fnpx.mp4" type="video/mp4"></video>
 
 <p>From a technical point of view I've made quite a few changes here. The actual wibbly stuff is all implemented in a single post-processor shader. This combines some radial blurring, some fake bloom and a simple noise function to permutate the edge.</p>
-
-<p>That green, though. Seriously, that's green. Might need to revisit that. I mean, I like green, but .. yeah, that is really .. green.<p>
-
+<p>That green, though. Seriously, that's green. Might need to revisit that. I mean, I like green, but .. yeah, that is really .. green.</p>
 <p>From a structural point of view though I've addressed a few things to get this scene working. This game is being written in C with no scripting language in play, so all in-game events need to be wired up somehow. The maps are built in Tiled with the judicious use of Tiled objects for things like invisible event triggers.</p>
-
 <p>The main tidy up was around entity instantiation during the Tiled map loading. Each entity type now has a pointer to a 'builder' function registered against a type name that's matched with the incoming Tiled data. Additionally I can give any Tiled object an 'event handler' property which is used to match against similarly registered event handle functions.</p>
-
 <p>This is quite flexible and means that I can use builders for common repeated entities (such as platforms, monsters, containers, etc) but just one-off event handlers for things that are only used once, such as in this case for 'scripting' the lift (when you reach the top it plummets and then jerks to a halt at the bottom).</p>
-
 <p>Nice to finally clean that up.</p>
-
 <p>The next step for this intro will be to get the player to the machine that transforms them, before ending the flashback and returning to 'now'.</p>
-
 <p>I don't want the player to have to dawdle about too long in the non-pookified (yes, that's a word) state, but I'd also like to get them to visit some rooms that they'll get to see later in the game.</p>
-
                 
             </div>
 

@@ -13,7 +13,7 @@ Turns out that it wasn't too hard to add in, and it does give me some new tools 
 
 Here's an example of an existing room with some hastily added lighting.
 
-<img src="http://i.imgur.com/OsPxrDY.gif" />
+![](images/OsPxrDY.gif)
 
 From a design point of view I can now add lights to a room in a few ways. I have a basic 'light' entity which ends up rendering a beam of light within whatever rectangular object boundaries are defined. So I can use those for light shafts.
 

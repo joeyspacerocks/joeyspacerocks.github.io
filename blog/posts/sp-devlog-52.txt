@@ -13,7 +13,7 @@ As an aside, I'm also going to play around with a script for augmenting room fil
 
 I've also simplified doors and exits (the GIF below shows some basic generates rooms - with manually added stuff on top). Previously exits were a mixture of tiles, invisible trigger areas and door objects placed into a room. Now an exit is a single Tiled object plonked into a room. In game this becomes an entity backed by an appropriate sprite and a door is automatically added next to it. The direction you exit the room in (i.e. up/down/left/right) is automatically determined by the edge the exit is added to, and the destination room identified from the world map (discussed in a previous entry).
 
-<img src="http://i.imgur.com/QwzRECY.gif" />
+![](images/QwzRECY.gif)
 
 I finally added in floor/ceiling exits too. Pretty simple except that it finally made me address the issue of how to deal with logistics. Vertical exits are simple as you just walk into them. The doors have a range within which they automatically open or close.
 
@@ -27,7 +27,7 @@ So much for doors.
 
 This is a supposed to be a game with a touch of the grotesque. So with that in mind, how about a little power-up that enables you to detach the upper part of your head fro your body and then run around the world in a disembodied state. Helpfully it also lets you scuttle through low areas.
 
-<img src="http://i.imgur.com/ku1wQvF.gif" />
+![](images/ku1wQvF.gif)
 
 It's not terribly well thought through at the moment - bugs galore and it's quite easy to lose your body. Never mind.
 

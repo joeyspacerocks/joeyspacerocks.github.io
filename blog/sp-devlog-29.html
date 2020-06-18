@@ -28,21 +28,14 @@
                 <p class="publish">Published on <span class="date">31 Aug 2015</span> by Joe</p>
 
                 <p>Recently I've been playing around with title screens which lead to a much needed tidy-up of various aspects of the code-base.</p>
-
 <p>Specifically I've now made the level code a bit more self-contained so that I can, for instance, design arbitrary screens using levels.</p>
-
 <p>So the title screen is now just another level with electrical entities for the titles themselves, etc.</p>
-
-<p><img src="http://fat.gfycat.com/RashPassionateCaiman.gif" /></p>
+<video autoplay="true" muted="true" loop="true"><source src="images/RashPassionateCaiman.mp4" type="video/mp4"></video>
 
 <p>It's only a stand-in for the moment as from a design point of view it's a bit messy plus there's not actually any room for UI menus and the like.</p>
-
 <p>Next up is a long-overdue clean of the render code. Specifically I never really handled rendering entities at different depths very well - I simply kept the entities in different buckets (arrays) in the level and used those to render them. I did it this for simplicity and because it was quick to knock together when I needed it. This obviously led to some nasty code in other places where I want to iterate over.</p>
-
 <p>So I'm finally going to fix this and add some proper sorting in the render code. While I'm at it I'll also sort by 'material' to clean up my existing batching code that I'm using to render all sprites in single draw calls.</p>
-
 <p>The inspiration for this clean up goes to an old article by <a href="http://realtimecollisiondetection.net/blog/?p=86">Christer Ericson</a>.</p>
-
                 
             </div>
 

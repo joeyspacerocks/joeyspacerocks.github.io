@@ -9,7 +9,7 @@ I've been tweaking the system a bit so that I can properly attach entities in Ti
 
 Below is a laser/forcefield attached to the moving platform. Had some fun messing about with particles to add some steam where the laser hits the water and sparks for the ground.
 
-<img src="http://giant.gfycat.com/LoathsomeUntriedBufeo.gif" />
+![](images/LoathsomeUntriedBufeo.gif)
 
 I've also zoomed out a bit so that you can see more of the play area - will give me more options for level design.
 

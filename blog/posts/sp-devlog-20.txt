@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Apologies that this update is similar to the last but I finally got the momentum stuff working properly. Thought it was before but ... y'know, bugs and things.
 
-<img src="http://fat.gfycat.com/VillainousUntimelyDrongo.gif" />
+![](images/VillainousUntimelyDrongo.gif)
 
 The funny thing about doing physics for platformers is that you end up with a mixture of 'real' modelling (e.g. momentum, buoyancy and other force equations) and 'hacks'. In this case when something is resting on something else (like the player on a moving platform, or a block sitting on a floating block) I do what many people do and 'attach' it.
 

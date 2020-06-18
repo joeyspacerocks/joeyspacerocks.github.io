@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Fixed the tiling bug and experimented with changing the scale.
 
-<img src="http://giant.gfycat.com/OddballComplexCuttlefish.gif" />
+![](images/OddballComplexCuttlefish.gif)
 
 I like big pixels, but there's no getting away from the fact that a larger view area gives me a lot more level design options.
 

@@ -9,6 +9,6 @@ I was supposed to be working on the structure of the game and power-ups this wee
 
 Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.
 
-<img src="https://giant.gfycat.com/PlaintiveRelievedGaur.gif" />
+![](images/PlaintiveRelievedGaur.gif)
 
 Um. Oops.

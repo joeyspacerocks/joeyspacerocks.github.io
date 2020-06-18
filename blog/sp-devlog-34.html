@@ -28,41 +28,24 @@
                 <p class="publish">Published on <span class="date">12 Dec 2015</span> by Joe</p>
 
                 <p>Spooky Pooky finally has some audio in it.</p>
-
 <p>After a bit of thrashing about trying to decide between straight OpenAL, FMod, Wwise, random wrapper libraries and SFML I fell off my toilet, banged my head and had an epiphany.</p>
-
 <p>Once I cleaned that up I just chucked SFML in there and never looked back. Currently using GLFW to get a window + OpenGL context set up, so I'll probably ditch that and use SFML there too - no point having two libraries.</p>
-
 <p>For iOS I'll just use the CoreAudio / OpenAL code I've used for my previous game (QB1-0) as it's pretty easy when it's just one platform to worry about.</p>
-
 <p>Like a lot of non-audio people I find adding sound to games pretty daunting - but to be honest it's like lots of things, you've just got to start doing something and let it grow from there.</p>
-
 <p>So I grabbed a whole bunch of weird samples from <a href="http://99sounds.com">99sounds.com</a> (great resource) and messed about with them in Audacity before chucking them into the game.</p>
-
 <p>My audio wrapper code is very straightforward at the moment - just maintain a map SFML sound buffers and an array of sound instances. I've added some spatial support for sounds on the left/right of the screen are located correctly which seems to work fine.</p>
-
 <p>There's only a few samples in there at the moment, but it really brings the game to life (every one always says this, but it's so true).</p>
-
 <p>Music is an interesting subject. My only musical skill is really the same as my core artistic skill - I really know when the output is a bit crap. I just can't grok proper DAWs - it's like trying to use Photoshop for me; I just don't have the years of using the tools that it really takes to be able to use them properly.</p>
-
 <p>Luckily I stumbled across <a href="http://boscaceoil.net/">Bosca Ceoil </a> by Terry Cavanagh and it's so much fun to use. Not sure the results are much good at the moment, but I can get a sense of progress here and some of it's sounding ok. I've put some in the game and it fits reasonably well.</p>
-
 <p>Here's a GIF showcasing the audio:</p>
-
-<p><img src="https://giant.gfycat.com/CaringSerpentineHarpseal.gif" /></p>
+<video autoplay="true" muted="true" loop="true"><source src="images/CaringSerpentineHarpseal.mp4" type="video/mp4"></video>
 
 <p>In other news - I'm rejigging where in the story the game opens. Originally I had the player starting as Horatio in his human form, stumbling across the machine that transforms him. However, Horatio lacks the speed and agility of the skeletal version, and the stage had no clear purpose to the player. So I was worried that the player would get turned off and bored before really getting into it.</p>
-
 <p>So I've decided to start the game with a scene similar to the above - you're an animated skeleton trapped in a glass jar and you don't know why or how you got there. In this first little section you find your brain (or maybe just your hippocampus) whereupon you regain your memory of how you got there.</p>
-
 <p>This part will then be presented as a playable flashback scene detailing Horatio's fall from flesh.</p>
-
 <p>Well it's a plan - being a metroidvania you'll come across the lab + machine area again later in the game.</p>
-
 <p>Oh yeah, one last technological development. There's doors. Look, there's one sliding up there. Everyone loves a game with doors in it.</p>
-
 <p>Adding them was reasonably simple - they're just entities that are solid (for which I had to rejig my collision code, previously only used for tile chunks) with paths and triggers.</p>
-
                 
             </div>
 

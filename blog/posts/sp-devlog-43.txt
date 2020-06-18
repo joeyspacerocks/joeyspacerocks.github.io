@@ -9,11 +9,11 @@ I began the week doodling some UI elements, which was surprisingly fun.
 
 I came up with a health / damage indicator bar ..
 
-<img src="http://i.imgur.com/MzzldfF.png" />
+![](images/MzzldfF.png)
 
 .. and a minimap ..
 
-<img src="http://i.imgur.com/qJAG280.png" />
+![](images/qJAG280.png)
 
 Both of these use masks to render their contents with a bit of a glow which gives it a nice pseudo-sci-fi look.
 
@@ -23,7 +23,7 @@ So, I've implemented a world map that describes how rooms in the game fit togeth
 
 To do this I use a single Tiled file with a special tileset for describing rooms and connections:
 
-<img src="http://i.imgur.com/GwnN7Nq.png" />
+![](images/GwnN7Nq.png)
 
 The squares tiles are cells (roughly a screen-sized area) that join together to form rooms. I use the connector tiles to join the rooms together.
 

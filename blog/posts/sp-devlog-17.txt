@@ -11,13 +11,13 @@ I've finally started building 'real' levels, hopefully for a demo build containi
 
 Level 1 ends with Horatio and his organs separated into jar containers and shipped off to different parts of the lab. So it makes sense for level 2 to start with our hero in a spot of bother ...
 
-<img src="http://giant.gfycat.com/SimpleCriminalAngelfish.gif" />
+![](images/SimpleCriminalAngelfish.gif)
 
 Currently Horatio's escape from the jar is just time based so I may need to make that user-controlled using a simple movement wiggle or something. Or not.
 
 Once freed level 2 is designed to teach the user blood collection and basic jumping / object avoidance ...
 
-<img src="http://giant.gfycat.com/DependableEcstaticArthropods.gif" />
+![](images/DependableEcstaticArthropods.gif)
 
 The funny thing about actually building levels is that you almost immediately realise how little your game code will support it. For example, I've got some collision code for sprite based enemies, but the first thing I go and do is put the electricity barrier in that he has to jump over. Obviously I then realise that I've got no support for collisions with path based entities like that. So, stop the level build and back to the code.
 

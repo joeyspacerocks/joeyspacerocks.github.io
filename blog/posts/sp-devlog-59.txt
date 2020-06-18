@@ -17,7 +17,7 @@ So, a bit of scene-setting then. I didn't want to open with this as it seemed mo
 
 First up, here's the finished-ish result.
 
-<img src="http://i.imgur.com/jl3Fnpx.gif" />
+![](images/jl3Fnpx.gif)
 
 From a technical point of view I've made quite a few changes here. The actual wibbly stuff is all implemented in a single post-processor shader. This combines some radial blurring, some fake bloom and a simple noise function to permutate the edge.
 

@@ -11,9 +11,9 @@ I've been distracted by some non-gamedev things for the past couple of months bu
 
 Here's an embryonic water level with some killer fish. Dumb but dangerous.
 
-<img src="http://giant.gfycat.com/IdenticalWarmheartedIrrawaddydolphin.gif" />
+![](images/IdenticalWarmheartedIrrawaddydolphin.gif)
 
-<img src="http://giant.gfycat.com/ElegantHomelyAndeancockoftherock.gif" />
+![](images/ElegantHomelyAndeancockoftherock.gif)
 
 I've also been cleaning up some of the triggers so that levels can include single-use buttons and timed buttons/triggers that turn themselves off a short while after being activated.
 

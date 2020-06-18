@@ -9,7 +9,7 @@ So a little update - I've pretty much finished level 2 of my first demo set of l
 
 Aim was to give the player some space to get used to jumping whilst introducing the idea that electricity hurts. Nothing too exciting or revolutionary so I may go back to it later after I have some real enemies sorted.
 
-<img src="http://i.imgur.com/HakfHge.png" />
+![](images/HakfHge.png)
 
 At this resolution the whole thing just looks like a load of white lines - later levels will start to break this up as at the start you're still in the lab complex before you descend to the more outlandish depths ...
 

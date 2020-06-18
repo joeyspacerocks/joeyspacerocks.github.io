@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Added some wibbly-wobbly water shader goodness.
 
-<img src="http://giant.gfycat.com/FlamboyantJoyousAnemoneshrimp.gif" />
+![](images/FlamboyantJoyousAnemoneshrimp.gif)
 
 It's not exactly revolutionary but I quite like the effect. Although it offends the purist in me that the game is no longer 16 colours now that I have transparency ...
 

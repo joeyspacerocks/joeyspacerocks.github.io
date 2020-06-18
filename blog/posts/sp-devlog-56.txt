@@ -13,8 +13,8 @@ It may not have worked, but let's give it a go anyway.
 
 So, here's some bats. Apparently all games need to have bats nowadays.
 
-<img src="http://i.imgur.com/Ol4QXq8.gif" />
+![](images/Ol4QXq8.gif)
 
-<img src="http://i.imgur.com/BpxJI4c.gif" />
+![](images/BpxJI4c.gif)
 
 I'm in the process of trying to bring some organisation to this mess and, dare I say it, plan the rest of the development.

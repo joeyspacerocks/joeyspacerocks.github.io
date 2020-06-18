@@ -9,10 +9,10 @@ So I'm still plugging away at Spooky Pooky after a short interlude whilst I patc
 
 Latest update is to tidy up some of the physics code so that I could impart some physically implausible reaction forces to platforms when landed on.
 
-<img src="http://giant.gfycat.com/InsistentScaryCapeghostfrog.gif" />
+![](images/InsistentScaryCapeghostfrog.gif)
 
 Similarly for floating platforms, albeit a bit more subtlety.
 
-<img src="http://giant.gfycat.com/CarefreeLastingArchaeopteryx.gif" />
+![](images/CarefreeLastingArchaeopteryx.gif)
 
 Tweaking this kind of stuff is really just a way of getting back into the flow of it after a bit of a creative slump. Going to change the control system next to try and improve gameplay as at the moment it's really just too twitchy.

@@ -11,7 +11,7 @@ Still, it all worked out - radically cleaned up my Tiled loader code, plus final
 
 The result, so far, is that I can flag chunks of scenery as being independent entities that I can then do things with - such as move around on paths (defined using polylines in Tiled), float about in water or have their state changed via triggers.
 
-<img src="http://giant.gfycat.com/DisfiguredCornyCod.gif" />
+![](images/DisfiguredCornyCod.gif)
 
 Above is a test level showing a simple up/down platform, some tiles following a path, a big chunk of scenery bobbing about in water and a square chunk of stone hanging from the ceiling waiting for a button press to release it.
 

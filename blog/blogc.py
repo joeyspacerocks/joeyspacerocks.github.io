@@ -7,8 +7,29 @@ from pathlib import Path
 import chevron
 import shutil
 import markdown
+import ffmpeg
+import pprint
 
 __version__ = '0.1.1'
+
+def process_media(m):
+    url = m.group(2)
+    if url.endswith('.gif'):
+        if path.isfile(url):
+            dest = url.split('.')[0] + '.mp4'
+            if not path.isfile(dest) or (path.getmtime(dest) < path.getmtime(url)):
+                print(' - converting {} to mp4 ...'.format(url.split('/')[1]))
+                ffmpeg.input(url).output(dest).run(quiet=True)
+            return '<video autoplay="true" muted="true" loop="true"><source src="{}" type="video/mp4"></video>'.format(dest)
+        else:
+            print('ERROR: no such GIF - ' + url)
+            return m.group(0)
+
+    elif url.startswith('https://www.youtube.com'):
+        # write embedded iframe
+        pass
+    else:
+        return m.group(0)
 
 def read_post(f):
     post = {
@@ -29,18 +50,15 @@ def read_post(f):
             else:
                 md_content += line
 
-    post['content'] = markdown.markdown(md_content)
+    post['blurb'] = md_content.split('.')[0] + ' ...'
 
-    # FIXME: extraxct summary from property, falling back to markdown-sourced paragraph
-    summary = re.sub(r'<[^<]+?>', '', post['content'])
-    summary = re.sub(r'\n+|\t+|\s+', ' ', summary)
-    post['blurb'] = re.sub(r'^(.{0,120})\b.*$', r'\1...', summary)
+    md_content = re.sub(r'\!\[(.*?)\]\((.+?)\)', process_media, md_content)
+    post['content'] = markdown.markdown(md_content)
 
     date = datetime.strptime(post['date'], '%Y%m%d')
     post['nice_date'] = date.strftime('%d %b %Y')
 
     return post
-
 
 def write_html(data, tmpl_path, tmpl_file, dest_path, dest_file):
     src = path.join(tmpl_path, tmpl_file)

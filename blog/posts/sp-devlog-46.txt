@@ -7,13 +7,13 @@ tags: devlog,spooky-pooky
 
 Been whiling away some evenings doodling some new tiles and the like.
 
-<img src="https://fat.gfycat.com/PessimisticBreakableAntarcticgiantpetrel.gif" />
+![](images/PessimisticBreakableAntarcticgiantpetrel.gif)
 
 Making pixel 'art' is quite relaxing when you're tired.
 
 I then stuck a couple of gun turrets in there. Turns out one of them fires caterpillars. Weird.
 
-<img src="https://giant.gfycat.com/AlarmedDistantAmericancrow.gif" />
+![](images/AlarmedDistantAmericancrow.gif)
 
 It was whilst doing this I realised that I hadn't properly implemented my 'cast a ray for line of sight' function. Gun turrets chuck a ray towards the player to see if they're within range before firing. If there's any solid tiles / entities in-between they are supposed to pretend they can't see you.
 

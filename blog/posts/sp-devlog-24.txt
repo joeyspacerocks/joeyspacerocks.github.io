@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Cross-platform is starting to become more of a reality now. Finally got my terrible rendering code running on a Mac.
 
-<img src="http://i.imgur.com/aFlYqfC.png" />
+![](images/aFlYqfC.png)
 
 The game runs at 480x272 and plays really nicely full screen.
 

@@ -9,9 +9,9 @@ Welcome to the first devlog entry for my new project.
 
 Spooky Pooky is a 2D platfomer with big pixels and 16 colours. That's right, the 1980's are back with a vengeance.
 
-<img width="568" height="320" src="http://i.imgur.com/1JMPgIJ.png" />
+![](images/images/1JMPgIJ.png)
 
-<img width="568" height="320" src="http://i.imgur.com/sTcM4Rf.png" />
+![](images/images/sTcM4Rf.png)
 
 As with [QB1-0](http://qb1-0.canfactory.com) this game is written in C, initially for iOS, and OpenGL for pixels.
 

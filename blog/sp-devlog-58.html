@@ -28,39 +28,23 @@
                 <p class="publish">Published on <span class="date">19 Feb 2017</span> by Joe</p>
 
                 <p>So, this game is called Spooky Pooky.</p>
-
 <p>I'm going for a sci-fi horror vibe, all be it with a chibi character approach. I've never been entirely happy with the atmosphere in the game (or lack of it), and have been toying with the idea of adding some form of lighting for a while now.</p>
-
 <p>Turns out that it wasn't too hard to add in, and it does give me some new tools to play with when setting up rooms.</p>
-
 <p>Here's an example of an existing room with some hastily added lighting.</p>
-
-<p><img src="http://i.imgur.com/OsPxrDY.gif" /></p>
+<video autoplay="true" muted="true" loop="true"><source src="images/OsPxrDY.mp4" type="video/mp4"></video>
 
 <p>From a design point of view I can now add lights to a room in a few ways. I have a basic 'light' entity which ends up rendering a beam of light within whatever rectangular object boundaries are defined. So I can use those for light shafts.</p>
-
 <p>I also have 'light-source' entities which typically render a visible, glowing, sprite (e.g. an actual light) and a custom render method that renders out a light beam in the appropriate direction. Light can optionally be coloured, or have a few basic effects added to it, such as 'flicker'.</p>
-
 <p>I'll add more as I need, but you get the idea.</p>
-
 <p>From a rendering point of view I ended up making some conceptually biggish changes, although they were relatively simple to add.</p>
-
 <p>The main change is to start using multiple-render targets in the shaders. Previously all fragment shaders just set colours to a single output target.</p>
-
 <p>Now I have three texture targets, namely the main one for texture, a 'glow' (or self-illuminating) texture for sprites that glow, and a 'light' target for the actual shafts of light.</p>
-
 <p>I've also split the source spritesheet texture into two textures. The first is the normal sprite texture; the second contains just pixels that should glow.</p>
-
 <p>So now when I render a sprite the standard blit shader I use outputs to all three targets. Normal sprites output black to the light shader so that I can layer the lights - i.e. have lights that shine behind tiles, or in front.</p>
-
 <p>At the end of the main render pass I then call a light mix shader that takes the main output and the light output and combines them to dim and light accordingly.</p>
-
 <p>After that I mix the output of that with the glow output so that self-illuminating stuff is blurred and artificially brightened.</p>
-
 <p>These things are all achieved by chucking them into my draw-call system with appropriate depths, so it's fairly flexible.</p>
-
 <p>So there we go. Lights. Of course having a technical solution is only part of the problem - now I have to dress the rooms with lights ...</p>
-
                 
             </div>
 

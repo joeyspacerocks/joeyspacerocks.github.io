@@ -7,9 +7,9 @@ tags: devlog,spooky-pooky
 
 So then. Weapons. Here we go, some explodey bang-bangs. Finally poor Horatio can fight back ...
 
-<img src="https://giant.gfycat.com/PlasticEnragedCob.gif" />
+![](images/PlasticEnragedCob.gif)
 
-<img src="https://giant.gfycat.com/OrganicMassiveGrassspider.gif" />
+![](images/OrganicMassiveGrassspider.gif)
 
 (The gif encoding has washed out some of the colours so it's all looking a bit grey at the top there instead of the vile green/yellow it should be..)
 

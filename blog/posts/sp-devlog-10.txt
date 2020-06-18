@@ -11,11 +11,11 @@ I'm using the [Tiled Map Editor](http://www.mapeditor.org/) to create levels whi
 
 Below are a couple of screenshots - the first shows a tile layer containing the actual scenery tiles:
 
-<img width="653" src="http://i.imgur.com/2vvg4IO.png" />
+![](images/2vvg4IO.png)
 
 The second is an object layer:
 
-<img width="645" src="http://i.imgur.com/IyjG4Vs.png" />
+![](images/IyjG4Vs.png)
 
 In the second you can see some boxes which are used to outline blocks of tiles in the layer below that should be separated from the main layer and turned into an independent entity.
 

@@ -13,10 +13,10 @@ In other words it's all a big excuse to play with different effects.
 
 Here's a seed gun. Let's you grow a lovely meadow and then run around in it. Let's all pretend that I know exactly what the purpose of this is and how it fits in with the big picture. Yes, let's.
 
-<img src="http://fat.gfycat.com/QualifiedRichCuttlefish.gif" />
+![](images/QualifiedRichCuttlefish.gif)
 
 Inexplicably guns can also fire creatures. Here's a crude play with some thing that fires stripy caterpillar.
 
-<img src="http://giant.gfycat.com/SlipperyEnchantingFireant.gif" />
+![](images/SlipperyEnchantingFireant.gif)
 
 I can think of lots of applications for this but it needs a bit of a graphical clean up.
