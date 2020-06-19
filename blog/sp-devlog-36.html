@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #36 - GLFW to SFML</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #36 - GLFW to SFML</h1>
+                <p class="strapline">Moving from GLFW to SFML for windowing and the like.
+</p>
                 <p class="publish">Published on <span class="date">13 Jan 2016</span> by Joe</p>
-
-                <p>And ... I'm back in the game. Took a little break over Christmas and the neglect caused Spooky Pooky to get very cross with me.</p>
+            </div>
+            
+            <p>And ... I'm back in the game. Took a little break over Christmas and the neglect caused Spooky Pooky to get very cross with me.</p>
 <p>Fired it up and randomly fullscreen was running at about 30fps.</p>
 <p>No idea why - MacBookPro retina using GLFW and OGL 3.2. Windowed still worked fine, even a window the same size as fullscreen.</p>
 <p>So began a long and ultimately fruitless journey to try and work what the hell was happening. Over Christmas I'd done two things that I thought could be relevant. The first was that I played quite a bit of Elite Dangerous, in full screen. The second was that I plugged my laptop into my Sony TV via HDMI.</p>
@@ -37,10 +41,9 @@
 <p>Brilliant. Anyway, mapping the input over to use SFML was trivial so the game is back to running how it should and I can get on with fixing the room transition code.</p>
 <p>Originally the game was being written as a level-based thingy - now it's a metroidvania. So levels have become rooms, and it lets you randomly wander between them. It's been fairly easy to transition the game to this. Each room is a Tiled map and I cache them in memory, preserving entity state as you wander between them.</p>
 <p>Rooms can be grouped into sections so I may flush whole sections out of memory when you cross the boundary - either way it's a fairly lazy system.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">13 Jan 2016</span> by Joe</div>
+        <div class="publish">Published on <span class="date">13 Jan 2016</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

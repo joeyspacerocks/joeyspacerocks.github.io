@@ -3,6 +3,8 @@ url: how_to_make_games_the_hard_way
 banner: post5.jpg
 date: 20141003
 
+Attempting to justify my approach to game development ... to myself.
+
 I first started writing computer games a long time ago. In human terms obviously, I mean we're not talking epochs here. I don't want to date myself (although I'd make a terrific date), but back then pixel art was called 'computer graphics' and 3D graphics were known as 'Elite'.
 
 If you wanted to make a game on any of the popular home computers of the age your language choices were pretty much Basic or assembler. Except that for most games Basic was too slow, so assembler it was. There were no frameworks, libraries or tools. Often there were only four colours, and one of them was black. Heck, half the time pixels weren't even square.

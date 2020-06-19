@@ -5,6 +5,8 @@ date: 20150831
 icon: cogs
 tags: devlog,spooky-pooky
 
+Trying to come up with a more engaging title screen.
+
 Recently I've been playing around with title screens which lead to a much needed tidy-up of various aspects of the code-base.
 
 Specifically I've now made the level code a bit more self-contained so that I can, for instance, design arbitrary screens using levels.

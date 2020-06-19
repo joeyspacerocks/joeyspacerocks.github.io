@@ -5,6 +5,8 @@ date: 20160308
 icon: cogs
 tags: devlog,spooky-pooky
 
+Brainbots have a lot of aggression to work out.
+
 Made a robot controlled by a brain in a jar. Plus some bang bangs and explosions.
 
 ![](images/BruisedDeliciousDoe.mp4)

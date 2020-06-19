@@ -5,6 +5,8 @@ date: 20150921
 icon: cogs
 tags: devlog,spooky-pooky
 
+An extensive reorganisation of the rendering engine.
+
 Well that took a while. I finally acknowledged the lumbering, drooling simpleton lurking in the corner of my code. He goes by the name of The Renderer.
 
 This entry is a little technical and has no nice pictures. Boo. Well, I am a programmer.

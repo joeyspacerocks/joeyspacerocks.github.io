@@ -5,6 +5,8 @@ date: 20151215
 icon: cogs
 tags: devlog,spooky-pooky
 
+Trying to jolt myself out of a creative slump.
+
 Silly little test to see how an electrical power up would look - i.e. how does the electrical sprite renderer look for small sprites (16x21 in this case):
 
 ![](images/ReliableAgreeableJoey.mp4)

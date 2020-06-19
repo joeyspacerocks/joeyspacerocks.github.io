@@ -5,6 +5,8 @@ date: 20141014
 icon: cogs
 tags: devlog,spooky-pooky
 
+Programming my way out of a lack of artistic ability
+
 I've distracted myself again - this time messing about with trying to come up with a decent title page.
 
 Acknowledging that I can only draw pictures that are 16x16 pixels I've tried to side-step the issue of drawing a decent title/logo for the game by instead generating one dynamically out of electricity:

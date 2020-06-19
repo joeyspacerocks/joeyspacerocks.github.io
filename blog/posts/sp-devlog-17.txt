@@ -5,6 +5,8 @@ date: 20150112
 icon: cogs
 tags: devlog,spooky-pooky
 
+Building the first real levels.
+
 Despite appearances I am making progress ... loosely in the right direction.
 
 I've finally started building 'real' levels, hopefully for a demo build containing some random number of levels to beat. Not sure how many yet; probably around 5-10, but enough to show off gameplay and get the kinks worked out.

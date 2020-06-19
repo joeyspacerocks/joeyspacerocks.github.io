@@ -5,6 +5,8 @@ date: 20141106
 icon: cogs
 tags: devlog,spooky-pooky
 
+First steps at adding the organ-based powerups.
+
 So recently I've been working on organ collection. Well, it was halloween ...
 
 In the game the hero must locate and collect his organs, each of which will then give him a power-up. Sometimes the power-up comes with a flip side. For example, collecting his lungs may give him a power (e.g. can blow things, or run faster) but will also limit his time underwater as he can now drown.

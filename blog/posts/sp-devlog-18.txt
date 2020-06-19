@@ -5,6 +5,8 @@ date: 20150120
 icon: cogs
 tags: devlog,spooky-pooky
 
+Introducing abilities through gameplay.
+
 So a little update - I've pretty much finished level 2 of my first demo set of levels.
 
 Aim was to give the player some space to get used to jumping whilst introducing the idea that electricity hurts. Nothing too exciting or revolutionary so I may go back to it later after I have some real enemies sorted.

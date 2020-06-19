@@ -5,6 +5,8 @@ date: 20160129
 icon: cogs
 tags: devlog,spooky-pooky
 
+A deeper look at the rendering "engine".
+
 Some more notes on rendering.
 
 For Spooky Pooky I chuck all sprites to be rendered into a big array - this includes the particles. At the end of the first pass of the rendering process I then sort this array by a few things (depth, blend-mode, shader) then I sweep through it filling up a big interleaved array of data to give to OpenGL.

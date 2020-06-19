@@ -3,6 +3,8 @@ url: written_a_game_now_what
 banner: post4.jpg
 date: 20140719
 
+Releasing a game to rapturous silence ... 
+
 Silence is golden. On the other hand, when it's the silence that greets the release of your pride and joy that you've spent the last year slaving away at, it's not so much golden as a disturbing brown.
 
 Let's get anecdotal. I wrote a game called [QB1-0](http://qb1-0.canfactory.com) and released it in December 2012 on the [iOS app store](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8). It's an arcade space shooter with a retro style. I like it, and I know for a fact that at least four other people do to. Some of us still play it.

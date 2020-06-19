@@ -5,6 +5,8 @@ date: 20151128
 icon: cogs
 tags: devlog,spooky-pooky
 
+Improving the workflow with tooling.
+
 I only stepped out for a minute and more than a month has passed. Good job this game is already retro ...
 
 I've been improving my tool chain of late as things were getting a little tedious in my crazy little self-made circle of hell.

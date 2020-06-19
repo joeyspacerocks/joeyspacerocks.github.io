@@ -5,6 +5,8 @@ date: 20160226
 icon: cogs
 tags: devlog,spooky-pooky
 
+Biting the bullet and getting a UI up and running.
+
 I began the week doodling some UI elements, which was surprisingly fun.
 
 I came up with a health / damage indicator bar ..

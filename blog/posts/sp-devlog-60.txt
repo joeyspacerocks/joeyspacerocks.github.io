@@ -5,6 +5,8 @@ date: 20170908
 icon: cogs
 tags: devlog,spooky-pooky
 
+Lighting is fun. Logging is ... not so much.
+
 Welcome to my weekly bi-annual devlog update. It's only been 7 months since the last update, 
 so apologies for spamming.
 

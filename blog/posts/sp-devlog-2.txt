@@ -5,6 +5,8 @@ date: 20140721
 icon: cogs
 tags: devlog,spooky-pooky
 
+Playing around with view area scaling.
+
 Fixed the tiling bug and experimented with changing the scale.
 
 ![](images/OddballComplexCuttlefish.mp4)

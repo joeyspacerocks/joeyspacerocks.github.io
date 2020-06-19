@@ -5,6 +5,8 @@ date: 20150607
 icon: cogs
 tags: devlog,spooky-pooky
 
+Animating tiles for non-sprite movement.
+
 Been a sparse few weeks for gamedev what with one thing and another, however I've been trying to get some tiny things done here and there.
 
 Finally added tile animations. Another little feature that took a little longer than it should have.

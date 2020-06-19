@@ -5,6 +5,8 @@ date: 20160401
 icon: cogs
 tags: devlog,spooky-pooky
 
+Rejigging the collision system to support weapons.
+
 So then. Weapons. Here we go, some explodey bang-bangs. Finally poor Horatio can fight back ...
 
 ![](images/PlasticEnragedCob.mp4)

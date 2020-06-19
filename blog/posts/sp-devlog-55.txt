@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Here's a little update - been fleshing out some of the audio recently as can be seen/heard in the vid below.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/HVntY3aGKG8" frameborder="0" allowfullscreen></iframe>
+![](https://www.youtube.com/embed/HVntY3aGKG8)
 
 It's all very WIP - helped show up a silly issue where I just pile in more sounds as needed until I run out of 'bandwidth' and more important sounds get ignored. So I need to keep track of what's playing and ensure that I impose simultaneous limits on the same sounds plus give others precedence. Hopefully it won't really need to get that complicated but I'll plan for it just in case.
 

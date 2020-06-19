@@ -23,22 +23,25 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #14 - Time is an Illusion</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #14 - Time is an Illusion</h1>
+                <p class="strapline">Fixing the timestep for future warping.
+</p>
                 <p class="publish">Published on <span class="date">12 Nov 2014</span> by Joe</p>
-
-                <p>Recently I've been finally addressing my lazy approach to the timestep. Because I'm initially targeting iOS devices and tuning the game accordingly I've just been relying on the fact that the game is fixed to 60fps and all my physics code has been tuned accordingly.</p>
+            </div>
+            
+            <p>Recently I've been finally addressing my lazy approach to the timestep. Because I'm initially targeting iOS devices and tuning the game accordingly I've just been relying on the fact that the game is fixed to 60fps and all my physics code has been tuned accordingly.</p>
 <p>So I've been through all the code and changed all the time-dependent functions (physics, squishiness, etc) to be correctly calculated from delta-time.</p>
 <p>The primary reason is so that the game runs at a consistent speed even in the frame-rate drops. As a side-effect though I can now artificially speed up and slow down time.</p>
 <p>As an experiment I've used this to enhance pausing the game by slowing down very quickly and speeding up on resume. Pretty subtle effect, but I'm hoping it's things like this that lead to a more polished end-product.</p>
-<iframe width="853" height="480" src="https://www.youtube.com/embed/hiPJNXYwyoU" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/hiPJNXYwyoU" frameborder="0" allowfullscreen></iframe>
 
 <p>Now that the code base is a bit cleaner I'm really going to stop procrastinating now and actually try and progress the game for real. Yeah sure.</p>
 <p>I'm going to create a little collection of demo levels, maybe five or so, to prototype the gameplay. Hopefully if I can get that together then I can maybe get some beta play worked out so that anyone with an iOS device that fancies giving it a play can have a go. That's probably the worst thing about developing an iOS game is that it's not as immediate to get people playing, although Apple's new use of TestFlight makes that a lot easier than it used to be.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">12 Nov 2014</span> by Joe</div>
+        <div class="publish">Published on <span class="date">12 Nov 2014</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

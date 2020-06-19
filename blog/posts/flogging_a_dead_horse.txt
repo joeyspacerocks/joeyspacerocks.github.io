@@ -4,9 +4,11 @@ banner: post2.jpg
 date: 20150507
 icon: bullhorn
 
+QB1-0 re-released on the App Store!
+
 Stop the presses! Hold on to your trousers! QB1-0 has been re-released under my own personal [App Store account](https://itunes.apple.com/us/app/qb1-0/id989626858?ls=1&amp;mt=8)!
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/gJkFGrNRVbY" frameborder="0" allowfullscreen></iframe>
+![](https://www.youtube.com/embed/gJkFGrNRVbY)
 
 Previously I'd published it under my employers account, but owing to some changes in circumstance I've now taken full ownership.
 

@@ -5,6 +5,8 @@ date: 20160119
 icon: cogs
 tags: devlog,spooky-pooky
 
+First steps to a larger world.
+
 Sometimes the simplest of things take an age to get working. Like room transitions. As seen in the horribly laggy gif below:
 
 ![](images/GoodnaturedWarmheartedFirefly.mp4)

@@ -5,6 +5,8 @@ date: 20151018
 icon: cogs
 tags: devlog,spooky-pooky
 
+Letting the foliage strike back.
+
 More prevarication recently - made a little wibbly, wobbly seed pod plant that explodes when you get too close.
 
 ![](images/GloomyDapperAnole.mp4)

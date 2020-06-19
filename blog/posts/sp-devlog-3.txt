@@ -5,6 +5,8 @@ date: 20140809
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding water areas and setting up a shader pipeline
+
 Which is faster? Glaciers or continental drift? Either way, they're both faster than my development of Spooky Pooky ...
 
 So, what have I done since the last time?

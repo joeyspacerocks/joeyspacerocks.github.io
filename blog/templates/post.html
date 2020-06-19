@@ -23,15 +23,17 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>{{title}}</h1>
+        <div class="post">
+            <div class="title">
+                <h1>{{title}}</h1>
+                <p class="strapline">{{blurb}}</p>
                 <p class="publish">Published on <span class="date">{{nice_date}}</span> by Joe</p>
-
-                {{{content}}}
-                
             </div>
+            
+            {{{content}}}
+        </div>
 
-            <div class="publish">Published on <span class="date">{{nice_date}}</span> by Joe</div>
+        <div class="publish">Published on <span class="date">{{nice_date}}</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #10 - Map Building</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #10 - Map Building</h1>
+                <p class="strapline">How I use Tiled to build rooms.
+</p>
                 <p class="publish">Published on <span class="date">04 Oct 2014</span> by Joe</p>
-
-                <p>Given that this is supposed to be a dev log there's not been much about the actual dev; so I thought I'd stick some notes down about how I'm designing levels.</p>
+            </div>
+            
+            <p>Given that this is supposed to be a dev log there's not been much about the actual dev; so I thought I'd stick some notes down about how I'm designing levels.</p>
 <p>I'm using the <a href="http://www.mapeditor.org/">Tiled Map Editor</a> to create levels which is a wonderfully flexible tool.</p>
 <p>Below are a couple of screenshots - the first shows a tile layer containing the actual scenery tiles:</p>
 <p><img alt="" src="images/2vvg4IO.png" /></p>
@@ -39,10 +43,9 @@
 <p>I use a third layer for liquid which I indicate using a simple tile. In the game I use the presence of this tile to set flags on the underlying tiles to indicate they are in water. I render the water using two passes - one to render the water using a simple shader (the water can be at any level) into a framebuffer and another to compose it with the background to add the wibble shader effects.</p>
 <p>It's a pretty flexible system - I can also tell entities (i.e. Tiled objects) that they 'belong' to a section of scenery by specifying it's name as a 'ground' property.</p>
 <p>Overall I'm pretty impressed by Tiled as I had assumed that I'd end up writing some kind of proprietary format or tool - so far it's not been necessary.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">04 Oct 2014</span> by Joe</div>
+        <div class="publish">Published on <span class="date">04 Oct 2014</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

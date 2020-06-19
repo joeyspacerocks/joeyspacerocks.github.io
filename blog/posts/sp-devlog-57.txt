@@ -5,6 +5,8 @@ date: 20161211
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding a dialogue system to the game.
+
 The dialogue system is in the game at last. It didn't take too much time really in and of itself, just took a while to find the time to do it.
 
 Here's an example:

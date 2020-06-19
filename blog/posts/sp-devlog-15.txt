@@ -5,6 +5,8 @@ date: 20141126
 icon: cogs
 tags: devlog,spooky-pooky
 
+Sketching out the intro level.
+
 Quick update - been working on an intro level where you play as the hero, Horatio prior to being transformed.
 
 It's only a small level and you lack certain abilities (such as not being able to jump very high, and slowish walk). Eventually you're corralled into ... The Machine:

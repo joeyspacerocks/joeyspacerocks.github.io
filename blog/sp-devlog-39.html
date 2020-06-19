@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #39 - Particles</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #39 - Particles</h1>
+                <p class="strapline">A deeper look at the particle system.
+</p>
                 <p class="publish">Published on <span class="date">27 Jan 2016</span> by Joe</p>
-
-                <p>An aside about the particle system.</p>
+            </div>
+            
+            <p>An aside about the particle system.</p>
 <p>Each particle is a simple struct containing the usual position, velocity, animation and some behaviour flags.</p>
 <p>The animation is the same stuff as used elsewhere - a simple array of frames (coords into a spritesheet / delay) plus some behaviour flags and render depth.</p>
 <p>I pre-allocate a pool of particles in the game init code (currently only 5000 big) plus a list that hooks into the pool for active particles (I have simple + fast implementations of pools and linked lists).</p>
@@ -36,10 +40,9 @@
 <p>For rendering it all goes into the same batch system that I use for all the other sprites. Each particle can have it's own depth and rendering requirements (e.g. blending mode / alpha) and they just end up sorted into batches with the rest of the stuff and flushed out to OpenGL using as few draw calls as possible.</p>
 <p>At the numbers I have in the game at the moment they have a negligible effect on performance - nothing like my previous game, QB1-0:</p>
 <video autoplay="true" muted="true" loop="true"><source src="images/WetGleefulAxolotl.mp4" type="video/mp4"></video>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">27 Jan 2016</span> by Joe</div>
+        <div class="publish">Published on <span class="date">27 Jan 2016</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

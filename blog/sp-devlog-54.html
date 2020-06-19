@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #54 - Collision Detection</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #54 - Collision Detection</h1>
+                <p class="strapline">Reworking the collision system ... again.
+</p>
                 <p class="publish">Published on <span class="date">06 Jul 2016</span> by Joe</p>
-
-                <p>My dedication to doing-a-little-bit-every-day is helping to push me through the molasses-like barrier of a creativity slump. At least, I think it's helping.</p>
+            </div>
+            
+            <p>My dedication to doing-a-little-bit-every-day is helping to push me through the molasses-like barrier of a creativity slump. At least, I think it's helping.</p>
 <p>The code has evolved to match the game that is emerging and whilst generally a good thing that helps keep things mean and lean, there are some aspects that eventually need to be taken to task.</p>
 <p>One such area has been collision detection. The main area I tackled at the start of the project was collision detection and response with solid areas. Specifically tiles.</p>
 <p>Entities were flagged as 'colliding with the world' and such things were shoved through a weaselly named function called 'apply_physics'. This handled applying generic forces (like gravity, springs, shifting things along predefined paths, buoyancy) as well as checking for collisions against solid tiles and other entities that were made of solid tiles (such as moving platforms).</p>
@@ -45,10 +49,9 @@
 <p>Some other low-hanging fruit that I tackled was my use of Tiled maps. Another evolutionary dead-end that was hanging about was my lazy hardcoding of which tiles were to be treated as solid (and solid-from-the-top-but-not-if-jumping-up). Basically I had some hard coded tile id ranges. Yeuch. Bad programmer.</p>
 <p>So I've finally promoted the foreground layer in the tile map to be treated as all-solid tiles, and additionally enabled flagging of individual tiles in the external tileset as jump-through via Tiled properties. Lovely.</p>
 <p>Running out of low-hanging fruit so looks like I'm gonna be climbing trees soon.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">06 Jul 2016</span> by Joe</div>
+        <div class="publish">Published on <span class="date">06 Jul 2016</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

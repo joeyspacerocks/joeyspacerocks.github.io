@@ -5,6 +5,8 @@ date: 20170219
 icon: cogs
 tags: devlog,spooky-pooky
 
+Putting a proper lighing system in for more atmosphere.
+
 So, this game is called Spooky Pooky.
 
 I'm going for a sci-fi horror vibe, all be it with a chibi character approach. I've never been entirely happy with the atmosphere in the game (or lack of it), and have been toying with the idea of adding some form of lighting for a while now.

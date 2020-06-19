@@ -5,6 +5,8 @@ date: 20150310
 icon: cogs
 tags: devlog,spooky-pooky
 
+Playing around with water physics.
+
 I took my eye off the ball for one second and .. bamm! Six weeks flash by.
 
 Still here, still plugging away. Got distracted by setting up an 'identity' and a new website plus some distracting business in so-called real-life.

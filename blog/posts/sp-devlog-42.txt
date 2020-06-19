@@ -5,6 +5,8 @@ date: 20160216
 icon: cogs
 tags: devlog,spooky-pooky
 
+First steps to a brighter world.
+
 I've long been tempted to mess with lighting in this game, but held off mostly due to in-decision. However I've decided that a little glow can go a long way and so implemented a little bloom shader for fake lights.
 
 Sprites can already define a 'mask'; just an offset to another sprite of the same size that masks out an area. I've been using this for the rendering wibbly liquid regions and now I'm also using it to define areas that should glow.

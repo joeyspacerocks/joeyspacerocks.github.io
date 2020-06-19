@@ -5,6 +5,8 @@ date: 20141004
 icon: cogs
 tags: devlog,spooky-pooky
 
+How I use Tiled to build rooms.
+
 Given that this is supposed to be a dev log there's not been much about the actual dev; so I thought I'd stick some notes down about how I'm designing levels.
 
 I'm using the [Tiled Map Editor](http://www.mapeditor.org/) to create levels which is a wonderfully flexible tool.

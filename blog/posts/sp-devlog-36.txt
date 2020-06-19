@@ -5,6 +5,8 @@ date: 20160113
 icon: cogs
 tags: devlog,spooky-pooky
 
+Moving from GLFW to SFML for windowing and the like.
+
 And ... I'm back in the game. Took a little break over Christmas and the neglect caused Spooky Pooky to get very cross with me.
 
 Fired it up and randomly fullscreen was running at about 30fps.

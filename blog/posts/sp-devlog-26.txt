@@ -5,6 +5,8 @@ date: 20150811
 icon: cogs
 tags: devlog,spooky-pooky
 
+Building on PC and adding some lovely fire effects.
+
 I've been busy porting the current build of Spooky Pooky to the PC - currently got it running more-or-less fine under Windows 8, thanks to it being written in C and using fairly standard OpenGL - i.e. no fancy extensions.
 
 So it's currently running on iOS, PC and Mac without too much trouble. Except for controllers of course. I've only got a wired XBox 360 controller so I've been testing with that and am now wondering how people deal with mapping all those buttons on different platforms. Crazy!

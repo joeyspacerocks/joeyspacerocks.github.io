@@ -5,6 +5,8 @@ date: 20160228
 icon: cogs
 tags: devlog,spooky-pooky
 
+Charting the world one room at a time.
+
 Finally got the minimap working. Surprisingly it was rather difficult .. or at least, pretty messy.
 
 In the end I keep an array hanging around that I plot the player's progress around the world in, as they move between rooms and room cells.

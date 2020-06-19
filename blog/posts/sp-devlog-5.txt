@@ -5,6 +5,8 @@ date: 20140816
 icon: cogs
 tags: devlog,spooky-pooky
 
+Some liquid-containing sprites for jars and the like ...
+
 You ever add something to a game and then spend far to much time messing about with it?
 
 So then, water ... added some render code so that arbitrary tiles can specify masks that apply the water affect.

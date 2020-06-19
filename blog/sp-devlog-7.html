@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #7 - Tile Objects</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #7 - Tile Objects</h1>
+                <p class="strapline">Sprites built out of tiles and edited in Tiled
+</p>
                 <p class="publish">Published on <span class="date">19 Sep 2014</span> by Joe</p>
-
-                <p>It was while I was writing an XML parser in C that I started to question my motivation behind this project ...</p>
+            </div>
+            
+            <p>It was while I was writing an XML parser in C that I started to question my motivation behind this project ...</p>
 <p>Still, it all worked out - radically cleaned up my Tiled loader code, plus finally sorted out the rest of the system so I can throw entities about with custom handlers for AI etc.</p>
 <p>The result, so far, is that I can flag chunks of scenery as being independent entities that I can then do things with - such as move around on paths (defined using polylines in Tiled), float about in water or have their state changed via triggers.</p>
 <video autoplay="true" muted="true" loop="true"><source src="images/DisfiguredCornyCod.mp4" type="video/mp4"></video>
@@ -36,10 +40,9 @@
 <p>I've also now replaced the old very specific custom code that drove the up/down platforms with this new generic system, which cleaned things up considerably.</p>
 <p>So, I'm getting there with organisation and slowly getting enough elements together so that I can put some proper trial levels together.</p>
 <p>Of course if I was't writing this thing from scratch then I wouldn't have had to write a (simple) physics system, an XML parser, a Tiled level loader and a million other things. But I can't help it ... it's more fun this way.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">19 Sep 2014</span> by Joe</div>
+        <div class="publish">Published on <span class="date">19 Sep 2014</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

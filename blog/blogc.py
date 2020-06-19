@@ -16,8 +16,7 @@ def process_media(m):
     if url.endswith('.mp4'):
         return '<video autoplay="true" muted="true" loop="true"><source src="{}" type="video/mp4"></video>'.format(url)
     elif url.startswith('https://www.youtube.com'):
-        # write embedded iframe
-        pass
+        return '<iframe src="{}" frameborder="0" allowfullscreen></iframe>'.format(url)
     else:
         return m.group(0)
 
@@ -28,6 +27,7 @@ def read_post(f):
     }
 
     md_content = ''
+    blurb = None
     with open(f) as fh:
         header = True
         for line in fh:
@@ -38,9 +38,12 @@ def read_post(f):
                 else:
                     header = False
             else:
-                md_content += line
+                if not blurb:
+                    blurb = line
+                else:
+                    md_content += line
 
-    post['blurb'] = md_content.split('.')[0] + ' ...'
+    post['blurb'] = blurb
 
     md_content = re.sub(r'\!\[(.*?)\]\((.+?)\)', process_media, md_content)
     post['content'] = markdown.markdown(md_content)

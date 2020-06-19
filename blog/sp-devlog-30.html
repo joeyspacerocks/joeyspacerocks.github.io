@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #30 - Rendering Rewrite</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #30 - Rendering Rewrite</h1>
+                <p class="strapline">An extensive reorganisation of the rendering engine.
+</p>
                 <p class="publish">Published on <span class="date">21 Sep 2015</span> by Joe</p>
-
-                <p>Well that took a while. I finally acknowledged the lumbering, drooling simpleton lurking in the corner of my code. He goes by the name of The Renderer.</p>
+            </div>
+            
+            <p>Well that took a while. I finally acknowledged the lumbering, drooling simpleton lurking in the corner of my code. He goes by the name of The Renderer.</p>
 <p>This entry is a little technical and has no nice pictures. Boo. Well, I am a programmer.</p>
 <p>Simple is generally pretty good and will get you a long way. My 'architecture' is almost non-existent: I have entities (a single structure representing most things in the game), particles (a simpler version) and tile chunks (ranging from full level-size tilemaps to 2 or 3 tile moving platforms).</p>
 <p>Previously the approach to rendering was crude. Entities were stored in buckets, each representing a different depth. The rendering loop rendered things in a fixed order - background tilemaps, followed by back entities, foreground tiles, foreground entities, particles, etc.</p>
@@ -50,10 +54,9 @@
 <p>I also use this same approach to render the normal water areas - previously I was using a nasty hardcoded function that replicated lots of other functionality.</p>
 <p>Anyway, the upshot is that it's all nicely flexible now and means that I can mix and match materials and depths etc. Should mean that I can add more composition effects much more simply than before.</p>
 <p>Oh, enough of all this pseudo-technical rambling. I'll stick some screenshots up next time.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">21 Sep 2015</span> by Joe</div>
+        <div class="publish">Published on <span class="date">21 Sep 2015</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

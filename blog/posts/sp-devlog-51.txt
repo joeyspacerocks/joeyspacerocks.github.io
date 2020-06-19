@@ -5,6 +5,8 @@ date: 20160504
 icon: cogs
 tags: devlog,spooky-pooky
 
+You can never fix a physics engine enough times.
+
 Physics stuff is a funny beast .. I had buoyancy working ages ago, but after fixing a few seemingly innocent bugs I realised that I'd completely broken it ...
 
 I can pop arbitrary chunks of tiles out as distinct entities by drawing a rectangular object around them in the level editor I'm using (Tiled) - I can then give them a few properties, such as density, which means that dropping into water will cause them to float. To do this I use a pretty standard buoyancy equations, but the thing that was really screwing it up was adding drag forces - for very light objects (such as those platforms, which have to be light so they don't sink when the player lands on them) I managed to give it massive drag forces in the reverse direction to velocity causing things to explode out of the water ..

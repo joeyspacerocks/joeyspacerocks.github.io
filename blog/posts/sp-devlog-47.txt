@@ -5,6 +5,8 @@ date: 20160323
 icon: cogs
 tags: devlog,spooky-pooky
 
+You can't keep a good UI down.
+
 So let's talk UI. I feel that UI gets a bad rap amongst game developers. It's all totally deserved of course.
 
 The problem (for me) is that it just doesn't fit in. It doesn't even try. You've got a whole bunch of code to run your game, some of it might even be nicely architected. Let's kid ourselves.

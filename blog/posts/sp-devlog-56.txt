@@ -5,6 +5,8 @@ date: 20160830
 icon: cogs
 tags: devlog,spooky-pooky
 
+The obligatory bats are in.
+
 I'm still here! I think this is the longest I've gone without posting, but I'm still here and working on the game.
 
 I took a break over the summer and messed about with Pico-8 to try and regain some perspective and sanity.

@@ -5,6 +5,8 @@ date: 20160124
 icon: cogs
 tags: devlog,spooky-pooky
 
+Decoupling things with a simple event bus.
+
 A little update this week.
 
 I've accidentally implemented some kind of poor-man's event system. Dang, half-arsed-framework-evolving-warning.

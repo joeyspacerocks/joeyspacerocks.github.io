@@ -5,6 +5,8 @@ date: 20150815
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding point-cloudes to sprites for more interesting rendering options.
+
 So then, this week I've been continuing the elemental theme and have been crafting an electrical demon. Or something.
 
 ![](images/ArcticDiligentBats.mp4)

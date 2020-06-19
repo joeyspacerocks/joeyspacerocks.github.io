@@ -5,6 +5,8 @@ date: 20140718
 icon: cogs
 tags: devlog,spooky-pooky
 
+A new project, a new devlog ... so it begins ...
+
 Welcome to the first devlog entry for my new project.
 
 Spooky Pooky is a 2D platfomer with big pixels and 16 colours. That's right, the 1980's are back with a vengeance.
@@ -15,7 +17,7 @@ Spooky Pooky is a 2D platfomer with big pixels and 16 colours. That's right, the
 
 As with [QB1-0](http://qb1-0.canfactory.com) this game is written in C, initially for iOS, and OpenGL for pixels.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/mL7WUmr7Mh8" frameborder="0" allowfullscreen></iframe>
+![](https://www.youtube.com/embed/mL7WUmr7Mh8)
 
 You play [unnamed protagonist] who stumbles across a mysterious castle/lab. Pressing buttons you shouldn't you are accidentally **pookified** by The Machine - all your flesh, blood and organs are stripped and scattered around the forbidding building. You must traverse the levels collecting blood and organs whilst avoiding the other macabre experiments that roam the facility.
 

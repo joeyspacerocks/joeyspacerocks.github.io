@@ -5,6 +5,8 @@ date: 20150710
 icon: cogs
 tags: devlog,spooky-pooky
 
+Migrating from mobile to desktop.
+
 Cross-platform is starting to become more of a reality now. Finally got my terrible rendering code running on a Mac.
 
 ![](images/aFlYqfC.png)

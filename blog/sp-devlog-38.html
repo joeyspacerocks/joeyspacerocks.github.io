@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #38 - Events, sort of</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #38 - Events, sort of</h1>
+                <p class="strapline">Decoupling things with a simple event bus.
+</p>
                 <p class="publish">Published on <span class="date">24 Jan 2016</span> by Joe</p>
-
-                <p>A little update this week.</p>
+            </div>
+            
+            <p>A little update this week.</p>
 <p>I've accidentally implemented some kind of poor-man's event system. Dang, half-arsed-framework-evolving-warning.</p>
 <p>It all started when I noticed that when the hero is exploded out of a container jar I had no easy (i.e. generic) way of switching his animation from 'look shocked and concerned' to 'act casual and wait to run around'.</p>
 <p>So I wanted things to know when they were freed from a container. Things in this eclectic code base are represented by a single struct called an Entity. Until now I had a bunch of function pointers for custom methods to think, render and handle collisions (actually two handlers for this for collisions between entities and collisions between an entity and tiles).</p>
@@ -37,10 +41,9 @@
 <p>To avoid calling event handlers on things that don't care about events (i.e. most things), entities also specify a bitmask indicating which events they want to be told about. E.g. the player entity has mask of EVT_COLLISION | EVT_RELEASED.</p>
 <p>So after all that I now have a logical place to put a bit of code that stops the player looking so worried when he's just exploded out of a jar.</p>
 <p>Take heed. This is why games aren't finished.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">24 Jan 2016</span> by Joe</div>
+        <div class="publish">Published on <span class="date">24 Jan 2016</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #34 - Audio</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #34 - Audio</h1>
+                <p class="strapline">Sounds like a good idea ... and not before time.
+</p>
                 <p class="publish">Published on <span class="date">12 Dec 2015</span> by Joe</p>
-
-                <p>Spooky Pooky finally has some audio in it.</p>
+            </div>
+            
+            <p>Spooky Pooky finally has some audio in it.</p>
 <p>After a bit of thrashing about trying to decide between straight OpenAL, FMod, Wwise, random wrapper libraries and SFML I fell off my toilet, banged my head and had an epiphany.</p>
 <p>Once I cleaned that up I just chucked SFML in there and never looked back. Currently using GLFW to get a window + OpenGL context set up, so I'll probably ditch that and use SFML there too - no point having two libraries.</p>
 <p>For iOS I'll just use the CoreAudio / OpenAL code I've used for my previous game (QB1-0) as it's pretty easy when it's just one platform to worry about.</p>
@@ -46,10 +50,9 @@
 <p>Well it's a plan - being a metroidvania you'll come across the lab + machine area again later in the game.</p>
 <p>Oh yeah, one last technological development. There's doors. Look, there's one sliding up there. Everyone loves a game with doors in it.</p>
 <p>Adding them was reasonably simple - they're just entities that are solid (for which I had to rejig my collision code, previously only used for tile chunks) with paths and triggers.</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">12 Dec 2015</span> by Joe</div>
+        <div class="publish">Published on <span class="date">12 Dec 2015</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

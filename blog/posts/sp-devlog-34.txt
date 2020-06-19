@@ -5,6 +5,8 @@ date: 20151212
 icon: cogs
 tags: devlog,spooky-pooky
 
+Sounds like a good idea ... and not before time.
+
 Spooky Pooky finally has some audio in it.
 
 After a bit of thrashing about trying to decide between straight OpenAL, FMod, Wwise, random wrapper libraries and SFML I fell off my toilet, banged my head and had an epiphany.

@@ -5,6 +5,8 @@ date: 20160706
 icon: cogs
 tags: devlog,spooky-pooky
 
+Reworking the collision system ... again.
+
 My dedication to doing-a-little-bit-every-day is helping to push me through the molasses-like barrier of a creativity slump. At least, I think it's helping.
 
 The code has evolved to match the game that is emerging and whilst generally a good thing that helps keep things mean and lean, there are some aspects that eventually need to be taken to task.

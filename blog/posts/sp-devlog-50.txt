@@ -5,6 +5,8 @@ date: 20160503
 icon: cogs
 tags: devlog,spooky-pooky
 
+Working through the bugs.
+
 My how time flies.
 
 Despite appearances, work is continuing - here's a little list of minor accomplishments to make myself feel better:

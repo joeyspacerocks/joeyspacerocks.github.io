@@ -5,6 +5,8 @@ date: 20150820
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding some weaponery to the gameplay.
+
 So I've been messing about with guns a bit.
 
 Some bang-bang explodey action ...

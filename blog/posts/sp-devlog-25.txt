@@ -5,6 +5,8 @@ date: 20150712
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding controller support to the Mac build.
+
 Thanks to [GLFW](http://www.glfw.org/) (great tip-off from [dek](http://twitter.com/dekdev)) I got an XBox 360 controller working very nicely with the game.
 
 Owing to how GLFW works I had to replace my lovely Mac-specific application launch code with a much simpler (and cross-platform) C file that uses GLFW to create the window + OpenGL context so that I could hook into it's input functions.

@@ -5,6 +5,8 @@ date: 20141002
 icon: cogs
 tags: devlog,spooky-pooky
 
+First attempt at squishy sprites.
+
 Spent some time adding some wibble ... not completely sold on this yet as with my low resolution it comes across as a bit glitchy, but it'll be useful for some of the bigger sprites.
 
 ![](images/LimitedInfantileImperatorangel.mp4)

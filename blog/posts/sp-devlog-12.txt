@@ -5,6 +5,8 @@ date: 20141029
 icon: cogs
 tags: devlog,spooky-pooky
 
+Adding momentum to the physics system.
+
 So I'm still plugging away at Spooky Pooky after a short interlude whilst I patched up QB1-0 with an iPhone 6+ fix.
 
 Latest update is to tidy up some of the physics code so that I could impart some physically implausible reaction forces to platforms when landed on.

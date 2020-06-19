@@ -5,6 +5,8 @@ date: 20170913
 icon: cogs
 tags: devlog,spooky-pooky
 
+Cleaning up the state handling.
+
 I told you I'd be back. Unless you've never been here before, and have no idea who I am or 
 what I'm talking about. In which case, hi!
 

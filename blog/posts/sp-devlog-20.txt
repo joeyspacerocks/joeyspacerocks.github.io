@@ -5,6 +5,8 @@ date: 20150317
 icon: cogs
 tags: devlog,spooky-pooky
 
+Everyone knows physics engines are tricky ...
+
 Apologies that this update is similar to the last but I finally got the momentum stuff working properly. Thought it was before but ... y'know, bugs and things.
 
 ![](images/VillainousUntimelyDrongo.mp4)

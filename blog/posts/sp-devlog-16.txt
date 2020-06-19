@@ -5,6 +5,8 @@ date: 20141215
 icon: cogs
 tags: devlog,spooky-pooky
 
+Developing the Pookification Machine.
+
 Dear diary. Progress has been slow over the last few weeks due to various ailments. Winter, huh.
 
 Still, I've been fleshing out the intro level where you begin as Horatio and end with the transformation.

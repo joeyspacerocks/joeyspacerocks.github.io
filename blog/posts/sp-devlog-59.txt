@@ -5,6 +5,8 @@ date: 20170220
 icon: cogs
 tags: devlog,spooky-pooky
 
+Jumbling up the narrative with a playable flashback scene.
+
 Despite appearances, I've actually been making pretty consistent and real progress for the last few months (by my own definition of 'progress').
 
 I've a fairly well defined sense of the opening chunk of the game, so I've knuckled down to attempt to get a first pass of that done.

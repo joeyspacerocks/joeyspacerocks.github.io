@@ -5,6 +5,8 @@ date: 20150509
 icon: cogs
 tags: devlog,spooky-pooky
 
+Preparations for multi-platform support.
+
 Greetings. Wow, has it been that long?
 
 I've been distracted by some non-gamedev things for the past couple of months but have kept picking away at Spooky Pooky in the meantime.

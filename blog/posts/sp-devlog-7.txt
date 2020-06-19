@@ -5,6 +5,8 @@ date: 20140919
 icon: cogs
 tags: devlog,spooky-pooky
 
+Sprites built out of tiles and edited in Tiled
+
 It was while I was writing an XML parser in C that I started to question my motivation behind this project ...
 
 Still, it all worked out - radically cleaned up my Tiled loader code, plus finally sorted out the rest of the system so I can throw entities about with custom handlers for AI etc.

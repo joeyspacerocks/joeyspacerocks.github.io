@@ -5,6 +5,8 @@ date: 20160531
 icon: cogs
 tags: devlog,spooky-pooky
 
+Heads up - doors are pretty complicated.
+
 Hello devlog, sorry it's been a while.
 
 Since last time I've made a little room generator script. It's really billy-basic - not so much procedural-generation as just ... generation. It's a Python script that just creates Tiled levels at custom screen-sizes (e.g. 1x1, 2x1, etc) with some exits at strategic points and some basic generation. The purpose is to have a quick way of kicking off empty rooms for me to fill with stuff to test. As the build progress I'll extend the script with more options (e.g. tilesets, etc) but it's only ever going to be used for generating the basis for hand-crafted rooms.

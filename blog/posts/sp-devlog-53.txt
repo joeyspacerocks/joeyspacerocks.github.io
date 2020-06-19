@@ -5,6 +5,8 @@ date: 20160619
 icon: cogs
 tags: devlog,spooky-pooky
 
+It ain't a Metroidvania with slime blobs.
+
 Like the sunshine in an English summertime, progress on Spooky Pooky has been patchy in the month of June.
 
 There has been an amount of cleanup in the code-base, such as removing the last references to 'levels' and replacing with 'rooms', finally cementing the game's status as a non-level based metroidvania. I've also been busy indulging in my favourite programming past-time - deleting code.

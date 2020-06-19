@@ -5,6 +5,8 @@ date: 20140913
 icon: cogs
 tags: devlog,spooky-pooky
 
+Linking entities together for extendable logic.
+
 Spent a while re-jigging my embryonic entity system so that things can be associated with other things (for example buttons can turn off forcefields).
 
 To accompany this I rewrote the Tiled level loader to take advantage of it's object layers, specifically using the properties to specify the relationships between entities.

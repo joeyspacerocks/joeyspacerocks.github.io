@@ -5,6 +5,8 @@ date: 20141112
 icon: cogs
 tags: devlog,spooky-pooky
 
+Fixing the timestep for future warping.
+
 Recently I've been finally addressing my lazy approach to the timestep. Because I'm initially targeting iOS devices and tuning the game accordingly I've just been relying on the fact that the game is fixed to 60fps and all my physics code has been tuned accordingly.
 
 So I've been through all the code and changed all the time-dependent functions (physics, squishiness, etc) to be correctly calculated from delta-time.
@@ -13,7 +15,7 @@ The primary reason is so that the game runs at a consistent speed even in the fr
 
 As an experiment I've used this to enhance pausing the game by slowing down very quickly and speeding up on resume. Pretty subtle effect, but I'm hoping it's things like this that lead to a more polished end-product.
 
-<iframe width="853" height="480" src="https://www.youtube.com/embed/hiPJNXYwyoU" frameborder="0" allowfullscreen></iframe>
+![](https://www.youtube.com/embed/hiPJNXYwyoU)
 
 Now that the code base is a bit cleaner I'm really going to stop procrastinating now and actually try and progress the game for real. Yeah sure.
 

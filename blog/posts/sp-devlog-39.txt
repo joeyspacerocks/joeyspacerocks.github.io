@@ -5,6 +5,8 @@ date: 20160127
 icon: cogs
 tags: devlog,spooky-pooky
 
+A deeper look at the particle system.
+
 An aside about the particle system.
 
 Each particle is a simple struct containing the usual position, velocity, animation and some behaviour flags.

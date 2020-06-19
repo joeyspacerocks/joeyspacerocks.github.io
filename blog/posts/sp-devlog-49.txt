@@ -5,6 +5,8 @@ date: 20160411
 icon: cogs
 tags: devlog,spooky-pooky
 
+Doodling around with machines and effects.
+
 I've started floundering again. It all began when I started to design (!) the save-game / checkpoint device.
 
 My first attempt was this:

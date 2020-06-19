@@ -23,11 +23,15 @@
 	        <a href="index.html">Home</a>
 	    </div>
 
-            <div class="post">
-		    <h1>Spooky Pooky #52 - Reanimator</h1>
+        <div class="post">
+            <div class="title">
+                <h1>Spooky Pooky #52 - Reanimator</h1>
+                <p class="strapline">Heads up - doors are pretty complicated.
+</p>
                 <p class="publish">Published on <span class="date">31 May 2016</span> by Joe</p>
-
-                <p>Hello devlog, sorry it's been a while.</p>
+            </div>
+            
+            <p>Hello devlog, sorry it's been a while.</p>
 <p>Since last time I've made a little room generator script. It's really billy-basic - not so much procedural-generation as just ... generation. It's a Python script that just creates Tiled levels at custom screen-sizes (e.g. 1x1, 2x1, etc) with some exits at strategic points and some basic generation. The purpose is to have a quick way of kicking off empty rooms for me to fill with stuff to test. As the build progress I'll extend the script with more options (e.g. tilesets, etc) but it's only ever going to be used for generating the basis for hand-crafted rooms.</p>
 <p>As an aside, I'm also going to play around with a script for augmenting room files to add 'stuff' - e.g. foliage, background tech stuff; basically non-colliding decoration.</p>
 <p>I've also simplified doors and exits (the GIF below shows some basic generates rooms - with manually added stuff on top). Previously exits were a mixture of tiles, invisible trigger areas and door objects placed into a room. Now an exit is a single Tiled object plonked into a room. In game this becomes an entity backed by an appropriate sprite and a door is automatically added next to it. The direction you exit the room in (i.e. up/down/left/right) is automatically determined by the edge the exit is added to, and the destination room identified from the world map (discussed in a previous entry).</p>
@@ -43,10 +47,9 @@
 
 <p>It's not terribly well thought through at the moment - bugs galore and it's quite easy to lose your body. Never mind.</p>
 <p>The reattachment animation was donated to me by a lovely person on Twitter called <a href="https://twitter.com/EnchaeC">@EnchaeC</a> and opend my eyes to the possibilities once you stop obsessing over frame-count and just bump it right up there ...</p>
-                
-            </div>
+        </div>
 
-            <div class="publish">Published on <span class="date">31 May 2016</span> by Joe</div>
+        <div class="publish">Published on <span class="date">31 May 2016</span> by Joe</div>
 	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
 
 	    <div class="links">

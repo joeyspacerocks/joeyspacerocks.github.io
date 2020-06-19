@@ -5,6 +5,8 @@ date: 20160313
 icon: cogs
 tags: devlog,spooky-pooky
 
+Raycasting to simulate enemy vision.
+
 Been whiling away some evenings doodling some new tiles and the like.
 
 ![](images/PessimisticBreakableAntarcticgiantpetrel.mp4)

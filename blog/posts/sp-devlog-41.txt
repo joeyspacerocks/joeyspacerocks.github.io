@@ -5,6 +5,8 @@ date: 20160131
 icon: cogs
 tags: devlog,spooky-pooky
 
+Creating a large bouncy caterpillar as a diversion.
+
 I was supposed to be working on the structure of the game and power-ups this weekend.
 
 Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.
