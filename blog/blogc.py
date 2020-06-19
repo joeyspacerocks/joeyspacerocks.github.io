@@ -7,24 +7,14 @@ from pathlib import Path
 import chevron
 import shutil
 import markdown
-import ffmpeg
 import pprint
 
 __version__ = '0.1.1'
 
 def process_media(m):
     url = m.group(2)
-    if url.endswith('.gif'):
-        if path.isfile(url):
-            dest = url.split('.')[0] + '.mp4'
-            if not path.isfile(dest) or (path.getmtime(dest) < path.getmtime(url)):
-                print(' - converting {} to mp4 ...'.format(url.split('/')[1]))
-                ffmpeg.input(url).output(dest).run(quiet=True)
-            return '<video autoplay="true" muted="true" loop="true"><source src="{}" type="video/mp4"></video>'.format(dest)
-        else:
-            print('ERROR: no such GIF - ' + url)
-            return m.group(0)
-
+    if url.endswith('.mp4'):
+        return '<video autoplay="true" muted="true" loop="true"><source src="{}" type="video/mp4"></video>'.format(url)
     elif url.startswith('https://www.youtube.com'):
         # write embedded iframe
         pass
@@ -69,6 +59,8 @@ def write_html(data, tmpl_path, tmpl_file, dest_path, dest_file):
             out.write(chevron.render(template, data))
 
 def main():
+    print('Generating blog ... ')
+
     src_path = 'posts'
     dest_path = 'out'
     tmpl_path = 'templates'
@@ -80,8 +72,7 @@ def main():
     for f in Path(src_path).iterdir():
         if f.name.endswith(".txt"):
             post = read_post(f)
-            # dest_file = path.splitext(f.name)[0] + '.html'
-            dest_file = post['url'] + '.html'
+            dest_file = post.get('url', path.splitext(f.name)[0] + '.html') + '.html'
             write_html(post, tmpl_path, 'post.html', dest_path, dest_file)
             index.append(post)
 

@@ -13,7 +13,7 @@ Then UI arrives and you realise that it's a bit weird - it doesn't want to run a
 
 Look.
 
-![](images/AnimatedBruisedIbadanmalimbe.gif)
+![](images/AnimatedBruisedIbadanmalimbe.mp4)
 
 Of course we're looking at it all wrong. The goal should be to polish it and make it look cool and swish and, because remember this is a game we're making, fun to use. So into the project todo list it goes. It's functional for the moment, so it gets the job done, but it needs pazazz and gravitas. Or other words.
 

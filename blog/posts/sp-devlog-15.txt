@@ -9,6 +9,6 @@ Quick update - been working on an intro level where you play as the hero, Horati
 
 It's only a small level and you lack certain abilities (such as not being able to jump very high, and slowish walk). Eventually you're corralled into ... The Machine:
 
-![](images/FilthyLegalBluet.gif)
+![](images/FilthyLegalBluet.mp4)
 
 Not quite finished yet - organs need refining and I want to add some distortion effects over the whole thing using some shader magic, but it's getting there ...

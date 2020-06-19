@@ -15,7 +15,7 @@ This level introduces water which gave me cause to examine my appalling stop-gap
 
 Look here's a large GIF with some floaty, nudgey kind of stuff:
 
-![](images/KnobbyAgedChinchilla.gif)
+![](images/KnobbyAgedChinchilla.mp4)
 
 Luckily I rediscovered [Chris Hecker's 18 year old physics series](http://chrishecker.com/Rigid_Body_Dynamics) or I'd still be embedded in a wall.
 

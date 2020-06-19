@@ -11,7 +11,7 @@ So then, water ... added some render code so that arbitrary tiles can specify ma
 
 Below is a container (will hold the organs that the player has to retrieve) containing some green gloop.
 
-![](images/DampDefenselessIbizanhound.gif)
+![](images/DampDefenselessIbizanhound.mp4)
 
 It required a separate rendering pass to the swimmable water (or what approximates to it in my ad-hoc thrown together renderer) so that it can render the background behind and the tiles in front. Just got to find a way to get some bubbles in there that can be masked off.
 
@@ -19,4 +19,4 @@ What you probably can't tell in the GIF above is that the little blood vials tha
 
 Also tweaked the water effect and made another little play level to have a swim. Additionally added another background level of parallax - no idea what to put in it yet. If I had a creative director I'd have probably sacked him by now.
 
-![](images/MildThickArrowcrab.gif)
+![](images/MildThickArrowcrab.mp4)

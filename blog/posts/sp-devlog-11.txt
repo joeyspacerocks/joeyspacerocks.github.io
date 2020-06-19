@@ -9,7 +9,7 @@ I've distracted myself again - this time messing about with trying to come up wi
 
 Acknowledging that I can only draw pictures that are 16x16 pixels I've tried to side-step the issue of drawing a decent title/logo for the game by instead generating one dynamically out of electricity:
 
-![](images/ThinSatisfiedEel.gif)
+![](images/ThinSatisfiedEel.mp4)
 
 The font is terrible so I need to mess around with ... there's also the nagging feeling that it doesn't really fit with the style of the actual game, however I always intended to have some electrical effects in the actual game itself so as to fit in with the theme of scientists-lab-run-amok, so I think I might feel better about it once I try incorporating the effect into the actual game. Or not.
 

@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 So then, this week I've been continuing the elemental theme and have been crafting an electrical demon. Or something.
 
-![](images/ArcticDiligentBats.gif)
+![](images/ArcticDiligentBats.mp4)
 
 It's using the same approach I took with the titles but I've made it generic now.
 
@@ -17,7 +17,7 @@ At render time I can then use the algorithm I'm using with the titles to generat
 
 Nice thing about this is I can also do other things with the point-cloud, like emit particles:
 
-![](images/MeagerPresentGoldeneye.gif)
+![](images/MeagerPresentGoldeneye.mp4)
 
 The actual sprite I'm using for this is just for testing, but due to the nature of the rendering can be extremely crude:
 

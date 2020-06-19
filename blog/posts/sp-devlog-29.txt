@@ -11,7 +11,7 @@ Specifically I've now made the level code a bit more self-contained so that I ca
 
 So the title screen is now just another level with electrical entities for the titles themselves, etc.
 
-![](images/RashPassionateCaiman.gif)
+![](images/RashPassionateCaiman.mp4)
 
 It's only a stand-in for the moment as from a design point of view it's a bit messy plus there's not actually any room for UI menus and the like.
 

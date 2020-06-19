@@ -9,6 +9,6 @@ I was supposed to be working on the structure of the game and power-ups this wee
 
 Instead I accidentally made some kind of blobby bouncy mega-caterpillar boss thing.
 
-![](images/PlaintiveRelievedGaur.gif)
+![](images/PlaintiveRelievedGaur.mp4)
 
 Um. Oops.

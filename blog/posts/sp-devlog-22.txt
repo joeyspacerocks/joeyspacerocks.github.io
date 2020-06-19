@@ -9,7 +9,7 @@ Been a sparse few weeks for gamedev what with one thing and another, however I'v
 
 Finally added tile animations. Another little feature that took a little longer than it should have.
 
-![](images/vHfDVzr.gif)
+![](images/vHfDVzr.mp4)
 
 Tiled has some support for tile animations, allowing you to specify a sequence of tiles from the set and the delays between them. So I added support for loading external tilesets (tsx) files and associated animations, plus some simple in-game code for rendering them.
 

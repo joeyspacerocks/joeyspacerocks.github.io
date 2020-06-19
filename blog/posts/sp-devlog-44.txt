@@ -13,5 +13,5 @@ Written a whole bunch of code that had me swearing after pretty much every line 
 
 Thank Venkman that I'm the only dev on this thing .. wouldn't want anyone else to see this particular implementation ..
 
-![](images/VelvetyPreciousAurochs.gif)
+![](images/VelvetyPreciousAurochs.mp4)
 

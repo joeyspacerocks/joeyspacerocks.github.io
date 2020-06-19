@@ -7,6 +7,6 @@ tags: devlog,spooky-pooky
 
 Silly little test to see how an electrical power up would look - i.e. how does the electrical sprite renderer look for small sprites (16x21 in this case):
 
-![](images/ReliableAgreeableJoey.gif)
+![](images/ReliableAgreeableJoey.mp4)
 
 In a bit of a creative slump at the moment (otherwise known as why the hell am I doing a metroidvania) so trying to jolt myself out of it with a few volts.

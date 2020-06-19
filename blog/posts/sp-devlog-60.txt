@@ -31,7 +31,7 @@ with big intensity steps which feels more in-keeping with the low-resolution / l
 rest of the game. To make this more interesting I've also added some time-based noise perturbation to give things
 a dynamic smokey look. You can see the result below where some a light shaft is slanting down into the water.
 
-![](images/ZYxJljY.gif)
+![](images/ZYxJljY.mp4)
 
 The second change was more subtle and I could see it maybe splitting opion. Personally I like it and I'm the
 developer so it's in. When I compose the contents of the final lighting buffer with the scene I take high-intensity 
@@ -43,7 +43,7 @@ The resulting glow texture is already being composited after the lighting into t
 pretty much for free I get some nice subtle glowing for bright pixels that are in direct light. You can (maybe) see
 this below:
 
-![](images/vHSlaw4.gif)
+![](images/vHSlaw4.mp4)
 
 The combination of these effects feel like they've lifted the look into something much more polished. I'm fully 
 aware that some people may not like this sort of thing, especially in a game with a pixelly look, but you can't please

@@ -11,13 +11,13 @@ There has been an amount of cleanup in the code-base, such as removing the last 
 
 On a more constructive note I've given the slime blobs the ground-breaking ability to follow the walls to their left. Hence the test blob-cave below.
 
-![](images/8hiOt7s.gif)
+![](images/8hiOt7s.mp4)
 
 Something that's been on the list for a while is importing rotated and flipped tiles from Tiled. When I render the tile-map I use a static VBA with enough tiles to cover the screen that I offset according to the scroll-offset. I dynamically remap the texture coords for the array and resend that every frame, so to support flips and rotations (which are covered by flips about the diagonal) I simply had to fiddle with the UVs when building the per-frame texture coords.
 
 The current plan is to chain a series of rooms together that contain all the weapons and power-ups available in the game, so that I can test them singularly and then in combinations. First step was to revisit the gain-a-powerup-organ sequence, which currently consists of finding an 'organ container' and busting it open using a button, etc.
 
-![](images/ajVLbLF.gif)
+![](images/ajVLbLF.mp4)
 
 I'm not finished with this yet as the effect underwhelms me a little, but it'll do for the moment.
 

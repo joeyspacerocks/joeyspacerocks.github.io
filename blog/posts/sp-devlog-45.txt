@@ -7,7 +7,7 @@ tags: devlog,spooky-pooky
 
 Made a robot controlled by a brain in a jar. Plus some bang bangs and explosions.
 
-![](images/BruisedDeliciousDoe.gif)
+![](images/BruisedDeliciousDoe.mp4)
 
 Toying with the idea of making this a mini-boss where that brain is yours and you need to defeat it in order to claim the 'brain' power-up. This'll give you the ability to 'remember' how you got to be a skeleton in a jar and trigger a playable flashback as human Horatio stumbling across the machine in the lab.
 

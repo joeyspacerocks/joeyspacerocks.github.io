@@ -27,7 +27,7 @@ An interesting simplification I also made was to wrap up the main foreground til
 
 During this I noticed that seed pods weren't exploding against arbitrary non-tile solid entities correctly and so started obsessing over it until I had it working properly. Even though I don't know what they're for or why I'm adding it. Brilliant.
 
-![](images/4A9NtX8.gif)
+![](images/4A9NtX8.mp4)
 
 As a consequence of getting this working I found a great little bug - I have a simple little structure that I wrap around fixed sized C arrays so I can pass them into functions and have them maintain a 'next' pointer for those things to easily push stuff into them. And of course I'd buggered up the code that shunts the pointer on. This was used for the collision stuff so it meant that if something collided with more than one thing during a frame it lost all but the last one, which luckily broke the seed stuff in some circumstances.
 

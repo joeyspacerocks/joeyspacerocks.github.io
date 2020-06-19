@@ -27,7 +27,7 @@ Luckily I stumbled across [Bosca Ceoil ](http://boscaceoil.net/) by Terry Cavana
 
 Here's a GIF showcasing the audio:
 
-![](images/CaringSerpentineHarpseal.gif)
+![](images/CaringSerpentineHarpseal.mp4)
 
 In other news - I'm rejigging where in the story the game opens. Originally I had the player starting as Horatio in his human form, stumbling across the machine that transforms him. However, Horatio lacks the speed and agility of the skeletal version, and the stage had no clear purpose to the player. So I was worried that the player would get turned off and bored before really getting into it.
 

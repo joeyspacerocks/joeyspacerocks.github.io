@@ -16,7 +16,7 @@ So, what have I done since the last time?
 * Reworked water to be rendered via a shader - currently looks exactly the same as straight-forward tiles, but will allow me to do something more interesting next
 
 
-![](images/JampackedSilkyLadybug.gif)
+![](images/JampackedSilkyLadybug.mp4)
 
 What haven't I done?
 
@@ -28,6 +28,6 @@ That is to say I've succumbed to spending too long messing about with sprites an
 
 The game revolves around collecting all the blood vials on each level, plus the body part that sits in the Organ Incubator .. first up is some terrible pixel art resembling a 'human' heart - once broken free of the machine it'll bounce about like an errant puppy requiring you to chase after it to complete the level.
 
-![](images/yJFhbkC.gif)
+![](images/yJFhbkC.mp4)
 
 Or something like that.

@@ -7,6 +7,6 @@ tags: devlog,spooky-pooky
 
 More prevarication recently - made a little wibbly, wobbly seed pod plant that explodes when you get too close.
 
-![](images/GloomyDapperAnole.gif)
+![](images/GloomyDapperAnole.mp4)
 
 Still indulging in experimenting with projectiles and weapons and the like, and starting to sketch out some test rooms to map out how the power ups will work together.
