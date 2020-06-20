@@ -13,10 +13,8 @@
 		        <h1><a href="../index.html">fistful of squid</a></h1>
                 <p>A blog by Joe, a part-time games developer</p>
 
-                <!-- {{#title}}<h2>{{.}}</h2>{{/title}} -->
-
                 <ul class="tags">
-                {{#tags}}<li{{#active}} class="active"{{/active}}><a href="{{tag}}.html">{{tag}}</a></li>{{/tags}}
+                {{#tags}}<li><span{{#active}} class="active"{{/active}}><a href="{{tag}}.html">{{tag}}</a></span></li>{{/tags}}
                 </ul>
             </div>
             
@@ -34,7 +32,17 @@
         </div>
 
         <div class="footer">
-            <div>
+            <ul>
+                {{#nav}}
+                    {{#prev}}<li><a href="{{.}}">&lt; Newer</a></li>{{/prev}}
+                    {{#pages}}
+                    <li><span{{#active}} class="active"{{/active}}><a href="{{url}}">{{page}}</a></span></li>
+                    {{/pages}}
+                    {{#next}}<li><a href="{{.}}">Older &gt;</a></li>{{/next}}
+                {{/nav}}
+            </ul>
+
+\           <div>
                 <a href="../index.html">
                     <p><img class="logo" src="../logo.svg" /></p>
                     <h1>fistful of squid</h1>

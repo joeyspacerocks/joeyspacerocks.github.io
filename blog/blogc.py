@@ -67,6 +67,7 @@ def main():
     src_path = 'posts'
     dest_path = '.'
     tmpl_path = 'templates'
+    page_size = 5
 
     if not path.exists(dest_path):
         mkdir(dest_path)
@@ -94,8 +95,40 @@ def main():
         for t in index_pages:
             tags.append({ 'tag': t, 'active': t == tag })
 
-        data = {'tags': tags, 'tag': tag, 'posts': posts}
-        write_html(data, tmpl_path, 'index.html', dest_path, tag + '.html')
+        page_posts = []
+        page = 0
+        page_count = int(len(posts) / page_size) + 1
+
+        for p in posts:
+            page_posts.append(p)
+            if len(page_posts) == page_size:
+                write_index_page(tags, tag, page, page_count, page_posts, tmpl_path, dest_path)
+                page += 1
+                page_posts.clear()
+
+        if len(page_posts) > 0:
+            write_index_page(tags, tag, page, page_count, page_posts, tmpl_path, dest_path)
+
+def index_filename(tag, page):
+    return (tag if page == 0 else '{}_{}'.format(tag, page + 1)) + '.html'
+
+def write_index_page(tags, tag, page, page_count, posts, tmpl_path, dest_path):
+    nav = {}
+    if page > 0:
+        nav['prev'] = index_filename(tag, page - 1)
+    if page < page_count - 1:
+        nav['next'] = index_filename(tag, page + 1)
+    if page_count > 1:
+        nav['pages'] = []
+        for p in range(0, page_count):
+            nav['pages'].append({
+                'page': p + 1, 
+                'url': index_filename(tag, p),
+                'active': page == p
+            })
+
+    data = {'tags': tags, 'tag': tag, 'posts': posts, 'nav': nav}
+    write_html(data, tmpl_path, 'index.html', dest_path, index_filename(tag, page))
 
 if __name__ == '__main__':
     main()
