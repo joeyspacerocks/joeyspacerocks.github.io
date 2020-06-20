@@ -3,7 +3,7 @@ url: sp-devlog-41
 banner: spdevlog.png
 date: 20160131
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Creating a large bouncy caterpillar as a diversion.
 

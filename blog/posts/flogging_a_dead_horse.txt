@@ -3,6 +3,7 @@ url: flogging_a_dead_horse
 banner: post2.jpg
 date: 20150507
 icon: bullhorn
+tags: QB1-0,press
 
 QB1-0 re-released on the App Store!
 

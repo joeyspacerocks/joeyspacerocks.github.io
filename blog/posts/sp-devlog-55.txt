@@ -3,7 +3,7 @@ url: sp-devlog-55
 banner: spdevlog.png
 date: 20160712
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Here's a little update - been fleshing out some of the audio recently as can be seen/heard in the vid below.
 

@@ -3,7 +3,7 @@ url: sp-devlog-9
 banner: spdevlog.png
 date: 20141002
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 First attempt at squishy sprites.
 

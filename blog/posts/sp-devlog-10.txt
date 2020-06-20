@@ -3,7 +3,7 @@ url: sp-devlog-10
 banner: spdevlog.png
 date: 20141004
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 How I use Tiled to build rooms.
 

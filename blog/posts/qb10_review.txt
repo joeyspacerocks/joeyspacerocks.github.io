@@ -2,6 +2,7 @@ title: QB1-0 Review
 url: qb10_review
 date: 20140717
 banner: post2.jpg
+tags: QB1-0,press
 
 A lovely review of QB1-0 by Indie Game Enthusiast
 

@@ -3,7 +3,7 @@ url: sp-devlog-48
 banner: spdevlog.png
 date: 20160401
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Rejigging the collision system to support weapons.
 

@@ -3,7 +3,7 @@ url: sp-devlog-28
 banner: spdevlog.png
 date: 20150820
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding some weaponery to the gameplay.
 

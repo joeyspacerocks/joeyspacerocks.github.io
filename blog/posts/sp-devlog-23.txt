@@ -3,7 +3,7 @@ url: sp-devlog-23
 banner: spdevlog.png
 date: 20150619
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Metroidvania for the win. Note to future self - sorry about this.
 

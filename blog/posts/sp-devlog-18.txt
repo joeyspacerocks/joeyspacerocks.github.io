@@ -3,7 +3,7 @@ url: sp-devlog-18
 banner: spdevlog.png
 date: 20150120
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Introducing abilities through gameplay.
 

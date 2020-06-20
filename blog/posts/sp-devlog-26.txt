@@ -3,7 +3,7 @@ url: sp-devlog-26
 banner: spdevlog.png
 date: 20150811
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Building on PC and adding some lovely fire effects.
 

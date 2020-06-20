@@ -3,7 +3,7 @@ url: sp-devlog-43
 banner: spdevlog.png
 date: 20160226
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Biting the bullet and getting a UI up and running.
 

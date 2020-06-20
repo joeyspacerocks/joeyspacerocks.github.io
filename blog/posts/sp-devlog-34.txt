@@ -3,7 +3,7 @@ url: sp-devlog-34
 banner: spdevlog.png
 date: 20151212
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Sounds like a good idea ... and not before time.
 

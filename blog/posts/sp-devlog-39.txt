@@ -3,7 +3,7 @@ url: sp-devlog-39
 banner: spdevlog.png
 date: 20160127
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 A deeper look at the particle system.
 

@@ -3,7 +3,7 @@ url: sp-devlog-30
 banner: spdevlog.png
 date: 20150921
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 An extensive reorganisation of the rendering engine.
 

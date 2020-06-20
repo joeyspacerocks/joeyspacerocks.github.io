@@ -3,7 +3,7 @@ url: sp-devlog-49
 banner: spdevlog.png
 date: 20160411
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Doodling around with machines and effects.
 

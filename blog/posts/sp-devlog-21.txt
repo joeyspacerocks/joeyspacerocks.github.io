@@ -3,7 +3,7 @@ url: sp-devlog-21
 banner: spdevlog.png
 date: 20150509
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Preparations for multi-platform support.
 

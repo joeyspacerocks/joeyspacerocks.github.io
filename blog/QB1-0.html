@@ -13,22 +13,39 @@
 		        <h1><a href="../index.html">fistful of squid</a></h1>
                 <p>A blog by Joe, a part-time games developer</p>
 
-                <!-- {{#title}}<h2>{{.}}</h2>{{/title}} -->
+                <!--  -->
 
                 <ul class="tags">
-                {{#tags}}<li{{#active}} class="active"{{/active}}><a href="{{tag}}.html">{{tag}}</a></li>{{/tags}}
+                <li><a href="index.html">index</a></li><li><a href="devlog.html">devlog</a></li><li><a href="spookypooky.html">spookypooky</a></li><li class="active"><a href="QB1-0.html">QB1-0</a></li><li><a href="press.html">press</a></li><li><a href="gamedev.html">gamedev</a></li>
                 </ul>
             </div>
             
             <div class="contents">
                 <ul>
-                    {{#posts}}
                         <li>
-                            <h2><i class="fa fa-{{icon}}"></i> <a href="{{url}}.html">{{title}}</a></h2>
-                            <p class="date">{{nice_date}}</p>
-                            <p class="blurb">{{blurb}}</p>
+                            <h2><i class="fa fa-bullhorn"></i> <a href="flogging_a_dead_horse.html">Flogging a dead horse?</a></h2>
+                            <p class="date">07 May 2015</p>
+                            <p class="blurb">QB1-0 re-released on the App Store!
+</p>
                         </li>
-                    {{/posts}}
+                        <li>
+                            <h2><i class="fa fa-bullhorn"></i> <a href="qb10_version_13_released.html">QB1-0 version 1.3 released</a></h2>
+                            <p class="date">03 Nov 2014</p>
+                            <p class="blurb">iPhone 6 support plus exciting bug fixes!
+</p>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-newspaper-o"></i> <a href="qb10_review.html">QB1-0 Review</a></h2>
+                            <p class="date">17 Jul 2014</p>
+                            <p class="blurb">A lovely review of QB1-0 by Indie Game Enthusiast
+</p>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-bullhorn"></i> <a href="qb10_version_12_released.html">QB1-0 version 1.2 released</a></h2>
+                            <p class="date">11 Jul 2014</p>
+                            <p class="blurb">Asteroids and lasers come to the iPad ...
+</p>
+                        </li>
                 </ul>
             </div>
         </div>

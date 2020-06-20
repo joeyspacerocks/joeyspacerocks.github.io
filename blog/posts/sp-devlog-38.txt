@@ -3,7 +3,7 @@ url: sp-devlog-38
 banner: spdevlog.png
 date: 20160124
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Decoupling things with a simple event bus.
 

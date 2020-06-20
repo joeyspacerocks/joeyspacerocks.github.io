@@ -3,7 +3,7 @@ url: sp-devlog-22
 banner: spdevlog.png
 date: 20150607
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Animating tiles for non-sprite movement.
 

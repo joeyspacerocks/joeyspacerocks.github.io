@@ -3,7 +3,7 @@ url: sp-devlog-15
 banner: spdevlog.png
 date: 20141126
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Sketching out the intro level.
 

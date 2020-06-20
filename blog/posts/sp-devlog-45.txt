@@ -3,7 +3,7 @@ url: sp-devlog-45
 banner: spdevlog.png
 date: 20160308
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Brainbots have a lot of aggression to work out.
 

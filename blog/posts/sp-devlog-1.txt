@@ -3,7 +3,7 @@ url: sp-devlog-1
 banner: spdevlog.png
 date: 20140718
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 A new project, a new devlog ... so it begins ...
 

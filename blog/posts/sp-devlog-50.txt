@@ -3,7 +3,7 @@ url: sp-devlog-50
 banner: spdevlog.png
 date: 20160503
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Working through the bugs.
 

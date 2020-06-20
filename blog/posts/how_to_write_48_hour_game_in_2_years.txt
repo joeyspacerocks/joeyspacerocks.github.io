@@ -2,6 +2,7 @@ title: How to write a 48-hour game in just 2 years
 url: how_to_write_48_hour_game_in_2_years
 banner: post1.jpg
 date: 20130726
+tags: gamedev
 
 ... or how to make, and finish, video games in your spare time ...
 

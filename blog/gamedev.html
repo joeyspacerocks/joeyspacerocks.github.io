@@ -13,22 +13,33 @@
 		        <h1><a href="../index.html">fistful of squid</a></h1>
                 <p>A blog by Joe, a part-time games developer</p>
 
-                <!-- {{#title}}<h2>{{.}}</h2>{{/title}} -->
+                <!--  -->
 
                 <ul class="tags">
-                {{#tags}}<li{{#active}} class="active"{{/active}}><a href="{{tag}}.html">{{tag}}</a></li>{{/tags}}
+                <li><a href="index.html">index</a></li><li><a href="devlog.html">devlog</a></li><li><a href="spookypooky.html">spookypooky</a></li><li><a href="QB1-0.html">QB1-0</a></li><li><a href="press.html">press</a></li><li class="active"><a href="gamedev.html">gamedev</a></li>
                 </ul>
             </div>
             
             <div class="contents">
                 <ul>
-                    {{#posts}}
                         <li>
-                            <h2><i class="fa fa-{{icon}}"></i> <a href="{{url}}.html">{{title}}</a></h2>
-                            <p class="date">{{nice_date}}</p>
-                            <p class="blurb">{{blurb}}</p>
+                            <h2><i class="fa fa-newspaper-o"></i> <a href="how_to_make_games_the_hard_way.html">How to make games the hard way</a></h2>
+                            <p class="date">03 Oct 2014</p>
+                            <p class="blurb">Attempting to justify my approach to game development ... to myself.
+</p>
                         </li>
-                    {{/posts}}
+                        <li>
+                            <h2><i class="fa fa-newspaper-o"></i> <a href="written_a_game_now_what.html">I've written a game! Now what?</a></h2>
+                            <p class="date">19 Jul 2014</p>
+                            <p class="blurb">Releasing a game to rapturous silence ... 
+</p>
+                        </li>
+                        <li>
+                            <h2><i class="fa fa-newspaper-o"></i> <a href="how_to_write_48_hour_game_in_2_years.html">How to write a 48-hour game in just 2 years</a></h2>
+                            <p class="date">26 Jul 2013</p>
+                            <p class="blurb">... or how to make, and finish, video games in your spare time ...
+</p>
+                        </li>
                 </ul>
             </div>
         </div>

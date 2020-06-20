@@ -3,7 +3,7 @@ url: sp-devlog-4
 banner: spdevlog.png
 date: 20140811
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Added some wibbly-wobbly water shader goodness.
 

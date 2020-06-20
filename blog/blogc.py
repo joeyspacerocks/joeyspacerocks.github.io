@@ -5,7 +5,6 @@ import argparse
 import re
 from pathlib import Path
 import chevron
-import shutil
 import markdown
 import pprint
 
@@ -44,6 +43,7 @@ def read_post(f):
                     md_content += line
 
     post['blurb'] = blurb
+    post['tags'] = post.get('tags', '').split(',')
 
     md_content = re.sub(r'\!\[(.*?)\]\((.+?)\)', process_media, md_content)
     post['content'] = markdown.markdown(md_content)
@@ -65,25 +65,37 @@ def main():
     print('Generating blog ... ')
 
     src_path = 'posts'
-    dest_path = 'out'
+    dest_path = '.'
     tmpl_path = 'templates'
 
     if not path.exists(dest_path):
         mkdir(dest_path)
-    
-    index = []
+
+    index_pages = { 'index': [] }
+
     for f in Path(src_path).iterdir():
         if f.name.endswith(".txt"):
             post = read_post(f)
             dest_file = post.get('url', path.splitext(f.name)[0] + '.html') + '.html'
             write_html(post, tmpl_path, 'post.html', dest_path, dest_file)
-            index.append(post)
 
-    index = sorted(index, key = lambda p: p['date'], reverse = True)
-    write_html({'posts': index}, tmpl_path, 'index.html', dest_path, 'index.html')
+            for t in post['tags']:
+                if t in index_pages:
+                    index_pages[t].append(post)
+                else:
+                    index_pages[t] = [post]
 
-    for f in Path(dest_path).iterdir():
-        shutil.copy(f.absolute(), '.')
+            index_pages['index'].append(post)
+
+    for tag, posts in index_pages.items():
+        posts = sorted(posts, key = lambda p: p['date'], reverse = True)
+
+        tags = []
+        for t in index_pages:
+            tags.append({ 'tag': t, 'active': t == tag })
+
+        data = {'tags': tags, 'tag': tag, 'posts': posts}
+        write_html(data, tmpl_path, 'index.html', dest_path, tag + '.html')
 
 if __name__ == '__main__':
     main()

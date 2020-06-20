@@ -3,7 +3,7 @@ url: sp-devlog-19
 banner: spdevlog.png
 date: 20150310
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Playing around with water physics.
 

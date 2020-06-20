@@ -3,7 +3,7 @@ url: sp-devlog-8
 banner: spdevlog.png
 date: 20140926
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 It's held together with glue and string ...
 

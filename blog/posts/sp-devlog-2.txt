@@ -3,7 +3,7 @@ url: sp-devlog-2
 banner: spdevlog.png
 date: 20140721
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Playing around with view area scaling.
 

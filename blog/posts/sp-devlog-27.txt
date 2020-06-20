@@ -3,7 +3,7 @@ url: sp-devlog-27
 banner: spdevlog.png
 date: 20150815
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding point-cloudes to sprites for more interesting rendering options.
 

@@ -3,7 +3,7 @@ url: sp-devlog-32
 banner: spdevlog.png
 date: 20151018
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Letting the foliage strike back.
 

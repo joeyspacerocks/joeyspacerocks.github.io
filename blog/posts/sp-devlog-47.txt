@@ -3,7 +3,7 @@ url: sp-devlog-47
 banner: spdevlog.png
 date: 20160323
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 You can't keep a good UI down.
 

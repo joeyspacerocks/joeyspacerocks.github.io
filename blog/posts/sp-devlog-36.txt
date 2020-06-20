@@ -3,7 +3,7 @@ url: sp-devlog-36
 banner: spdevlog.png
 date: 20160113
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Moving from GLFW to SFML for windowing and the like.
 

@@ -3,7 +3,7 @@ url: sp-devlog-12
 banner: spdevlog.png
 date: 20141029
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding momentum to the physics system.
 

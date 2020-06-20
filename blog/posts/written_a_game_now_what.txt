@@ -2,6 +2,7 @@ title: I've written a game! Now what?
 url: written_a_game_now_what
 banner: post4.jpg
 date: 20140719
+tags: gamedev
 
 Releasing a game to rapturous silence ... 
 

@@ -3,7 +3,7 @@ url: sp-devlog-58
 banner: spdevlog.png
 date: 20170219
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Putting a proper lighing system in for more atmosphere.
 

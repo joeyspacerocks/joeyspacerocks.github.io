@@ -3,6 +3,7 @@ url: qb10_version_12_released
 banner: post2.jpg
 date: 20140711
 icon: bullhorn
+tags: QB1-0,press
 
 Asteroids and lasers come to the iPad ...
 

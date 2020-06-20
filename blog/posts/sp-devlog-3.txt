@@ -3,7 +3,7 @@ url: sp-devlog-3
 banner: spdevlog.png
 date: 20140809
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding water areas and setting up a shader pipeline
 

@@ -3,7 +3,7 @@ url: sp-devlog-11
 banner: spdevlog.png
 date: 20141014
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Programming my way out of a lack of artistic ability
 

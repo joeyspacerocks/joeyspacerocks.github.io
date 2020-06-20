@@ -3,7 +3,7 @@ url: sp-devlog-37
 banner: spdevlog.png
 date: 20160119
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 First steps to a larger world.
 

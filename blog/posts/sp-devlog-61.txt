@@ -3,7 +3,7 @@ url: sp-devlog-61
 banner: spdevlog.png
 date: 20170913
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Cleaning up the state handling.
 

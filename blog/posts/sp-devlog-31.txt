@@ -3,7 +3,7 @@ url: sp-devlog-31
 banner: spdevlog.png
 date: 20151011
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Fun creating some different types of weapon.
 

@@ -3,7 +3,7 @@ url: sp-devlog-56
 banner: spdevlog.png
 date: 20160830
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 The obligatory bats are in.
 

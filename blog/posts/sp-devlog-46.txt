@@ -3,7 +3,7 @@ url: sp-devlog-46
 banner: spdevlog.png
 date: 20160313
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Raycasting to simulate enemy vision.
 

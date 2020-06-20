@@ -3,7 +3,7 @@ url: sp-devlog-14
 banner: spdevlog.png
 date: 20141112
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Fixing the timestep for future warping.
 

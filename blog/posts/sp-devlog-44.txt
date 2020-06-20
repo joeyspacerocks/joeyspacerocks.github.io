@@ -3,7 +3,7 @@ url: sp-devlog-44
 banner: spdevlog.png
 date: 20160228
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Charting the world one room at a time.
 

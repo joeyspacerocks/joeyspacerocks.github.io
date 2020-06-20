@@ -2,6 +2,7 @@ title: How to make games the hard way
 url: how_to_make_games_the_hard_way
 banner: post5.jpg
 date: 20141003
+tags: gamedev
 
 Attempting to justify my approach to game development ... to myself.
 

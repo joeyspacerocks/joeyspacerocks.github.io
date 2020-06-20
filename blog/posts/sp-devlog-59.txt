@@ -3,7 +3,7 @@ url: sp-devlog-59
 banner: spdevlog.png
 date: 20170220
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Jumbling up the narrative with a playable flashback scene.
 

@@ -3,7 +3,7 @@ url: sp-devlog-16
 banner: spdevlog.png
 date: 20141215
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Developing the Pookification Machine.
 

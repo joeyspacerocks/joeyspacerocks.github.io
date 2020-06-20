@@ -3,7 +3,7 @@ url: sp-devlog-33
 banner: spdevlog.png
 date: 20151128
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Improving the workflow with tooling.
 

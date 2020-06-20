@@ -3,7 +3,7 @@ url: sp-devlog-57
 banner: spdevlog.png
 date: 20161211
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding a dialogue system to the game.
 

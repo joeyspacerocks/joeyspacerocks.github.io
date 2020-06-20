@@ -3,7 +3,7 @@ url: sp-devlog-60
 banner: spdevlog.png
 date: 20170908
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Lighting is fun. Logging is ... not so much.
 

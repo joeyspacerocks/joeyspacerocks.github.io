@@ -3,7 +3,7 @@ url: sp-devlog-17
 banner: spdevlog.png
 date: 20150112
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Building the first real levels.
 

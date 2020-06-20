@@ -3,7 +3,7 @@ url: sp-devlog-25
 banner: spdevlog.png
 date: 20150712
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Adding controller support to the Mac build.
 

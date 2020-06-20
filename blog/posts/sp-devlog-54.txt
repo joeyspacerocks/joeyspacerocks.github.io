@@ -3,7 +3,7 @@ url: sp-devlog-54
 banner: spdevlog.png
 date: 20160706
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Reworking the collision system ... again.
 

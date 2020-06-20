@@ -3,7 +3,7 @@ url: sp-devlog-6
 banner: spdevlog.png
 date: 20140913
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Linking entities together for extendable logic.
 

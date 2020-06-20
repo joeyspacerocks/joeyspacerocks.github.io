@@ -3,7 +3,7 @@ url: sp-devlog-29
 banner: spdevlog.png
 date: 20150831
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Trying to come up with a more engaging title screen.
 

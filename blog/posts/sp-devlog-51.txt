@@ -3,7 +3,7 @@ url: sp-devlog-51
 banner: spdevlog.png
 date: 20160504
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 You can never fix a physics engine enough times.
 

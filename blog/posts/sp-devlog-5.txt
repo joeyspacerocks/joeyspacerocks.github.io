@@ -3,7 +3,7 @@ url: sp-devlog-5
 banner: spdevlog.png
 date: 20140816
 icon: cogs
-tags: devlog,spooky-pooky
+tags: devlog,spookypooky
 
 Some liquid-containing sprites for jars and the like ...
 
