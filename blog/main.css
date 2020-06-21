@@ -60,7 +60,18 @@ a {
     .header ul li:last-child, .footer ul li:last-child {
         border-right: none;
     }
-    
+
+    .tag-popular::before {
+        content: '\2605';
+        padding-right: 5px;
+        font-size: 18px;
+    }
+
+    .tag-popular.active::before {
+        font-weight: bolder;
+        font-size: 24px;
+    }
+
 .contents ul {
     display: inline-block;
     list-style: none;
