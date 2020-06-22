@@ -10,11 +10,11 @@
         
             <div class="header">
                 <img class="logo" src="../logo.svg" />
-		        <h1><a href="../index.html">fistful of squid</a></h1>
+		        <h1><a href="/">fistful of squid</a></h1>
                 <p>A blog by Joe, a part-time games developer</p>
 
                 <ul class="tags">
-                {{#tags}}<li><span class="tag-{{tag}}{{#active}} active{{/active}}"><a href="{{tag}}.html">{{tag}}</a></span></li>{{/tags}}
+                {{#tags}}<li><span class="tag-{{tag}}{{#active}} active{{/active}}"><a href="{{tag}}">{{tag}}</a></span></li>{{/tags}}
                 </ul>
             </div>
             
@@ -22,7 +22,7 @@
                 <ul>
                     {{#posts}}
                         <li>
-                            <h2><i class="fa fa-{{icon}}"></i> <a href="{{url}}.html">{{title}}</a></h2>
+                            <h2><i class="fa fa-{{icon}}"></i> <a href="{{url}}">{{title}}</a></h2>
                             <p class="date">{{nice_date}}</p>
                             <p class="blurb">{{blurb}}</p>
                         </li>
@@ -43,7 +43,7 @@
             </ul>
 
 \           <div>
-                <a href="../index.html">
+                <a href="/">
                     <p><img class="logo" src="../logo.svg" /></p>
                     <h1>fistful of squid</h1>
                 </a>
