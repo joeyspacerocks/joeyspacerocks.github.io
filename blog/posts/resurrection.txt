@@ -1,0 +1,50 @@
+title: Resurrection
+banner: spdevlog.png
+date: 20200622
+tags: gamedev,spookypooky
+
+I honestly don't know where the time went ...
+
+According to the dates on this blog it's been, let's see, a mere 3 years, 2 months and some number of days since the last entry on this blog, which frankly boggles my mind.
+
+In fact, it's been so long I feel like I need to re-introduce the game I'm working on, titled "Spooky Pooky" (as much for me as for you).
+
+![](images/sp-ouch.mp4)
+
+The adventure takes the form of a 'one-world-opening-up-as-abilities-are-gained' stage (or *metroidvania* as these things are oft labelled), presented with just two dimensions (three were beyond the budget). It is a broadly set in the  B-movie-sci-fi-horror genre (as popular now as it ever was).
+
+The last post I made ended with a typically pithy predection:
+
+> I expect the next blog post will be titled "Why I moved from C to C++ to Unity in 3 months".
+
+Nothing so dramatic has happened. In fact work has continued on Spooky Pooky with many accomplishments achieved, the wisdom of which vary greatly and albeit at a timescale more akin to arboreal giants than humans.
+
+Everyone loves lists. Here's one:
+
+* The rendering engine has been migrated from OpenGL to Vulkan
+* The windows/audio/input support has been migrated from SFML to SDL
+* There is a built-in editor for building rooms and the world. Tiled is no more.
+* Rooms can be edited in-game, flipping between editor and game with a keypress.
+* Sprites and tiles are being created with Aseprite (previously PyxelEdit)
+* The engine performs live-reloading of sprite and tiles, which are repacked on-save directly from Aseprite with no export steps.
+* The engine performs live-reloading of vertex and fragment shaders.
+* There is a story! Mostly, with some gaps and many things to pin down.
+* There is a 'scripting' system (not a language), whereby scenes and events can be scripted to some extent.
+* Items can be picked up, as can weapons, and there is an inventory.
+* The player can now die! In the game.
+
+Those are the big things - there's obviously been a fair bit of tiny fixes and the like.
+
+So ... progress of a sort. However, it ain't a game yet so an awful lot left to get on with.
+
+![](images/sp-reflections.mp4)
+
+In the world outside of Spooky Pooky I've been distracted by a number of other little projects, including a [little CLI project management tool](https://github.com/joeyspacerocks/teenypm), and many, many [Pico-8](https://www.lexaloffle.com/pico-8.php) prototypes, doodles and even the occasional [seasonal game](https://fistfulofsquid.itch.io/sanity-clause) ...
+
+Oh and I've also rewritten the static generator for this blog to add proper tags and pagination (since the devlog entries grew rather a lot ...).
+
+My New Year's resolution (in June) is to try and update this blog once a week with an actual progress report, with the occasionally deeper look at some more interesting things (such as the custom editor).
+
+I'll tweet updates on [Twitter](https://twitter.com/joeyspacerocks).
+
+Right, I'm off to make a game.

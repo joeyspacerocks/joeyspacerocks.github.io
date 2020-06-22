@@ -1,0 +1,123 @@
+<html>
+    <head>
+    	<title>Resurrection</title>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link rel="stylesheet" type="text/css" href="main.css" />
+        <style type="text/css">
+            .logo {
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+            
+            <div class="post-header">
+                <div class="banner">
+                    <img src="images/spdevlog.png" />
+                </div>
+            </div>
+
+	    <div class="nav">
+	        <a href="index.html">Home</a>
+	    </div>
+
+        <div class="post">
+            <div class="title">
+                <h1>Resurrection</h1>
+                <p class="strapline">I honestly don't know where the time went ...
+</p>
+                <p class="publish">Published on <span class="date">22 Jun 2020</span> by Joe</p>
+            </div>
+            
+            <p>According to the dates on this blog it's been, let's see, a mere 3 years, 2 months and some number of days since the last entry on this blog, which frankly boggles my mind.</p>
+<p>In fact, it's been so long I feel like I need to re-introduce the game I'm working on, titled "Spooky Pooky" (as much for me as for you).</p>
+<video autoplay="true" muted="true" loop="true"><source src="images/sp-ouch.mp4" type="video/mp4"></video>
+
+<p>The adventure takes the form of a 'one-world-opening-up-as-abilities-are-gained' stage (or <em>metroidvania</em> as these things are oft labelled), presented with just two dimensions (three were beyond the budget). It is a broadly set in the  B-movie-sci-fi-horror genre (as popular now as it ever was).</p>
+<p>The last post I made ended with a typically pithy predection:</p>
+<blockquote>
+<p>I expect the next blog post will be titled "Why I moved from C to C++ to Unity in 3 months".</p>
+</blockquote>
+<p>Nothing so dramatic has happened. In fact work has continued on Spooky Pooky with many accomplishments achieved, the wisdom of which vary greatly and albeit at a timescale more akin to arboreal giants than humans.</p>
+<p>Everyone loves lists. Here's one:</p>
+<ul>
+<li>The rendering engine has been migrated from OpenGL to Vulkan</li>
+<li>The windows/audio/input support has been migrated from SFML to SDL</li>
+<li>There is a built-in editor for building rooms and the world. Tiled is no more.</li>
+<li>Rooms can be edited in-game, flipping between editor and game with a keypress.</li>
+<li>Sprites and tiles are being created with Aseprite (previously PyxelEdit)</li>
+<li>The engine performs live-reloading of sprite and tiles, which are repacked on-save directly from Aseprite with no export steps.</li>
+<li>The engine performs live-reloading of vertex and fragment shaders.</li>
+<li>There is a story! Mostly, with some gaps and many things to pin down.</li>
+<li>There is a 'scripting' system (not a language), whereby scenes and events can be scripted to some extent.</li>
+<li>Items can be picked up, as can weapons, and there is an inventory.</li>
+<li>The player can now die! In the game.</li>
+</ul>
+<p>Those are the big things - there's obviously been a fair bit of tiny fixes and the like.</p>
+<p>So ... progress of a sort. However, it ain't a game yet so an awful lot left to get on with.</p>
+<video autoplay="true" muted="true" loop="true"><source src="images/sp-reflections.mp4" type="video/mp4"></video>
+
+<p>In the world outside of Spooky Pooky I've been distracted by a number of other little projects, including a <a href="https://github.com/joeyspacerocks/teenypm">little CLI project management tool</a>, and many, many <a href="https://www.lexaloffle.com/pico-8.php">Pico-8</a> prototypes, doodles and even the occasional <a href="https://fistfulofsquid.itch.io/sanity-clause">seasonal game</a> ...</p>
+<p>Oh and I've also rewritten the static generator for this blog to add proper tags and pagination (since the devlog entries grew rather a lot ...).</p>
+<p>My New Year's resolution (in June) is to try and update this blog once a week with an actual progress report, with the occasionally deeper look at some more interesting things (such as the custom editor).</p>
+<p>I'll tweet updates on <a href="https://twitter.com/joeyspacerocks">Twitter</a>.</p>
+<p>Right, I'm off to make a game.</p>
+        </div>
+
+        <div class="publish">Published on <span class="date">22 Jun 2020</span> by Joe</div>
+	    <div><a href="index.html"><i class="fa fa-chevron-left"></i> Back to index</a></div>
+
+	    <div class="links">
+		<p>
+		Interested in finding out more about <strong>Spooky Pooky</strong>?
+		</p>
+                <ul>
+                 <li><i class="fa fa-envelope"></i> <a href="http://eepurl.com/bcNbXr">Sign up for <strong>news and updates</strong></a></li>
+                 <li><i class="fa fa-twitter"></i> <a href="https://twitter.com/joeyspacerocks">Talk to me <strong>@joeyspacerocks</strong></a></li>
+                 <li><i class="fa fa-desktop"></i> <a href="../spookypooky/index.html">Visit the main site</a></li>
+                </ul>
+	    </div>
+
+            <div class="comments">
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    /* * * CONFIGURATION VARIABLES * * */
+                    var disqus_shortname = 'fistfulofsquid';
+                
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                         dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                     </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div>
+                <a href="../index.html">
+                    <p><img class="logo" src="../logo.svg" /></p>
+                    <h1>fistful of squid</h1>
+                </a>
+                <p><i class="fa fa-twitter"></i> Talk to me <a href="https://twitter.com/joeyspacerocks">@joeyspacerocks</a></p>
+                <p class="copyright">&copy; copyright Joe Trewin 2015 - present</p>
+            </div>
+        </div>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-59810066-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

@@ -51,6 +51,9 @@ def read_post(f):
     date = datetime.strptime(post['date'], '%Y%m%d')
     post['nice_date'] = date.strftime('%d %b %Y')
 
+    if not ('url' in post):
+        post['url'] = path.splitext(path.basename(f))[0]
+
     return post
 
 def write_html(data, tmpl_path, tmpl_file, dest_path, dest_file):
@@ -77,7 +80,7 @@ def main():
     for f in Path(src_path).iterdir():
         if f.name.endswith(".txt"):
             post = read_post(f)
-            dest_file = post.get('url', path.splitext(f.name)[0] + '.html') + '.html'
+            dest_file = post['url'] + '.html'
             write_html(post, tmpl_path, 'post.html', dest_path, dest_file)
 
             for t in post['tags']:
