@@ -149,6 +149,7 @@ def generate_rss(posts):
     fg.description('A blog by Joe, a part-time games developer')
     fg.author( {'name':'Joe Trewin', 'uri': 'https://twitter.com/joeyspacerocks' } )
     fg.link( href='https://fistfulofsquid.com/blog')
+    fg.link( href='https://fistfulofsquid.com/blog/rss', rel='self' )
     fg.language('en')
 
     for post in sorted(posts, key = lambda p: p['date']):
@@ -161,16 +162,8 @@ def generate_rss(posts):
         fe.published(date)
         fe.updated(date)
 
-    fg.link( href='https://fistfulofsquid.com/blog/atom', rel='self' )
-    atomfeed = fg.atom_str(pretty=True)
-
-    fg.link( href='https://fistfulofsquid.com/blog/rss', rel='self' )
     rssfeed  = fg.rss_str(pretty=True)
-
-    fg.atom_file('atom.xml')
     fg.rss_file('rss.xml')
-
-    pass
 
 if __name__ == '__main__':
     main()
