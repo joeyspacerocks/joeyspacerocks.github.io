@@ -7,6 +7,7 @@ from pathlib import Path
 import chevron
 import markdown
 import pprint
+from feedgen.feed import FeedGenerator
 
 __version__ = '0.1.1'
 
@@ -76,10 +77,12 @@ def main():
         mkdir(dest_path)
 
     index_pages = { 'index': [] }
+    all_posts = []
 
     for f in Path(src_path).iterdir():
         if f.name.endswith(".txt"):
             post = read_post(f)
+            all_posts.append(post)
             dest_file = post['url'] + '.html'
             write_html(post, tmpl_path, 'post.html', dest_path, dest_file)
 
@@ -112,6 +115,9 @@ def main():
         if len(page_posts) > 0:
             write_index_page(tags, tag, page, page_count, page_posts, tmpl_path, dest_path)
 
+    generate_rss(all_posts)
+    print('Finished')
+
 def index_filename(tag, page):
     return (tag if page == 0 else '{}_{}'.format(tag, page + 1)) + '.html'
 
@@ -132,6 +138,26 @@ def write_index_page(tags, tag, page, page_count, posts, tmpl_path, dest_path):
 
     data = {'tags': tags, 'tag': tag, 'posts': posts, 'nav': nav}
     write_html(data, tmpl_path, 'index.html', dest_path, index_filename(tag, page))
+
+def generate_rss(posts):
+    print('Generating RSS feed ...')
+
+    fg = FeedGenerator()
+    fg.id('https://fistfulofsquid.com/blog')
+    fg.title('Fistful of Squid Blog')
+    fg.description('A blog by Joe, a part-time games developer')
+    fg.author( {'name':'Joe Trewin', 'uri': 'https://twitter.com/joeyspacerocks' } )
+    fg.link( href='https://fistfulofsquid.com/blog')
+    fg.link( href='https://fistfulofsquid.com/blog/atom.xml', rel='self' )
+    fg.language('en')
+
+
+    atomfeed = fg.atom_str(pretty=True)
+    rssfeed  = fg.rss_str(pretty=True)
+    fg.atom_file('atom.xml')
+    fg.rss_file('rss.xml')
+
+    pass
 
 if __name__ == '__main__':
     main()
