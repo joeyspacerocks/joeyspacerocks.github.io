@@ -1,6 +1,7 @@
 from sys import argv
 from os import path, mkdir
 from datetime import datetime
+import pytz
 import argparse
 import re
 from pathlib import Path
@@ -148,12 +149,24 @@ def generate_rss(posts):
     fg.description('A blog by Joe, a part-time games developer')
     fg.author( {'name':'Joe Trewin', 'uri': 'https://twitter.com/joeyspacerocks' } )
     fg.link( href='https://fistfulofsquid.com/blog')
-    fg.link( href='https://fistfulofsquid.com/blog/atom.xml', rel='self' )
     fg.language('en')
 
+    for post in sorted(posts, key = lambda p: p['date']):
+        fe = fg.add_entry()
+        fe.id('https://fistfulofsquid.com/blog/' + post['url'])
+        fe.title(post['title'])
+        fe.link(href='https://fistfulofsquid.com/blog/' + post['url'])
+        fe.description(post['blurb'])
+        date = datetime.strptime(post['date'], '%Y%m%d').replace(tzinfo=pytz.UTC)
+        fe.published(date)
+        fe.updated(date)
 
+    fg.link( href='https://fistfulofsquid.com/blog/atom', rel='self' )
     atomfeed = fg.atom_str(pretty=True)
+
+    fg.link( href='https://fistfulofsquid.com/blog/rss', rel='self' )
     rssfeed  = fg.rss_str(pretty=True)
+
     fg.atom_file('atom.xml')
     fg.rss_file('rss.xml')
 
