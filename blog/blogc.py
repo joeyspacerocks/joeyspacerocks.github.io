@@ -72,7 +72,7 @@ def read_post(f):
                     header = False
             else:
                 if not blurb:
-                    blurb = line
+                    blurb = line.strip()
                 else:
                     md_content += line
 
