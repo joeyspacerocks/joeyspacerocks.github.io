@@ -128,6 +128,30 @@ a {
         margin-top: 0;
     }
 
+    .contents figure {
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        overflow: hidden;
+        border-radius: 100px;
+        box-shadow: 0px 0px 40px 0px rgba(20, 20, 20, 0.5);
+        background: #000;
+    }
+
+    .contents figure img:hover {
+        transform: translateX(-50%) translateY(-50%) scale(2.4);
+    }
+
+    .contents figure img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: auto;
+        width: 100%;
+        transform: translateX(-50%) translateY(-50%) scale(1.8);
+        transition: all 1s ease-in-out;
+    }
 
 /* post */
 

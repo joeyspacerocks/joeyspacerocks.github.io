@@ -9,10 +9,19 @@ import chevron
 import markdown
 import pprint
 from feedgen.feed import FeedGenerator
+import ffmpeg
+import urllib.request
 
 __version__ = '0.1.1'
 
+image_path = 'images'
+
+def thumb_file(f):
+    return path.join(image_path, 'th_' + f)
+
 def process_media(m):
+    image_path = 'images'
+
     url = m.group(2)
     if url.endswith('.mp4'):
         return '<video autoplay="true" muted="true" loop="true"><source src="{}" type="video/mp4"></video>'.format(url)
@@ -21,7 +30,30 @@ def process_media(m):
     else:
         return m.group(0)
 
+# find first image/video and generate image from it
+def generate_thumb(md_content, post_url):
+    image_file = thumb_file(post_url + '.png')
+    
+    if not path.isfile(image_file):
+        m = re.search(r'\!\[(.*?)\]\((.+?)\)', md_content)
+        if not m:
+            return None
+
+        url = m.group(2)
+
+        if url.startswith('https://www.youtube.com'):
+            video_id = url.split('/')[-1]
+            image_url = 'https://img.youtube.com/vi/{}/0.jpg'.format(video_id)
+            urllib.request.urlretrieve(image_url, image_file)
+
+        else:
+            ffmpeg.input(url).output(image_file, vframes=1).run(quiet=True)
+
+    return image_file
+
 def read_post(f):
+    print('Processing post source file: ' + f.name)
+
     post = {
         'content': '',
         'icon': 'newspaper-o'
@@ -47,14 +79,18 @@ def read_post(f):
     post['blurb'] = blurb
     post['tags'] = post.get('tags', '').split(',')
 
+    if not ('url' in post):
+        post['url'] = path.splitext(path.basename(f))[0]
+
+    post['thumb'] = generate_thumb(md_content, post['url'])
+    post['thumb'] = post['thumb'] or path.join(image_path, post['banner'])
+        
+
     md_content = re.sub(r'\!\[(.*?)\]\((.+?)\)', process_media, md_content)
     post['content'] = markdown.markdown(md_content)
 
     date = datetime.strptime(post['date'], '%Y%m%d')
     post['nice_date'] = date.strftime('%d %b %Y')
-
-    if not ('url' in post):
-        post['url'] = path.splitext(path.basename(f))[0]
 
     return post
 
